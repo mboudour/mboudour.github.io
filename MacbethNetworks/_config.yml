@@ -1,0 +1,11 @@
+# Site settings
+title: Sheakespeare's Macbeth Networks
+email: Moses.Boudourides@gmail.com
+banner: "/_img/banner.jpg"
+description: > # this means to ignore newlines until "baseurl:"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://mboudour.github.io" # the base hostname & protocol for your site
+twitter_username: mosabou
+github_username:  mboudour
+# Build settings
+markdown: kramdown
