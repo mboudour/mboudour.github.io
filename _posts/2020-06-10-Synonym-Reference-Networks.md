@@ -455,7 +455,7 @@ plt.margins(x=0.1, y=0)
 ```
 
 
-![png](/images/synonym_nets_files/synonym_nets_12_0.png)
+![png](/images/synonym_nets_12_0.png)
 
 
 
@@ -467,7 +467,7 @@ Image(filename='allDirected.png',width=800, height=400)
 
 
 
-![png](/images/synonym_nets_files/synonym_nets_13_0.png)
+![png](/images/synonym_nets_13_0.png)
 
 
 
@@ -535,7 +535,7 @@ plt.margins(x=0.1, y=0)
 ```
 
 
-![png](/images/synonym_nets_files/synonym_nets_15_0.png)
+![png](/images/synonym_nets_15_0.png)
 
 
 
@@ -546,7 +546,7 @@ Image(filename='allDirectedLSCC.png',width=800, height=400)
 
 
 
-![png](/images/synonym_nets_files/synonym_nets_16_0.png)
+![png](/images/synonym_nets_16_0.png)
 
 
 
@@ -626,7 +626,7 @@ plt.margins(x=0.1, y=0.1)
 ```
 
 
-![png](/images/synonym_nets_files/synonym_nets_19_0.png)
+![png](/images/synonym_nets_19_0.png)
 
 
 
@@ -637,7 +637,7 @@ Image(filename='allReci.png',width=800, height=400)
 
 
 
-![png](/images/synonym_nets_files/synonym_nets_20_0.png)
+![png](/images/synonym_nets_20_0.png)
 
 
 
@@ -699,7 +699,7 @@ plt.margins(x=0.1, y=0.1)
 ```
 
 
-![png](/images/synonym_nets_files/synonym_nets_22_0.png)
+![png](/images/synonym_nets_22_0.png)
 
 
 
