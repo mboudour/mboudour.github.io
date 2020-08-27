@@ -3,7 +3,7 @@ layout: page
 title: Moses Boudourides
 permalink: /about/
 ---
-![](https://www.dropbox.com/s/fc0y8grpv1h8g7p/MAB_July2020_Patrasso.png?dl=0)
+![](images/MAB_July2020_Patrasso.png)
 
 Moses Boudourides is in the Faculty of [Northwestern University School of Professional Studies (SPS) Data Science Program](https://sps.northwestern.edu/masters/data-science/faculty.php) and Affiliated Faculty at the [Science of Networks in Communities (SONIC) at Northwestern University](http://sonic.northwestern.edu/people/affiliated-faculty/moses-boudourides/). During 2019-20 he was Visiting Professor at the [New York University Abu Dhabi (NYUAD)](https://nyuad.nyu.edu/en/).
 
