@@ -17,7 +17,7 @@ In 2019 he was awarded a Robert K. Merton Visiting Research Fellowship from the 
 * [Moses Boudourides CV](https://www.dropbox.com/s/eyjlqpisiv5zui6/Boudourides_CV_Aug2020a.pdf?dl=0).
 
 **Social Media**
-* [Moses Boudourides](https://github.com/mboudour)
+* [Github](https://github.com/mboudour)
 * [Medium](https://medium.com/@mosabou)
 * [Slideshare](https://www.slideshare.net/MosesBoudourides)
 * [Facebook](https://www.facebook.com/moses.boudourides)
