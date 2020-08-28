@@ -15,4 +15,4 @@ In 2019 he was awarded a Robert K. Merton Visiting Research Fellowship from the 
 
 [Moses Boudourides at SONIC](http://sonic.northwestern.edu/people/affiliated-faculty/moses-boudourides/).
 
-[Moses Boudourides CV](https://www.dropbox.com/s/6vbhq32yudl3yez/Boudourides_CV_May2020.pdf?dl=0).
+[Moses Boudourides CV](https://www.dropbox.com/s/m7iiawbf9pv3i7u/Boudourides_CV_Aug2020.pdf?dl=0).
