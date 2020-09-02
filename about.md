@@ -12,8 +12,8 @@ His undergraduate studies (Engineering Diploma) were on Chemical Engineering at 
 In 2019 he was awarded a Robert K. Merton Visiting Research Fellowship from the Institute for Analytical Sociology (IAS) at Linköping University in Sweden.
 
 **Personal Webpages**
-* [Moses Boudourides at NYUAD](https://nyuad.nyu.edu/en/academics/divisions/science/faculty/moses-boudourides.html)
-* [Moses Boudourides at SONIC](http://sonic.northwestern.edu/people/affiliated-faculty/moses-boudourides/)
+* [Moses Boudourides at the Northwestern University SONIC Lab](http://sonic.northwestern.edu/people/affiliated-faculty/moses-boudourides/)
+* [Moses Boudourides at the NYUAD Research Group in Network Science](https://sites.google.com/nyu.edu/rgns/members)
 * [Moses Boudourides CV](https://www.dropbox.com/s/eyjlqpisiv5zui6/Boudourides_CV_Aug2020a.pdf?dl=0)
 
 **Social Media**
