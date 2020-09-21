@@ -1,0 +1,1660 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>p1</title>
+      
+      
+        
+          
+        <style>
+            .panel-widget-box {
+                	min-height: 20px;
+                	background-color: #f5f5f5;
+                	border: 1px solid #e3e3e3 !important;
+                	border-radius: 4px;
+                	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+                	box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+                	overflow-x: hidden;
+                	overflow-y: hidden;
+                }
+
+                .scrollable {
+                  overflow: scroll;
+                }
+
+                progress {
+                	appearance: none;
+                	-moz-appearance: none;
+                	-webkit-appearance: none;
+
+                	border: none;
+                	height: 20px;
+                	background-color: whiteSmoke;
+                	border-radius: 3px;
+                	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+                	color: royalblue;
+                	position: relative;
+                	margin: 0 0 1.5em;
+                }
+
+                progress[value]::-webkit-progress-bar {
+                	background-color: whiteSmoke;
+                	border-radius: 3px;
+                	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+                }
+
+                progress[value]::-webkit-progress-value {
+                	position: relative;
+
+                	background-size: 35px 20px, 100% 100%, 100% 100%;
+                	border-radius:3px;
+                }
+
+                progress.active:not([value])::before {
+                	background-position: 10%;
+                	animation-name: stripes;
+                	animation-duration: 3s;
+                	animation-timing-function: linear;
+                	animation-iteration-count: infinite;
+                }
+
+                progress[value]::-moz-progress-bar {
+                	background-size: 35px 20px, 100% 100%, 100% 100%;
+                	border-radius:3px;
+                }
+
+                progress:not([value])::-moz-progress-bar {
+                	border-radius:3px;
+                	background:
+                	linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.2) 33%, rgba(0, 0, 0, 0.2) 66%, transparent 66%) left/2.5em 1.5em;
+
+                }
+
+                progress.active:not([value])::-moz-progress-bar {
+                	background-position: 10%;
+                	animation-name: stripes;
+                	animation-duration: 3s;
+                	animation-timing-function: linear;
+                	animation-iteration-count: infinite;
+                }
+
+                progress.active:not([value])::-webkit-progress-bar {
+                	background-position: 10%;
+                	animation-name: stripes;
+                	animation-duration: 3s;
+                	animation-timing-function: linear;
+                	animation-iteration-count: infinite;
+                }
+
+                progress.primary[value]::-webkit-progress-value { background-color: #007bff; }
+                progress.primary:not([value])::before { background-color: #007bff; }
+                progress.primary:not([value])::-webkit-progress-bar { background-color: #007bff; }
+                progress.primary::-moz-progress-bar { background-color: #007bff; }
+
+                progress.secondary[value]::-webkit-progress-value { background-color: #6c757d; }
+                progress.secondary:not([value])::before { background-color: #6c757d; }
+                progress.secondary:not([value])::-webkit-progress-bar { background-color: #6c757d; }
+                progress.secondary::-moz-progress-bar { background-color: #6c757d; }
+
+                progress.success[value]::-webkit-progress-value { background-color: #28a745; }
+                progress.success:not([value])::before { background-color: #28a745; }
+                progress.success:not([value])::-webkit-progress-bar { background-color: #28a745; }
+                progress.success::-moz-progress-bar { background-color: #28a745; }
+
+                progress.danger[value]::-webkit-progress-value { background-color: #dc3545; }
+                progress.danger:not([value])::before { background-color: #dc3545; }
+                progress.danger:not([value])::-webkit-progress-bar { background-color: #dc3545; }
+                progress.danger::-moz-progress-bar { background-color: #dc3545; }
+
+                progress.warning[value]::-webkit-progress-value { background-color: #ffc107; }
+                progress.warning:not([value])::before { background-color: #ffc107; }
+                progress.warning:not([value])::-webkit-progress-bar { background-color: #ffc107; }
+                progress.warning::-moz-progress-bar { background-color: #ffc107; }
+
+                progress.info[value]::-webkit-progress-value { background-color: #17a2b8; }
+                progress.info:not([value])::before { background-color: #17a2b8; }
+                progress.info:not([value])::-webkit-progress-bar { background-color: #17a2b8; }
+                progress.info::-moz-progress-bar { background-color: #17a2b8; }
+
+                progress.light[value]::-webkit-progress-value { background-color: #f8f9fa; }
+                progress.light:not([value])::before { background-color: #f8f9fa; }
+                progress.light:not([value])::-webkit-progress-bar { background-color: #f8f9fa; }
+                progress.light::-moz-progress-bar { background-color: #f8f9fa; }
+
+                progress.dark[value]::-webkit-progress-value { background-color: #343a40; }
+                progress.dark:not([value])::-webkit-progress-bar { background-color: #343a40; }
+                progress.dark:not([value])::before { background-color: #343a40; }
+                progress.dark::-moz-progress-bar { background-color: #343a40; }
+
+                progress:not([value])::-webkit-progress-bar {
+                	border-radius: 3px;
+                	background:
+                	linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.2) 33%, rgba(0, 0, 0, 0.2) 66%, transparent 66%) left/2.5em 1.5em;
+                }
+                progress:not([value])::before {
+                	content:" ";
+                	position:absolute;
+                	height: 20px;
+                	top:0;
+                	left:0;
+                	right:0;
+                	bottom:0;
+                	border-radius: 3px;
+                	background:
+                	linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.2) 33%, rgba(0, 0, 0, 0.2) 66%, transparent 66%) left/2.5em 1.5em;
+                }
+
+                @keyframes stripes {
+                  from {background-position: 0%}
+                  to {background-position: 100%}
+                }
+
+        </style>
+        <style>
+            .codehilite .hll { background-color: #ffffcc }
+                .codehilite  { background: #f8f8f8; }
+                .codehilite .c { color: #408080; font-style: italic } /* Comment */
+                .codehilite .err { border: 1px solid #FF0000 } /* Error */
+                .codehilite .k { color: #008000; font-weight: bold } /* Keyword */
+                .codehilite .o { color: #666666 } /* Operator */
+                .codehilite .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
+                .codehilite .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+                .codehilite .cp { color: #BC7A00 } /* Comment.Preproc */
+                .codehilite .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
+                .codehilite .c1 { color: #408080; font-style: italic } /* Comment.Single */
+                .codehilite .cs { color: #408080; font-style: italic } /* Comment.Special */
+                .codehilite .gd { color: #A00000 } /* Generic.Deleted */
+                .codehilite .ge { font-style: italic } /* Generic.Emph */
+                .codehilite .gr { color: #FF0000 } /* Generic.Error */
+                .codehilite .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+                .codehilite .gi { color: #00A000 } /* Generic.Inserted */
+                .codehilite .go { color: #888888 } /* Generic.Output */
+                .codehilite .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+                .codehilite .gs { font-weight: bold } /* Generic.Strong */
+                .codehilite .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+                .codehilite .gt { color: #0044DD } /* Generic.Traceback */
+                .codehilite .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+                .codehilite .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+                .codehilite .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+                .codehilite .kp { color: #008000 } /* Keyword.Pseudo */
+                .codehilite .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+                .codehilite .kt { color: #B00040 } /* Keyword.Type */
+                .codehilite .m { color: #666666 } /* Literal.Number */
+                .codehilite .s { color: #BA2121 } /* Literal.String */
+                .codehilite .na { color: #7D9029 } /* Name.Attribute */
+                .codehilite .nb { color: #008000 } /* Name.Builtin */
+                .codehilite .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+                .codehilite .no { color: #880000 } /* Name.Constant */
+                .codehilite .nd { color: #AA22FF } /* Name.Decorator */
+                .codehilite .ni { color: #999999; font-weight: bold } /* Name.Entity */
+                .codehilite .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+                .codehilite .nf { color: #0000FF } /* Name.Function */
+                .codehilite .nl { color: #A0A000 } /* Name.Label */
+                .codehilite .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+                .codehilite .nt { color: #008000; font-weight: bold } /* Name.Tag */
+                .codehilite .nv { color: #19177C } /* Name.Variable */
+                .codehilite .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+                .codehilite .w { color: #bbbbbb } /* Text.Whitespace */
+                .codehilite .mb { color: #666666 } /* Literal.Number.Bin */
+                .codehilite .mf { color: #666666 } /* Literal.Number.Float */
+                .codehilite .mh { color: #666666 } /* Literal.Number.Hex */
+                .codehilite .mi { color: #666666 } /* Literal.Number.Integer */
+                .codehilite .mo { color: #666666 } /* Literal.Number.Oct */
+                .codehilite .sa { color: #BA2121 } /* Literal.String.Affix */
+                .codehilite .sb { color: #BA2121 } /* Literal.String.Backtick */
+                .codehilite .sc { color: #BA2121 } /* Literal.String.Char */
+                .codehilite .dl { color: #BA2121 } /* Literal.String.Delimiter */
+                .codehilite .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+                .codehilite .s2 { color: #BA2121 } /* Literal.String.Double */
+                .codehilite .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+                .codehilite .sh { color: #BA2121 } /* Literal.String.Heredoc */
+                .codehilite .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+                .codehilite .sx { color: #008000 } /* Literal.String.Other */
+                .codehilite .sr { color: #BB6688 } /* Literal.String.Regex */
+                .codehilite .s1 { color: #BA2121 } /* Literal.String.Single */
+                .codehilite .ss { color: #19177C } /* Literal.String.Symbol */
+                .codehilite .bp { color: #008000 } /* Name.Builtin.Pseudo */
+                .codehilite .fm { color: #0000FF } /* Name.Function.Magic */
+                .codehilite .vc { color: #19177C } /* Name.Variable.Class */
+                .codehilite .vg { color: #19177C } /* Name.Variable.Global */
+                .codehilite .vi { color: #19177C } /* Name.Variable.Instance */
+                .codehilite .vm { color: #19177C } /* Name.Variable.Magic */
+                .codehilite .il { color: #666666 } /* Literal.Number.Integer.Long */
+
+                .markdown h1 { margin-block-start: 0.34em }
+                .markdown h2 { margin-block-start: 0.42em }
+                .markdown h3 { margin-block-start: 0.5em }
+                .markdown h4 { margin-block-start: 0.67em }
+                .markdown h5 { margin-block-start: 0.84em }
+                .markdown h6 { margin-block-start: 1.17em }
+                .markdown ul { padding-inline-start: 2em }
+                .markdown ol { padding-inline-start: 2em }
+                .markdown strong { font-weight: 600 }
+                .markdown a { color: -webkit-link }
+                .markdown a { color: -moz-hyperlinkText }
+
+        </style>
+        <style>
+            .json-formatter-row {
+                  font-family: monospace;
+                }
+                .json-formatter-row,
+                .json-formatter-row a,
+                .json-formatter-row a:hover {
+                  color: black;
+                  text-decoration: none;
+                }
+                .json-formatter-row .json-formatter-row {
+                  margin-left: 1rem;
+                }
+                .json-formatter-row .json-formatter-children.json-formatter-empty {
+                  opacity: 0.5;
+                  margin-left: 1rem;
+                }
+                .json-formatter-row .json-formatter-children.json-formatter-empty:after {
+                  display: none;
+                }
+                .json-formatter-row .json-formatter-children.json-formatter-empty.json-formatter-object:after {
+                  content: "No properties";
+                }
+                .json-formatter-row .json-formatter-children.json-formatter-empty.json-formatter-array:after {
+                  content: "[]";
+                }
+                .json-formatter-row .json-formatter-string,
+                .json-formatter-row .json-formatter-stringifiable {
+                  color: green;
+                  white-space: pre;
+                  word-wrap: break-word;
+                }
+                .json-formatter-row .json-formatter-number {
+                  color: blue;
+                }
+                .json-formatter-row .json-formatter-boolean {
+                  color: red;
+                }
+                .json-formatter-row .json-formatter-null {
+                  color: #855A00;
+                }
+                .json-formatter-row .json-formatter-undefined {
+                  color: #ca0b69;
+                }
+                .json-formatter-row .json-formatter-function {
+                  color: #FF20ED;
+                }
+                .json-formatter-row .json-formatter-date {
+                  background-color: rgba(0, 0, 0, 0.05);
+                }
+                .json-formatter-row .json-formatter-url {
+                  text-decoration: underline;
+                  color: blue;
+                  cursor: pointer;
+                }
+                .json-formatter-row .json-formatter-bracket {
+                  color: blue;
+                }
+                .json-formatter-row .json-formatter-key {
+                  color: #00008B;
+                  padding-right: 0.2rem;
+                }
+                .json-formatter-row .json-formatter-toggler-link {
+                  cursor: pointer;
+                }
+                .json-formatter-row .json-formatter-toggler {
+                  line-height: 1.2rem;
+                  font-size: 0.7rem;
+                  vertical-align: middle;
+                  opacity: 0.6;
+                  cursor: pointer;
+                  padding-right: 0.2rem;
+                }
+                .json-formatter-row .json-formatter-toggler:after {
+                  display: inline-block;
+                  transition: transform 100ms ease-in;
+                  content: "\25BA";
+                }
+                .json-formatter-row > a > .json-formatter-preview-text {
+                  opacity: 0;
+                  transition: opacity 0.15s ease-in;
+                  font-style: italic;
+                }
+                .json-formatter-row:hover > a > .json-formatter-preview-text {
+                  opacity: 0.6;
+                }
+                .json-formatter-row.json-formatter-open > .json-formatter-toggler-link .json-formatter-toggler:after {
+                  transform: rotate(90deg);
+                }
+                .json-formatter-row.json-formatter-open > .json-formatter-children:after {
+                  display: inline-block;
+                }
+                .json-formatter-row.json-formatter-open > a > .json-formatter-preview-text {
+                  display: none;
+                }
+                .json-formatter-row.json-formatter-open.json-formatter-empty:after {
+                  display: block;
+                }
+                .json-formatter-dark.json-formatter-row {
+                  font-family: monospace;
+                }
+                .json-formatter-dark.json-formatter-row,
+                .json-formatter-dark.json-formatter-row a,
+                .json-formatter-dark.json-formatter-row a:hover {
+                  color: white;
+                  text-decoration: none;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-row {
+                  margin-left: 1rem;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-children.json-formatter-empty {
+                  opacity: 0.5;
+                  margin-left: 1rem;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-children.json-formatter-empty:after {
+                  display: none;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-children.json-formatter-empty.json-formatter-object:after {
+                  content: "No properties";
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-children.json-formatter-empty.json-formatter-array:after {
+                  content: "[]";
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-string,
+                .json-formatter-dark.json-formatter-row .json-formatter-stringifiable {
+                  color: #31F031;
+                  white-space: pre;
+                  word-wrap: break-word;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-number {
+                  color: #66C2FF;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-boolean {
+                  color: #EC4242;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-null {
+                  color: #EEC97D;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-undefined {
+                  color: #ef8fbe;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-function {
+                  color: #FD48CB;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-date {
+                  background-color: rgba(255, 255, 255, 0.05);
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-url {
+                  text-decoration: underline;
+                  color: #027BFF;
+                  cursor: pointer;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-bracket {
+                  color: #9494FF;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-key {
+                  color: #23A0DB;
+                  padding-right: 0.2rem;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-toggler-link {
+                  cursor: pointer;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-toggler {
+                  line-height: 1.2rem;
+                  font-size: 0.7rem;
+                  vertical-align: middle;
+                  opacity: 0.6;
+                  cursor: pointer;
+                  padding-right: 0.2rem;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-toggler:after {
+                  display: inline-block;
+                  transition: transform 100ms ease-in;
+                  content: "\25BA";
+                }
+                .json-formatter-dark.json-formatter-row > a > .json-formatter-preview-text {
+                  opacity: 0;
+                  transition: opacity 0.15s ease-in;
+                  font-style: italic;
+                }
+                .json-formatter-dark.json-formatter-row:hover > a > .json-formatter-preview-text {
+                  opacity: 0.6;
+                }
+                .json-formatter-dark.json-formatter-row.json-formatter-open > .json-formatter-toggler-link .json-formatter-toggler:after {
+                  transform: rotate(90deg);
+                }
+                .json-formatter-dark.json-formatter-row.json-formatter-open > .json-formatter-children:after {
+                  display: inline-block;
+                }
+                .json-formatter-dark.json-formatter-row.json-formatter-open > a > .json-formatter-preview-text {
+                  display: none;
+                }
+                .json-formatter-dark.json-formatter-row.json-formatter-open.json-formatter-empty:after {
+                  display: block;
+                }
+
+        </style>
+        <style>
+            table.panel-df {
+                    margin-left: auto;
+                    margin-right: auto;
+                    border: none;
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                    color: black;
+                    font-size: 12px;
+                    table-layout: fixed;
+                    width: 100%;
+                }
+
+                .panel-df tr, .panel-df th, .panel-df td {
+                    text-align: right;
+                    vertical-align: middle;
+                    padding: 0.5em 0.5em !important;
+                    line-height: normal;
+                    white-space: normal;
+                    max-width: none;
+                    border: none;
+                }
+
+                .panel-df tbody {
+                    display: table-row-group;
+                    vertical-align: middle;
+                    border-color: inherit;
+                }
+
+                .panel-df tbody tr:nth-child(odd) {
+                    background: #f5f5f5;
+                }
+
+                .panel-df thead {
+                    border-bottom: 1px solid black;
+                    vertical-align: bottom;
+                }
+
+                .panel-df tr:hover {
+                    background: lightblue !important;
+                    cursor: pointer;
+                }
+
+        </style>
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.1.1.min.js" integrity="sha384-kLr4fYcqcSpbuI95brIH3vnnYCquzzSxHPU6XGQCIkQRGJwhg0StNbj1eegrHs12" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="3de3060a-be2c-41ef-8fd7-55802d913ef2" data-root-id="2171"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="2417">
+          {"5801a1c9-d2d0-4e3b-9ccf-6627df2b9a93":{"roots":{"references":[{"attributes":{"children":[{"id":"2172"},{"id":"2176"},{"id":"2261"}],"margin":[0,0,0,0],"name":"Row17356","tags":["embedded"]},"id":"2171","type":"Row"},{"attributes":{"text":"Transitions among chronologically successive Yasujir\u00f4 Ozu's films in terms of numbers of common actors","text_color":{"value":"black"},"text_font_size":{"value":"12pt"}},"id":"2177","type":"Title"},{"attributes":{},"id":"2193","type":"SaveTool"},{"attributes":{"line_color":{"value":"gold"},"line_width":{"field":"edge_line_width"},"xs":{"field":"xs"},"ys":{"field":"ys"}},"id":"2217","type":"MultiLine"},{"attributes":{"margin":[5,5,5,5],"name":"HSpacer17360","sizing_mode":"stretch_width"},"id":"2172","type":"Spacer"},{"attributes":{"data":{"index":{"__ndarray__":"AAAAAAEAAAACAAAAAwAAAAQAAAAFAAAABgAAAAcAAAAIAAAACQAAAAoAAAALAAAADAAAAA0AAAAOAAAADwAAABAAAAARAAAAEgAAABMAAAAUAAAAFQAAABYAAAAXAAAAGAAAABkAAAAaAAAAGwAAABwAAAAdAAAAHgAAAB8AAAAgAAAAIQAAACIAAAAjAAAAJAAAACUAAAAmAAAAJwAAACgAAAApAAAAKgAAACsAAAAsAAAALQAAAC4AAAAvAAAAMAAAAA==","dtype":"int32","order":"little","shape":[49]},"node_size":{"__ndarray__":"AAAAAAAAGkAAAAAAAAAeQAAAAAAAACpAAAAAAAAADEAAAAAAAAASQAAAAAAAABhAAAAAAAAAGkAAAAAAAAAaQAAAAAAAABRAAAAAAAAAOUAAAAAAAAApQAAAAAAAAAxAAAAAAACAM0AAAAAAAAAqQAAAAAAAADJAAAAAAAAAHEAAAAAAAAAQQAAAAAAAACFAAAAAAAAADEAAAAAAAAAjQAAAAAAAADJAAAAAAAAAMEAAAAAAAAAUQAAAAAAAAAhAAAAAAAAAHEAAAAAAAAAIQAAAAAAAAAhAAAAAAAAAKkAAAAAAAAAkQAAAAAAAAChAAAAAAAAAGkAAAAAAAAAMQAAAAAAAABJAAAAAAAAAHEAAAAAAAAAYQAAAAAAAABBAAAAAAAAALEAAAAAAAAAUQAAAAAAAAC5AAAAAAAAAJUAAAAAAAAAQQAAAAAAAABhAAAAAAAAADEAAAAAAAAAWQAAAAAAAACRAAAAAAAAAGkAAAAAAAAASQAAAAAAAAARAAAAAAAAAIEA=","dtype":"float64","order":"little","shape":[49]}},"selected":{"id":"2248"},"selection_policy":{"id":"2249"}},"id":"2209","type":"ColumnDataSource"},{"attributes":{"fill_color":{"value":"red"},"size":{"field":"node_size","units":"screen"}},"id":"2214","type":"Circle"},{"attributes":{},"id":"2183","type":"LinearScale"},{"attributes":{"end":1.1993834640584398,"reset_end":1.1993834640584398,"reset_start":-1.1993834421628558,"start":-1.1993834421628558,"tags":[[["y","y",null]]]},"id":"2174","type":"Range1d"},{"attributes":{"graph_layout":{"0":[-0.9979453742139096,-0.06407025870762463],"1":[-0.9815591632468975,-0.19115858231995672],"10":[0.15960003186430868,-0.987181774701702],"11":[0.8014136546922531,0.598110509719039],"12":[0.8713186975478389,-0.49071752075774816],"13":[0.801413714296898,-0.5981104282188102],"14":[0.7183495155566529,-0.6956823975404014],"15":[0.28452759769015906,0.9586678881265108],"16":[0.7183493367427181,0.6956825386452751],"17":[-0.7614460043682428,0.6482283601712897],"18":[0.518392501833587,0.8551427856810369],"19":[-0.22252101068581245,-0.9749278941645754],"2":[0.9917899965996502,-0.12787735895441635],"20":[0.9269167182662774,-0.3752670487758012],"21":[-0.096023190291021,-0.9953790823126771],"22":[-0.9979453742139096,0.06407034020785343],"23":[0.9672948717101268,0.253654610889643],"24":[-0.3453650514438777,-0.938468388498458],"25":[-0.6723008801453375,0.7402780783473568],"26":[0.15959986795153508,0.9871817965972858],"27":[-0.5721165584447848,-0.8201723609641745],"28":[0.967294812105482,-0.25365470820334907],"29":[0.2845276274924815,-0.958667806626282],"3":[-0.9009688552953902,-0.43388374673783986],"30":[-0.34536508124620013,0.9384684103940419],"31":[0.623489795998963,0.7818315161803723],"32":[0.0320516274481718,0.9994862218733318],"33":[0.032051802536816346,-0.9994861999777479],"34":[-0.761445944763598,-0.6482284574849958],"35":[-0.4625383658858432,0.8865992562638081],"36":[-0.4625382168742308,-0.8865993535775141],"37":[-0.5721166776540747,0.8201722636504684],"38":[0.4047833067411785,-0.914412609446877],"39":[0.6234896171850283,-0.7818316134940783],"4":[-0.9490557370755422,-0.3151083190442063],"40":[0.9269167778709223,0.3752670110667401],"41":[-0.22252095108116748,0.9749279160601593],"42":[-0.9009688552953902,0.43388382823806865],"43":[0.4047833961481459,0.9144126313424608],"44":[-0.6723008801453375,-0.740277996847128],"45":[-0.8380881006381218,0.5455349213368326],"46":[0.9917899965996502,0.12787717223374287],"47":[-0.9490557966801872,0.3151081621258553],"48":[-0.09602301147708614,0.995379104208261],"5":[-0.8380881602427668,-0.5455348398366038],"6":[0.8713186975478389,0.4907175724556545],"7":[-0.9815591632468975,0.19115866382018554],"8":[1.0,1.0947791929981227e-08],"9":[0.518392442228942,-0.855142823390098]}},"id":"2211","type":"StaticLayoutProvider"},{"attributes":{},"id":"2231","type":"NodesAndLinkedEdges"},{"attributes":{},"id":"2236","type":"BasicTickFormatter"},{"attributes":{"data":{"common_actors":["Takeshi Sakamoto, Shigeru Ogura, Tatsuo Sait\u00f4, Junko Matsui, Tokio Seki, Chish\u00fb Ry\u00fb","Chish\u00fb Ry\u00fb, Tatsuo Sait\u00f4","Ch\u00f4ko Iida","Ch\u00f4ko Iida","Hisao Yoshitani, Eiko Takamatsu, Ichir\u00f4 Y\u00fbki, Nobuko Wakaba, Ichir\u00f4 Okuni","Takeshi Sakamoto","Mitsuko Yoshikawa, Tatsuo Sait\u00f4","Minoru Takada","Chish\u00fb Ry\u00fb","Chish\u00fb Ry\u00fb, Tatsuo Sait\u00f4","Mitsuko Ichimura, Tatsuo Sait\u00f4","Ichir\u00f4 Okuni, Teruo M\u00f4uri, Tatsuo Sait\u00f4","Tokihiko Okada, Tatsuo Sait\u00f4","Ch\u00f4ko Iida, Takeshi Sakamoto, Tokihiko Okada, Tatsuo Sait\u00f4","S\u00f4tar\u00f4 Okada, Toshiko Iizuka, Mitsuko Yoshikawa, Tatsuo Sait\u00f4, Tokihiko Okada","Tokihiko Okada, Tatsuo Sait\u00f4","Reik\u00f4 Tani, Takeshi Sakamoto, Tatsuo Sait\u00f4","Takeshi Sakamoto, Tatsuo Sait\u00f4","Takeshi Sakamoto, Chish\u00fb Ry\u00fb, Tatsuo Sait\u00f4","Satoko Date, Ch\u00f4ko Iida","Shin'y\u00f4 Nara, Yoshiko Okada","Kinuyo Tanaka, Chish\u00fb Ry\u00fb","Seiji Nishimura, Reik\u00f4 Tani, Chish\u00fb Ry\u00fb","Den Ohinata, Ch\u00f4ko Iida, Seiichi Kat\u00f4, Chish\u00fb Ry\u00fb","Ch\u00f4ko Iida, K\u00f4ji Mitsui, Chish\u00fb Ry\u00fb","Ch\u00f4ko Iida, Tomio Aoki, Kiyoshi Aono, Takeshi Sakamoto","Ch\u00f4ko Iida, Tomio Aoki, Takeshi Sakamoto","Ch\u00f4ko Iida, Takeshi Sakamoto, Chish\u00fb Ry\u00fb","Ch\u00f4ko Iida, Chish\u00fb Ry\u00fb, Kiyoshi Aono","Tomio Aoki, Mitsuko Yoshikawa, Masao Hayama, Ch\u00f4ko Iida, Tomoko Naniwa","Yaeko Izumo, Michiko Kuwano, Takeshi Sakamoto, Mitsuko Yoshikawa, Tatsuo Sait\u00f4, Masao Hayama, Ch\u00f4ko Iida","Takeshi Sakamoto, Chiyoko Fumiya, Shin Saburi, Masao Hayama, Reik\u00f4 Tani, Chish\u00fb Ry\u00fb","Seiji Nishimura, Takeshi Sakamoto, Chish\u00fb Ry\u00fb","Takeshi Sakamoto, Eiko Takamatsu, Fujiyo Osafune, Yoshino Tani, H\u00f4hi Aoki, Chish\u00fb Ry\u00fb","Ichir\u00f4 Shimizu, H\u00f4hi Aoki, Chish\u00fb Ry\u00fb","Yoshiko Tsubouchi, Chish\u00fb Ry\u00fb","Chish\u00fb Ry\u00fb","Tami Yamamoto, Chikage Awashima, Eiko Yamada, Jun Tanizaki, Tomoka Hasebe, Kuniko Miyake, Matsuko Shiga, Chish\u00fb Ry\u00fb","Hisao Toake, Kuniko Miyake, Chish\u00fb Ry\u00fb","Nobuo Nakamura, Eijir\u00f4 T\u00f4no, Haruko Sugimura, Kuniko Miyake, Zen Murase, Keijir\u00f4 Morozumi, S\u00f4 Yamamura, Teruko Nagaoka, Chish\u00fb Ry\u00fb","Kazuko Yamamoto, Junji Masuda, Nobuo Nakamura, Haruko Sugimura, Kumeko Urabe, Masami Taura, Seiji Miyaguchi, Fujio Suga, Haruo Tanaka, S\u00f4 Yamamura, Teruko Nagaoka, Ts\u00fbsai Sugawara, Teiji Takahashi, Chish\u00fb Ry\u00fb","Nobuo Nakamura, Mutsuko Sakura, Ineko Arima, Fujio Suga, Teruko Nagaoka, Ts\u00fbsai Sugawara, Teiji Takahashi, Chish\u00fb Ry\u00fb","Mutsuko Sakura, Y\u00f4ko Chimura, Yoshiko Kuga, Fujio Suga, Norikazu Takeda, Toyo Takahashi, Chish\u00fb Ry\u00fb, Teruko Nagaoka, Ts\u00fbsai Sugawara, Keiji Sada","Mutsuko Sakura, Toyo Takahashi, Masahiko Shimazu, Haruko Sugimura, Haruo Tanaka, Chish\u00fb Ry\u00fb","Toyo Takahashi, Masahiko Shimazu, Mutsuko Sakura, Chish\u00fb Ry\u00fb","Masahiko Shimazu, Y\u00f4ko Tsukasa, Setsuko Hara, Chish\u00fb Ry\u00fb","Daisuke Kat\u00f4, Chish\u00fb Ry\u00fb, Haruko Sugimura"],"edge_line_width":{"__ndarray__":"MzMzMzMzGUAAAAAAAAAMQGZmZmZmZgZAZmZmZmZmBkBmZmZmZmYWQGZmZmZmZgZAAAAAAAAADEBmZmZmZmYGQGZmZmZmZgZAAAAAAAAADEAAAAAAAAAMQMzMzMzMzBBAAAAAAAAADECZmZmZmZkTQGZmZmZmZhZAAAAAAAAADEDMzMzMzMwQQAAAAAAAAAxAzMzMzMzMEEAAAAAAAAAMQAAAAAAAAAxAAAAAAAAADEDMzMzMzMwQQJmZmZmZmRNAzMzMzMzMEECZmZmZmZkTQMzMzMzMzBBAzMzMzMzMEEDMzMzMzMwQQGZmZmZmZhZAAAAAAAAAHEAzMzMzMzMZQMzMzMzMzBBAMzMzMzMzGUDMzMzMzMwQQAAAAAAAAAxAZmZmZmZmBkDMzMzMzMweQMzMzMzMzBBAzMzMzMzMIEDMzMzMzMwnQMzMzMzMzB5AMzMzMzMzIkAzMzMzMzMZQJmZmZmZmRNAmZmZmZmZE0DMzMzMzMwQQA==","dtype":"float64","order":"little","shape":[47]},"end":{"__ndarray__":"LgAAABcAAAAoAAAABgAAAAsAAAAfAAAAEgAAACsAAAAPAAAAGgAAACAAAAAwAAAAKQAAAB4AAAAjAAAAJQAAABkAAAARAAAALQAAACoAAAAvAAAABwAAABYAAAAAAAAAAQAAAAQAAAADAAAABQAAACIAAAAsAAAAGwAAACQAAAAYAAAAEwAAABUAAAAhAAAACgAAAB0AAAAmAAAACQAAACcAAAAOAAAADQAAAAwAAAAUAAAAHAAAAAIAAAA=","dtype":"int32","order":"little","shape":[47]},"end_values":["Wife Lost (1928)","Physical Beauty (1928)","Treasure Mountain (1929)","Days of Youth (1929)","Fighting Friends (1929)","The Life of an Office Worker (1929)","Introduction to Marriage (1930)","Walk Cheerfully (1930)","I Flunked, But... (1930)","That Night's Wife (1930)","The Luck Which Touched the Leg (1930)","Young Lady (1930)","T\u00f4ky\u00f4 no gassho (1931)","The Lady and the Beard (1931)","The Sorrow of the Beautiful Woman (1931)","Tokyo Chorus (1931)","Spring Comes from the Ladies (1932)","I Was Born, But... (1932)","Where Now Are the Dreams of Youth (1932)","Until the Day We Meet Again (1932)","Woman of Tokyo (1933)","Dragnet Girl (1933)","Passing Fancy (1933)","A Mother Should Be Loved (1934)","A Story of Floating Weeds (1934)","An Innocent Maid (1935)","An Inn in Tokyo (1935)","College is a Nice Place (1936)","The Only Son (1936)","What Did the Lady Forget? (1937)","The Brothers and Sisters of the Toda Family (1941)","There Was a Father (1942)","Record of a Tenement Gentleman (1947)","Kaze no naka no mendori (1948)","Late Spring (1949)","The Munekata Sisters (1950)","Early Summer (1951)","The Flavor of Green Tea Over Rice (1952)","Tokyo Story (1953)","Early Spring (1956)","Tokyo Twilight (1957)","Higanbana (1958)","Good Morning (1959)","Floating Weeds (1959)","Late Autumn (1960)","The End of Summer (1961)","An Autumn Afternoon (1962)"],"start":{"__ndarray__":"CAAAAC4AAAAXAAAAKAAAAAYAAAAQAAAAHwAAABIAAAArAAAADwAAABoAAAAgAAAAMAAAACkAAAAeAAAAIwAAACUAAAAZAAAAEQAAAC0AAAAqAAAALwAAAAcAAAAWAAAAAAAAAAEAAAAEAAAAAwAAAAUAAAAiAAAALAAAABsAAAAkAAAAGAAAABMAAAAVAAAAIQAAAAoAAAAdAAAAJgAAAAkAAAAnAAAADgAAAA0AAAAMAAAAFAAAABwAAAA=","dtype":"int32","order":"little","shape":[47]},"start_values":["Dreams of Youth (1928)","Wife Lost (1928)","Physical Beauty (1928)","Treasure Mountain (1929)","Days of Youth (1929)","I Graduated, But... (1929)","The Life of an Office Worker (1929)","Introduction to Marriage (1930)","Walk Cheerfully (1930)","I Flunked, But... (1930)","That Night's Wife (1930)","The Luck Which Touched the Leg (1930)","Young Lady (1930)","T\u00f4ky\u00f4 no gassho (1931)","The Lady and the Beard (1931)","The Sorrow of the Beautiful Woman (1931)","Tokyo Chorus (1931)","Spring Comes from the Ladies (1932)","I Was Born, But... (1932)","Where Now Are the Dreams of Youth (1932)","Until the Day We Meet Again (1932)","Woman of Tokyo (1933)","Dragnet Girl (1933)","Passing Fancy (1933)","A Mother Should Be Loved (1934)","A Story of Floating Weeds (1934)","An Innocent Maid (1935)","An Inn in Tokyo (1935)","College is a Nice Place (1936)","The Only Son (1936)","What Did the Lady Forget? (1937)","The Brothers and Sisters of the Toda Family (1941)","There Was a Father (1942)","Record of a Tenement Gentleman (1947)","Kaze no naka no mendori (1948)","Late Spring (1949)","The Munekata Sisters (1950)","Early Summer (1951)","The Flavor of Green Tea Over Rice (1952)","Tokyo Story (1953)","Early Spring (1956)","Tokyo Twilight (1957)","Higanbana (1958)","Good Morning (1959)","Floating Weeds (1959)","Late Autumn (1960)","The End of Summer (1961)"],"weight":[6,2,1,1,5,1,2,1,1,2,2,3,2,4,5,2,3,2,3,2,2,2,3,4,3,4,3,3,3,5,7,6,3,6,3,2,1,8,3,9,14,8,10,6,4,4,3],"xs":[{"__ndarray__":"AAAAAAAA8D/jNEY6///vPxHDEbj4/+8/Fa9Bts//7z+jTPSkFP/vPx1oerik/O8/e/VqfbH27z8LL0fiGezvP8NT/i9f3u8/haf8X7687z8=","dtype":"float64","order":"little","shape":[10]},{"__ndarray__":"haf8X7687z/vjgcpRsjvPwEZfLzexe8/CZI+QWq07z+PMSHYhJjvP23Zai8Rd+8/v/fzH8xU7z/pHvz3eTTvP2vyWi/cFe8/3Wni0n747j/D4ErKmd3uP9sjek72xO4/HazyXxT07j8=","dtype":"float64","order":"little","shape":[13]},{"__ndarray__":"HazyXxT07j9PPtTLDdTuPynCkhzRs+4/J/zoihWS7j/n4DxxfG7uP1+fqL8aSe4/v5C8jewh7j8Heu4SQvrtPzmG4uTg1O0/iRDJyyyy7T/FN+JfTantPw==","dtype":"float64","order":"little","shape":[11]},{"__ndarray__":"xTfiX02p7T9HnVxgkIztP9+LJE05Z+0/H7gSfng17T/5I6xcYvnsP6GMqmNtuew/O3WaScV77D8lSWuVY0HsP93CAeGBB+w/O1Qmlf3M6z+hj8u/1+HrPw==","dtype":"float64","order":"little","shape":[11]},{"__ndarray__":"oY/Lv9fh6z/fJa00IcPrP00qfiwRm+s/QbOOvBdp6z9blvgdFzPrP7unl/FZ/eo/kU8YwPnG6j+jxsdDGo/qPxcT3P0dWOo/p1af//oi6j/1Eq8/LqXpPw==","dtype":"float64","order":"little","shape":[11]},{"__ndarray__":"eTmNv7f85j+bIKZYQ23mP8HByYX46uU/P9ruJjRz5T9LtkevAQHlPy1YrSySmOQ/l7ADb/A/5D+jfwkSz/LjP3mRZt+g8+M/","dtype":"float64","order":"little","shape":[9]},{"__ndarray__":"eZFm36Dz4z+FRRUiY8/jP7e55WAInOM/V5rg6lNY4z8bTACTuQrjP3OReODateI/4WyDKrFX4j9Z69ckxvHhP9vOEv/Si+E/uWMrV5kw4T+TkcgPGObgPwd0DULqpuA/c70736uW4D8=","dtype":"float64","order":"little","shape":[13]},{"__ndarray__":"c70736uW4D/dytz5dXfgP2fEnuPtReA/fhOks8P03z/SmEX+pSrfP/6EEyg8ON4/1nel3LIw3T/GT31V5C3cP8aUgfeDSNs/AkuiiGWM2j8edddkyOvZP+biGp7459k/","dtype":"float64","order":"little","shape":[12]},{"__ndarray__":"5uIanvjn2T9y3Cyw843ZP55S5QuX99g/EkI30DEU2D/iH4Om7/bWP665+89WwtU/EseyOCGZ1D+yqGVqrZfTP1aqXqJryNI/XsW/G0YZ0j8a4Lg9szXSPw==","dtype":"float64","order":"little","shape":[11]},{"__ndarray__":"GuC4PbM10j9SmeOJF9DRPzYWtruyT9E/YpjdENev0D8UKt028e/PP7SCs8uXUM4/vOAKXPt4zD+85sQnnnXKP0xBJg7cYsg/NJvi4fhgxj98xG2JjZDEPxyzcOIdBcM/vGl4bv6pwT8MHaa6xG3EPw==","dtype":"float64","order":"little","shape":[14]},{"__ndarray__":"DB2musRtxD8sxt1kBSzCP4gjJTSO6L8/qGB3KJNruz94cckPitq2P9gt7wIDRbI/kOcG2v1jqz+Q0VgnEmmgPw==","dtype":"float64","order":"little","shape":[8]},{"__ndarray__":"kNFYJxJpoD9A/EuDgcmJP4A1EGXrDXu/wF4SlCuimb8w6cFAWKGlvyBsVSQm8a2/GBuNu7cMs7/gH/XN9pS4vw==","dtype":"float64","order":"little","shape":[8]},{"__ndarray__":"4B/1zfaUuL9IocfRV6G5v3hLAsbl2bu/4Ki1RLl2v7/cXt3e0ArCv0Aj+At1lMS/pOi6d4MMx784uo/OSDvJv5hhgXwyLcu/VMLIB5F7zL8=","dtype":"float64","order":"little","shape":[10]},{"__ndarray__":"VMLIB5F7zL/Q9E/clNnMvySPLnQDmc2/dFTbHeDPzr9m4/5sfyzQv+rlnrek/dC/dCl8Hx/K0b9myXNj0ZTSv3oXb5MSZdO/jPaPSvox1L+wTkk/0evUvziFOvIalNW/AIBIJHYa1r8=","dtype":"float64","order":"little","shape":[13]},{"__ndarray__":"AIBIJHYa1r8ip0rdJ1vWv1r5R+18x9a/XunEM9Jo179wTSyxdSzYv+TGtevx9ti/JHoUY/W42b/gyPsBaHfav/JxSsQpPNu/gnKi0yIB3L+2DFW+Urfcv3xIoBFKXt2/pv+nhDqa3b8=","dtype":"float64","order":"little","shape":[13]},{"__ndarray__":"pv+nhDqa3b90oYDiR/zdvx4Z2FaVfN6/aBzb+Rse3780YaeCINTfv/iDZN7ATOC/nYh9ekW44L94o17oiyjhv1Z28rLfk+G/1cGc7xzy4b8OISkH5EXiv1KngKLHTuK/","dtype":"float64","order":"little","shape":[12]},{"__ndarray__":"UqeAosdO4r/iIMeNunriv98dH8rtuuK/wiG4S+4S479Kb6K/THzjvy4sXl5x7+O/ZH44wmlj5L82Xye/0Mzkv8mtMxs6JOW/lvBZSwZv5b/NeqkifYPlvw==","dtype":"float64","order":"little","shape":[11]},{"__ndarray__":"zXqpIn2D5b89Da5ZwpXlv3tBG7KBvuW/jFshyXwC5r8qtV4H31jmv0o4b9WdtOa/y3Zqka0N578PbbWTOWPnvwaGxyWntOe/uma21Qr+578xbCiLj0Dov6fOzQLEXei/","dtype":"float64","order":"little","shape":[12]},{"__ndarray__":"p87NAsRd6L8ayfI9C2zov3bpSm2Lkei/wfGaGxXR6L+0gUfWxB7pv/6snlhGbem/ht5IxFe46b+M/aXvMwLqv4Apo04RSuq/QNUXZPyL6r9erSAbWMjqvygK7SKe0eq/","dtype":"float64","order":"little","shape":[12]},{"__ndarray__":"KArtIp7R6r+WN8LFIuDqv3msoOZy+Oq/2ZEg2Ckc678ccHWrR0frvwEcSc+Rduu/An9LDCqr679UatsKlebrv6nUwk5TJey/2uHvXUtg7L+SXQ6deZLsv02VP3AVvuy/C6oGo7zU7L8=","dtype":"float64","order":"little","shape":[13]},{"__ndarray__":"C6oGo7zU7L/g2e0yKdnsv+xQt/AC7ey/kzYQnawU7b9MY30xSkvtv/Ymr/vDhu2/0ud1mKC+7b9bSUPZRPHtv5vyynaCIe6/mUIaQ6pe7r8=","dtype":"float64","order":"little","shape":[10]},{"__ndarray__":"mUIaQ6pe7r8z0TlBN2vuv4yOkNWvfu6/xxnLJJ2c7r/rILOQHcXuv2v3V1+Q9e6/E9MZAAoq77+m2yCaN17vv2vs+1U2ju+/F+oLmi26779vgSfD7mjvvw==","dtype":"float64","order":"little","shape":[11]},{"__ndarray__":"b4Enw+5o77+wG53Oo5TvvxgMW+owtO+/sPYC48LG778+E9Q7b9Dvv6v5VlR51e+/pbzXvcvY77/jLi4jK+/vvw==","dtype":"float64","order":"little","shape":[8]},{"__ndarray__":"4y4uIyvv77/jLi4jK+/vv+MuLiMr7++/4y4uIyvv77/jLi4jK+/vv+MuLiMr7++/4y4uIyvv778=","dtype":"float64","order":"little","shape":[7]},{"__ndarray__":"4y4uIyvv778MAVWaRuXvv4wU94Xp3e+/OAa1h0fZ778xwFg/BNbvvxATLBBa0e+/uMqvgZDH77+D5T+6W7bvvzg5ZrsJoO+/b4Enw+5o778=","dtype":"float64","order":"little","shape":[10]},{"__ndarray__":"b4Enw+5o77+TJ2i1A4Xvv746zz0pi++/MPmLBkZ477/+QpbGOFTvvxCFFeZHKe+/o/BegSX/7r+GimOKHNnuv8z+nqyLtu6/o/K1cmmW7r8xm9x+Znnuv1jIan/wXu6/l0IaI6pe7r8=","dtype":"float64","order":"little","shape":[13]},{"__ndarray__":"l0IaI6pe7r9UuaelC0Xuv/iwYM1vKO6/fmL0CEsG7r/PCVnv3N3tv7ahfs8lse2/fDX2BmyD7b8H60z6K1Xtv3GrnpnXJO2/by1408ny7L8LqgajvNTsvw==","dtype":"float64","order":"little","shape":[11]},{"__ndarray__":"C6oGo7zU7L89jPTIDrrsv4C9aANEluy/JI9ki3Rm7L+KWRQSiC3svyOhJhuV7+u/TqHTUcWt67+wkLCKU2nrv1OweKYxKOu/S8N3rf/v6r+GMvb/y77qvyoK7UKe0eq/","dtype":"float64","order":"little","shape":[12]},{"__ndarray__":"KgrtQp7R6r9GVa/q1rLqvz6MOmUrhuq/ODEo0YRK6r8x/XBfyQfqv+jLgw7lw+m//6rHNGR+6b/QeyVZyDbpv15iZDVZ8Oi/3EjbYOav6L9V1DtOEHXov6bOzeLDXei/","dtype":"float64","order":"little","shape":[12]},{"__ndarray__":"ps7N4sNd6L8QZ/ElPzXov1yLmPJ0A+i/oSdWNRbH57/nqB9X0ITnv81ItcswP+e/kTTWSzf05r+qSt3tI6Pmv8L+zJGpT+a/0E7AipwB5r+UslTsLr/lv0CMsdBvheW/zXqpIn2D5b8=","dtype":"float64","order":"little","shape":[13]},{"__ndarray__":"zXqpIn2D5b9mh8tJOVblv15TYeP0G+W/lghFpgvR5L9i9MLUBHbkvzjmBsbIDOS/Hi4W9Wac47+Rx/wkMS/jv/59+FjzzuK/kgk1RDSA4r/xrVAOBD3iv0+ngGLHTuK/","dtype":"float64","order":"little","shape":[12]},{"__ndarray__":"T6eAYsdO4r/ERXCVIiHivw4slXyj3+G/HsW2sOOC4b+yjgX+zBDhv5OUEME9mOC/MJt7Z6Em4L9WL28JUHzfv6BNtN8mst6/mtxVqhno3b+e/6fkOZrdvw==","dtype":"float64","order":"little","shape":[11]},{"__ndarray__":"nv+n5Dma3b9QBUGY2Fndv/jfFU5I+Ny/pI+3UWdx3L9a3ESZ49Dbv5bX8oE6Hdu/gN+UQ85Y2r9EtPTcv4zZv94ENfABvti/auAKbtni17+ycH5nnvDWvwzH72OO7tW//n9IBHYa1r8=","dtype":"float64","order":"little","shape":[13]},{"__ndarray__":"/n9IBHYa1r80xkJQXLrVv6zNI2h6KNW/0CmavddT1L8KdElRW0bTv4a2qBu8F9K/ALFeZI3m0L9oB5BpUaTPv7B37vPD1c2/YCz8irNFzL9YwsiHkXvMvw==","dtype":"float64","order":"little","shape":[11]},{"__ndarray__":"WMLIh5F7zL/gidGoAdPLv/R9mHLS5sq/oCBBFY2wyb9stS92UUvIv4gacq1CwMa/CIBA3e4Axb+Eoa1AEQbDvxDIkV+418C/SG0z3tcavb8IIPXN+ZS4vw==","dtype":"float64","order":"little","shape":[11]},{"__ndarray__":"CCD1zfmUuL+Y3gQrDh6zv0A6KRBFTqu/ILdIym1goL+A0KARWsqFv0A74QUD7YU/0NFYBxhpoD8=","dtype":"float64","order":"little","shape":[7]},{"__ndarray__":"0NFYBxhpoD8QfesaE1KqP8gl2yqD87E/iO0DRwp4tj+IGGPk+7G6P0iwUkkExr4/ZD9NLIVtwT8cHaYaxm3EPw==","dtype":"float64","order":"little","shape":[8]},{"__ndarray__":"HB2mGsZtxD8Mvb2Pyu3DPxyV467gGsQ/RPH2ufAfxT8M5tm9E9HGPxyKNsRI2cg/NO+yjgjqyj9syr9nb+bMP3xpsotH1c4/Bo4XTEpV0D9eoe7rnSbRP2qL3X4f49E/GuC4XbM10j8=","dtype":"float64","order":"little","shape":[13]},{"__ndarray__":"GuC4XbM10j/Cc0PPLpDSP34OrG/eJtM/Yt+wfYAI1D+G8M5tdR7VPw4lF0AARdY/Au+0OLBg1z+qxirsSWHYP1YlxiZ9Ptk/aocq8b0C2j/i4ho++OfZPw==","dtype":"float64","order":"little","shape":[11]},{"__ndarray__":"4uIaPvjn2T+CeRCJjHXaPzpYosCGLNs/kt0nMwkZ3D+C4Ue1RCvdPxooB7xrRd4/QtiLhRhI3z9x0lV5jBDgP5EYdDhDbuA/cb07v6uW4D8=","dtype":"float64","order":"little","shape":[10]},{"__ndarray__":"cb07v6uW4D95+G0Ui7rgP5mGALGz9OA/4djACRZK4T9F+qDtEbThP6+k/+Z2KeI/4yqEZIeg4j/tGZIbVQ7jP8et8RH+a+M/tXawhfO94z91kWZ/oPPjPw==","dtype":"float64","order":"little","shape":[11]},{"__ndarray__":"dZFmf6Dz4z+fQrWKHxXkP6cQartHU+Q/j3CyOLez5D+vkLbTNCvlPyHiYaw+p+U/heX33D4Y5j+JtCuAFH7mP305jR+4/OY/","dtype":"float64","order":"little","shape":[9]},{"__ndarray__":"fTmNH7j85j/BUECFqBLnP9GarTx4Nec/s/1e4sxn5z9by+DbL6XnPwvz4KUy6uc/9fPzI9Q46D8f/pbzKZLoP6sAH1vt7ug//2d7PUVF6T+X/aj9SZTpP/USr18upek/","dtype":"float64","order":"little","shape":[12]},{"__ndarray__":"9RKvXy6l6T9vKrLYy8LpP9clcLw56+k/ycZvVVEi6j8bN/l67mXqP9MJ/bDeseo/fz3ZmRcC6z8b44rQdVHrPy2IAkN4mus/95U8kmDd6z+hj8u/1+HrPw==","dtype":"float64","order":"little","shape":[11]},{"__ndarray__":"oY/Lv9fh6z/tJneQy/PrP9/iWIwWEOw/iS+GZK437D89i8WUb2XsP70lO2vUlew/IWSQbqDJ7D8XtgTiRAHtP63q61z6Oe0/G3cHwUhv7T/Jaz2zo6DtP8U34j9Nqe0/","dtype":"float64","order":"little","shape":[12]},{"__ndarray__":"xTfiP02p7T9RQX8jrLXtP+fjGIKi0O0///p1Iwb77T+Nb84/FC7uP8NLzAIXY+4/E2RIiUWV7j/fcATnAsLuPwFy/2R26u4/HazyPxT07j8=","dtype":"float64","order":"little","shape":[10]},{"__ndarray__":"HazyPxT07j9NnWcf9vnuPwHdQKp/BO8/7YH6mnQV7z9PfdmL/ivvPwXQpPCSRu8/n37DQ6Fk7z/vFcAFEIXvP4Wn/F++vO8/","dtype":"float64","order":"little","shape":[9]}],"ys":[{"__ndarray__":"AAAAvJyCRz5gJXprrLeSP9C6klpgLKI/EP2mm10Vqj/YgDhJF4ywPyg79cWBvLM/iD7/yq20tj94lXwLIpW5P4jj6/hleLw/rA5TeEdewD8=","dtype":"float64","order":"little","shape":[10]},{"__ndarray__":"rA5TeEdewD+I4h0MeUm/P6gAV1fKPr8/BG2oBGNnwD+seeo0sdfBPzR9Z+qNz8M/nP734YQqxj9MUh3KFbfIPxzT2SNON8s/1DwdtGZuzT+MFHnKVD/PPzbskU0eZtA/MgqQjOA70D8=","dtype":"float64","order":"little","shape":[13]},{"__ndarray__":"MgqQjOA70D8+H35Ol5bQP6KT16Y6FdE/CpEQDSvG0T+i78qKuqXSPwbNP0HZp9M/UhYzgAe71D9eWjJgbcbVP0LTA0C8tNY/IlD4l3OK1z8KKPPsXwTYPw==","dtype":"float64","order":"little","shape":[11]},{"__ndarray__":"Cijz7F8E2D9WbFBT2UvYP96Lm/LizNg/Ull5OVCV2T/6+lMsY47aPwIylyp5kts/PmaJiZqH3D9+Vgmja27dP2I6xabmVN4/9g925VQ/3z8+QFGt6mffPw==","dtype":"float64","order":"little","shape":[11]},{"__ndarray__":"PkBRrepn3z/6AFBHY7ffP9NJyfTIFuA/7a/uliNo4D95QM3yVsbgP0fXm0LYJ+E/ZWCbRkiJ4T/LGzNvnObhP3N/+HOAOOI/P78kLFaA4j+jY9SmuCPjPw==","dtype":"float64","order":"little","shape":[11]},{"__ndarray__":"myb8BghD5j9ncxTigLnmPxseDkZIKOc/EZ8psN2R5z/LkOk5QPnnP9t2iCNwWeg/IYEDvkqs6D+PGPDKFPXoP+VBH4fDBOk/","dtype":"float64","order":"little","shape":[9]},{"__ndarray__":"5UEfh8ME6T+te7jzqRvpP9k6lE7CO+k/Sf2XJyBn6T+J8HeCQJzpP52VrhAX2+k/C8MmKlkj6j+Z6Qsev3DqP4cpC2l3veo/b8Eh/EAE6z9vqPfQuUHrP21t5qRWeOs/6yE9Z1Rd6z8=","dtype":"float64","order":"little","shape":[13]},{"__ndarray__":"6yE9Z1Rd6z9RaBMEs2XrP5eSIZFUfOs/P9jDHJKk6z8t1aHZO9rrP1GuecNmF+w/N4EhruFX7D+T0gLI05fsP/lmPC2H0ew/q7PlS9oA7T9HsJS89yjtPxtJVUfeQu0/","dtype":"float64","order":"little","shape":[12]},{"__ndarray__":"G0lVR95C7T+PoxPoS1btP9HA5i3lce0/4wkalMeY7T83pPHE3sjtP0+G2gpd/O0/J8xJM3ws7j83R0YGeVTuP/OxHq5Oc+4/3+D12aKM7j/tUWdHaK3uPw==","dtype":"float64","order":"little","shape":[11]},{"__ndarray__":"7VFnR2it7j8z7WXlqbTuP3dNuGtowO4/gUQLzl/R7j+jo4nASebuP0s3tBZU/u4/3XjAkgIZ7z8T2HSSvDXvP+dcVxPSVe8/v972LsJ77z+XB/23v6bvP2tf0Ncx0u8/M/R3h8r77z+T8HJH/pbvPw==","dtype":"float64","order":"little","shape":[14]},{"__ndarray__":"k/ByR/6W7z//B8xRJcDvP+UmyqON3e8/laqvhlzu7z/f8GvhePbvPxMJNu3++e8/M/R3h8r77z8z9HeHyvvvPw==","dtype":"float64","order":"little","shape":[8]},{"__ndarray__":"M/R3h8r77z9Pins0s/vvPwkcM/lU++8//XrztBz67z9z+AirIvfvP5um6SjW8e8/+R135/fq7z+9R3ZHJdrvPw==","dtype":"float64","order":"little","shape":[8]},{"__ndarray__":"vUd2RyXa7z9ZMdiONd7vP908EQpr2O8/6+OV5HfG7z/bsgdYlavvP7Fqfo6jje8/5VdqNjxy7z8lpXvFGlzvP+WmeH2bSe8/N/JtB5wy7z8=","dtype":"float64","order":"little","shape":[10]},{"__ndarray__":"N/JtB5wy7z+PX9+SvyzvP6d474kGHO8/TU8pgyj/7j/BT9HbENzuP88K7Zn+ue4/MVTDorab7j85OoQxvn7uPwt9jxg5YO4/HZNZlttA7j8zFIs2UiPuP5XNsp4FCO4/qxZf5+4H7j8=","dtype":"float64","order":"little","shape":[13]},{"__ndarray__":"qxZf5+4H7j9XrAn2QfntP5UWgDg54+0/0bEA1dDE7T/5ohdP0aHtP0HLahkBfu0/+WHiySdZ7T9Pye2dpy/tP9nGgZyg/+w/7zK7kdfM7D9dreDs+5zsPw/zFTDrcOw/i/NJZwVf7D8=","dtype":"float64","order":"little","shape":[13]},{"__ndarray__":"i/NJZwVf7D9xJmvmAkjsP6dj5K/7Jew//Yzskmn36z9XH0Qh47/rP/XLib8vges/1xe5BDE86z8ViGPEDvbqPw33lHZwtuo/m1pK77eB6j/VebdljVTqP7PhLufZPuo/","dtype":"float64","order":"little","shape":[12]},{"__ndarray__":"s+Eu59k+6j9DU//llhvqP5WeLFjX5uk/R80ylp2c6T+zUGHJk0LpPznbzHLS4Og/GUfBfYZ/6D/nD2c0bCfoP3H1FDjk3ec/rVhC7Iae5z/vUg6nW7DnPw==","dtype":"float64","order":"little","shape":[11]},{"__ndarray__":"71IOp1uw5z8R1t2hw4znP4lZn0WlWOc/8TZTyBQP5z8H35i3tLXmP82A7MH8VuY/uTYyoxz75T+lXj3bfKTlPxmy8CodVOU/YXRn7wgN5T/3GiOxM83kPw/Q6GZJvuQ/","dtype":"float64","order":"little","shape":[12]},{"__ndarray__":"D9DoZkm+5D+137+rs5bkPz3uAP/XWuQ/FTRsyIEH5D8VX2LtDKfjP0MhjX7QROM/rct/+XXj4j8P+jhf34HiPyELJA7EJOI/Q1sYhpbS4T/XdUpvUYnhP8/2vqYFdeE/","dtype":"float64","order":"little","shape":[12]},{"__ndarray__":"z/a+pgV14T9F74odNlzhP+midqhpK+E/GyQPvkDd4D8rQjF1bnvgP+/mbw5wE+A/ZnXCWrpV3z8iNixo84DeP4rZFBjxrd0/HqumLdPs3D/WuqMRwEncP+Lo9povvNs/Ku4ircDE2z8=","dtype":"float64","order":"little","shape":[13]},{"__ndarray__":"Ku4ircDE2z9W/jKsMWTbPzqz6TOozNo/Hlaesjrv2T8m7duAveLYPwJGwMnk0Nc/enpiV+LY1j/SNdnb1vzVP1YNP3lQLdU/LiDCbLsq1D8=","dtype":"float64","order":"little","shape":[10]},{"__ndarray__":"LiDCbLsq1D9O2u8AT7vTP+77SMm6G9M/8mGCrYs20j8Gts/1qxLRPyw3NMDXmc8/lLBgIXMVzT9EKiLwNdjKP5z0WNHc/sg/zOPpHmVoxz9sNboY43fIPw==","dtype":"float64","order":"little","shape":[11]},{"__ndarray__":"bDW6GON3yD8EoL/MrE/GP2xEdwQFLsQ/5G4NQmz9wT+ItYTqtWa/P3i4NXbhp7o/SHxwpQ7TtT9YGdbv6WawPw==","dtype":"float64","order":"little","shape":[8]},{"__ndarray__":"WBnW7+lmsD8wSHa0jd6lPyC7gBKP3pU/AAAAMafgZT4g71aaid6VvyBiYfiK3qW/WKbLkehmsL8=","dtype":"float64","order":"little","shape":[7]},{"__ndarray__":"WKbLkehmsL+QRHpjpzW1v5gsAgfEqrm/OKTAhuCcvb8wvLVJz43Av7gh8sDoJsK/TLTaMKOiw78EpqHovA3Fv6T1lUF9dsa/7Pu0aeJ3yL8=","dtype":"float64","order":"little","shape":[10]},{"__ndarray__":"7Pu0aeJ3yL9U7PezO8bHvzSKMAwFz8e/0I522gfCyL9ksAAPFXbKvxwTBFvek8y/vESLy0q7zr/2c9nNKFrQvzp9NbLbQNG/iM44prUY0r/Sy1IaGt3Svxbe3RsYkdO/eoM/Fbwq1L8=","dtype":"float64","order":"little","shape":[13]},{"__ndarray__":"eoM/Fbwq1L/GPQxlmIvUvxzLk1H0HtW/Dhimou7q1b9KFs4hmdPWv4Yz8wFsuNe/DOWN+YeM2L+A4ZdvOFrZv3Z/4PuCMNq/OA91qH0P279qUaBVwMTbvw==","dtype":"float64","order":"little","shape":[11]},{"__ndarray__":"alGgVcDE27/GtH2Ltx/cvxJ8UFrapdy/JM5XQFFi3b/Y7+gaokLevwDYAqFLK9+/c7S6haIH4L8VOvICeHbgv4zvkNcE3eC/pGXSZm014b/EIBVdQoPhv3Co/XoFdeG/","dtype":"float64","order":"little","shape":[12]},{"__ndarray__":"cKj9egV14b/Gf+9ev5Xhv3+kXpMzzuG/4u3CNIMf4r+MBv0fz3zivwvZ/Vew3OK/TAZ14XE+47946c0ftaDjv24XTpCJ/eO/jkwRXwZP5L8SIXlAl5fkv7WBJ5tJvuS/","dtype":"float64","order":"little","shape":[12]},{"__ndarray__":"tYEnm0m+5L9wlE6DW9rkv/TfbPyuBeW/dvOAh2ZC5b9euKW27Inlvyj2YQhq1+W//xTvoukq5r92ocD2SIPmv8VOpzc33Oa/JY/OSD8v5780X4u8hHfnv3iIbOamt+e/jgRNe1uw578=","dtype":"float64","order":"little","shape":[13]},{"__ndarray__":"jgRNe1uw578ztsJ5i9Lnv5vzsyxX/ue/VECoe3I26L8SDwg1yHrovzXVlF34yui/ipXGeXcj6b+bjIqJ0X3pv6okpjX90em/sszvy04a6r+MVeRtzVnqv1iTbRvaPuq/","dtype":"float64","order":"little","shape":[12]},{"__ndarray__":"WJNtG9o+6r/iNZVnxljqvzKdO55hfeq/mUZrMq6v6r90cGvb5uvqvx/mIkYLLOu/OHGE/iJt67/3q8YPZbHrv5m6KmTu++u/iKKm3N5K7L8upYibBV/svw==","dtype":"float64","order":"little","shape":[11]},{"__ndarray__":"LqWImwVf7L8JCJCKtmDsv/qQc9ilbuy/5MjASNiK7L/buv7XV7LsvwqEhAbA4uy/cKo5LNgY7b+4BodHnE3tvyP/LSKceu2/PB8bHeGe7b8AgzjHsL3tv0Vh6C5o2u2/S8id2+4H7r8=","dtype":"float64","order":"little","shape":[13]},{"__ndarray__":"S8id2+4H7r9q8T5HQRbuv3fPSyWbKu6/yTcR2vxG7r86PPQyUmruvwvMrR9gku6/RJIWDfC77r/H8We5h+Luv8fo8MkSA++/jdUptTIf77/Yo6z7mzLvvw==","dtype":"float64","order":"little","shape":[11]},{"__ndarray__":"2KOs+5sy77/Togq1TEbvv83vGXxmY++/veLqkgaI778BoL9tr6rvv45zotXgw++/UjFSjszS779pFceWIdrvv2PAvrbR3O+/IFn3f27d779e+bQ7Jdrvvw==","dtype":"float64","order":"little","shape":[11]},{"__ndarray__":"Xvm0OyXa779y61/GwN/vv4bdClFc5e+/ms+12/fq77+twWBmk/Dvv8GzC/Eu9u+/1aW2e8r7778=","dtype":"float64","order":"little","shape":[7]},{"__ndarray__":"1aW2e8r7778dpMprRvTvv2KuhcTa7O+/3ALP5ULk77/JaluJ9tjvv1uwp1E1yu+/qaAofhi57780orE7/pbvvw==","dtype":"float64","order":"little","shape":[8]},{"__ndarray__":"NKKxO/6W77/wkcxDqKjvvxr/yknoqe+/t8iipsaY779WpGobc3vvv2T1NAcIWe+/nfH/8tw1778cnQ7eJxPvv2Jm/Tz58O6//zVvZDDR7r9V3tqi2LXuv4btWr3Yne6/jQOmG2it7r8=","dtype":"float64","order":"little","shape":[13]},{"__ndarray__":"jQOmG2it7r/O22h4c5Tuv9k1tx/gde6/LBgJIfdO7r80fidGWCDuv0r8V/Pg7O2/HJUbQPO47b8WMEQ6tontv35XN/07Yu2/hF9chjJA7b+8+pM73kLtvw==","dtype":"float64","order":"little","shape":[11]},{"__ndarray__":"vPqTO95C7b9ai6qCphvtv/KNzQnD5uy/Usgr7reg7L8+J2ZBIlDsv7AJjbur/+u/eggXYYK367/3U9Zet3rrv+UZUF+cReu/jtN7e1Rd678=","dtype":"float64","order":"little","shape":[10]},{"__ndarray__":"jtN7e1Rd67/Q/1H/CT3rv6PzASnHD+u/5blZ4czR6r8QxJb9roXqvybnRUVYMOq/96x+cs3Y6b9Vl7xqJIfpvxZ1SoZkQOm/g0TJX8cB6b+J8127wwTpvw==","dtype":"float64","order":"little","shape":[11]},{"__ndarray__":"ifNdu8ME6b8UT5fo8NPov4roszWClOi/LX+88sc/6L+cVmrQ+tjnv+FuzFRtbOe/GguM6ZEH579S+0pqpqvmvzrYOrsHQ+a/","dtype":"float64","order":"little","shape":[9]},{"__ndarray__":"Otg6uwdD5r8wozQ6gSjmv4bqAOgQ+uW/VBVhn3y05b/9pe9jtGDlvyqnu8nXB+W/nbHPpRar5L8hQ/AYYUnkv11p2bun6OO/beCauxuR4780TStXCELjv0MVE3u4I+O/","dtype":"float64","order":"little","shape":[12]},{"__ndarray__":"QxUTe7gj478riOIQG/jiv2YJip4yt+K/5/lLvuxa4r9YM2vD1enhv9jgqK/LbuG/8g15gRTz4L8wlIsXu37gv76/o9niF+C/bNTqKi9337+Co8516mffvw==","dtype":"float64","order":"little","shape":[11]},{"__ndarray__":"gqPOdepn378IWb8BFi3fvy5K5q7evt6/pHEl9dcX3r/MJjdeeU7dvz4hLC57cty/asNWfbyD279+Ex1l9Ibavwa+z3Psjdm/YPRvjxes2L/usW7JXt/Xv1CLcBVgBNi/","dtype":"float64","order":"little","shape":[12]},{"__ndarray__":"UItwFWAE2L+A3OmmRWzXv/wHObBHqta/giS9g2Gx1b82wu4FE5DUv5K1lcWPY9O/5Hh5s3BL0r/4E6TKMlrRvwydD1qxhdC/em0N9eA70L8=","dtype":"float64","order":"little","shape":[10]},{"__ndarray__":"em0N9eA70L+0/LoWSVXPv3heO7ifyc2/IF6CANrIy7/8sxDgxpLJv8AKnejSZ8e/xANZvYxTxb+MFdsXS0XDv0TVTQlJXsC/","dtype":"float64","order":"little","shape":[9]}]},"selected":{"id":"2246"},"selection_policy":{"id":"2247"}},"id":"2210","type":"ColumnDataSource"},{"attributes":{},"id":"2197","type":"ResetTool"},{"attributes":{"line_color":{"value":"green"},"line_width":{"field":"edge_line_width"},"xs":{"field":"xs"},"ys":{"field":"ys"}},"id":"2219","type":"MultiLine"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"2200","type":"BoxAnnotation"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"2199","type":"BoxAnnotation"},{"attributes":{"axis_label":"x","bounds":"auto","formatter":{"id":"2236"},"major_label_orientation":"horizontal","ticker":{"id":"2186"},"visible":false},"id":"2185","type":"LinearAxis"},{"attributes":{},"id":"2233","type":"EdgesAndLinkedNodes"},{"attributes":{"align":null,"below":[{"id":"2185"}],"center":[{"id":"2188"},{"id":"2192"}],"left":[{"id":"2189"}],"margin":null,"min_border_bottom":10,"min_border_left":10,"min_border_right":10,"min_border_top":10,"plot_height":900,"plot_width":900,"renderers":[{"id":"2222"}],"sizing_mode":"fixed","title":{"id":"2177"},"toolbar":{"id":"2201"},"toolbar_location":null,"x_range":{"id":"2173"},"x_scale":{"id":"2181"},"y_range":{"id":"2174"},"y_scale":{"id":"2183"}},"id":"2176","subtype":"Figure","type":"Plot"},{"attributes":{"overlay":{"id":"2200"}},"id":"2196","type":"BoxZoomTool"},{"attributes":{"source":{"id":"2210"}},"id":"2221","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"#30a2da"},"line_alpha":{"value":0.2},"size":{"field":"node_size","units":"screen"}},"id":"2213","type":"Circle"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"2175"},{"id":"2193"},{"id":"2194"},{"id":"2195"},{"id":"2196"},{"id":"2197"},{"id":"2198"}]},"id":"2201","type":"Toolbar"},{"attributes":{"data_source":{"id":"2209"},"glyph":{"id":"2212"},"hover_glyph":{"id":"2214"},"muted_glyph":null,"nonselection_glyph":{"id":"2213"},"selection_glyph":null,"view":{"id":"2216"}},"id":"2215","type":"GlyphRenderer"},{"attributes":{},"id":"2249","type":"UnionRenderers"},{"attributes":{"margin":[5,5,5,5],"name":"HSpacer17361","sizing_mode":"stretch_width"},"id":"2261","type":"Spacer"},{"attributes":{"end":1.199794537421391,"reset_end":1.199794537421391,"reset_start":-1.1977399116353005,"start":-1.1977399116353005,"tags":[[["x","x",null]]]},"id":"2173","type":"Range1d"},{"attributes":{},"id":"2248","type":"Selection"},{"attributes":{"fill_color":{"value":"lime"},"size":{"field":"node_size","units":"screen"}},"id":"2212","type":"Circle"},{"attributes":{"overlay":{"id":"2199"}},"id":"2198","type":"BoxSelectTool"},{"attributes":{"axis":{"id":"2185"},"grid_line_color":null,"ticker":null},"id":"2188","type":"Grid"},{"attributes":{"data_source":{"id":"2210"},"glyph":{"id":"2217"},"hover_glyph":{"id":"2219"},"muted_glyph":null,"nonselection_glyph":{"id":"2218"},"selection_glyph":null,"view":{"id":"2221"}},"id":"2220","type":"GlyphRenderer"},{"attributes":{},"id":"2238","type":"BasicTickFormatter"},{"attributes":{"axis_label":"y","bounds":"auto","formatter":{"id":"2238"},"major_label_orientation":"horizontal","ticker":{"id":"2190"},"visible":false},"id":"2189","type":"LinearAxis"},{"attributes":{},"id":"2194","type":"PanTool"},{"attributes":{},"id":"2246","type":"Selection"},{"attributes":{},"id":"2181","type":"LinearScale"},{"attributes":{},"id":"2195","type":"WheelZoomTool"},{"attributes":{"line_alpha":{"value":0.2},"line_width":{"field":"edge_line_width"},"xs":{"field":"xs"},"ys":{"field":"ys"}},"id":"2218","type":"MultiLine"},{"attributes":{"edge_renderer":{"id":"2220"},"inspection_policy":{"id":"2233"},"layout_provider":{"id":"2211"},"node_renderer":{"id":"2215"},"selection_policy":{"id":"2231"}},"id":"2222","type":"GraphRenderer"},{"attributes":{},"id":"2186","type":"BasicTicker"},{"attributes":{},"id":"2190","type":"BasicTicker"},{"attributes":{},"id":"2247","type":"UnionRenderers"},{"attributes":{"axis":{"id":"2189"},"dimension":1,"grid_line_color":null,"ticker":null},"id":"2192","type":"Grid"},{"attributes":{"callback":null,"renderers":[{"id":"2222"}],"tags":["hv_created"],"tooltips":[["start","@{start_values}"],["end","@{end_values}"],["common_actors","@{common_actors}"],["weight","@{weight}"]]},"id":"2175","type":"HoverTool"},{"attributes":{"source":{"id":"2209"}},"id":"2216","type":"CDSView"}],"root_ids":["2171"]},"title":"Bokeh Application","version":"2.1.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('2417').textContent;
+                  var render_items = [{"docid":"5801a1c9-d2d0-4e3b-9ccf-6627df2b9a93","root_ids":["2171"],"roots":{"2171":"3de3060a-be2c-41ef-8fd7-55802d913ef2"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>p2</title>
+      
+      
+        
+          
+        <style>
+            .panel-widget-box {
+                	min-height: 20px;
+                	background-color: #f5f5f5;
+                	border: 1px solid #e3e3e3 !important;
+                	border-radius: 4px;
+                	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+                	box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+                	overflow-x: hidden;
+                	overflow-y: hidden;
+                }
+
+                .scrollable {
+                  overflow: scroll;
+                }
+
+                progress {
+                	appearance: none;
+                	-moz-appearance: none;
+                	-webkit-appearance: none;
+
+                	border: none;
+                	height: 20px;
+                	background-color: whiteSmoke;
+                	border-radius: 3px;
+                	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+                	color: royalblue;
+                	position: relative;
+                	margin: 0 0 1.5em;
+                }
+
+                progress[value]::-webkit-progress-bar {
+                	background-color: whiteSmoke;
+                	border-radius: 3px;
+                	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+                }
+
+                progress[value]::-webkit-progress-value {
+                	position: relative;
+
+                	background-size: 35px 20px, 100% 100%, 100% 100%;
+                	border-radius:3px;
+                }
+
+                progress.active:not([value])::before {
+                	background-position: 10%;
+                	animation-name: stripes;
+                	animation-duration: 3s;
+                	animation-timing-function: linear;
+                	animation-iteration-count: infinite;
+                }
+
+                progress[value]::-moz-progress-bar {
+                	background-size: 35px 20px, 100% 100%, 100% 100%;
+                	border-radius:3px;
+                }
+
+                progress:not([value])::-moz-progress-bar {
+                	border-radius:3px;
+                	background:
+                	linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.2) 33%, rgba(0, 0, 0, 0.2) 66%, transparent 66%) left/2.5em 1.5em;
+
+                }
+
+                progress.active:not([value])::-moz-progress-bar {
+                	background-position: 10%;
+                	animation-name: stripes;
+                	animation-duration: 3s;
+                	animation-timing-function: linear;
+                	animation-iteration-count: infinite;
+                }
+
+                progress.active:not([value])::-webkit-progress-bar {
+                	background-position: 10%;
+                	animation-name: stripes;
+                	animation-duration: 3s;
+                	animation-timing-function: linear;
+                	animation-iteration-count: infinite;
+                }
+
+                progress.primary[value]::-webkit-progress-value { background-color: #007bff; }
+                progress.primary:not([value])::before { background-color: #007bff; }
+                progress.primary:not([value])::-webkit-progress-bar { background-color: #007bff; }
+                progress.primary::-moz-progress-bar { background-color: #007bff; }
+
+                progress.secondary[value]::-webkit-progress-value { background-color: #6c757d; }
+                progress.secondary:not([value])::before { background-color: #6c757d; }
+                progress.secondary:not([value])::-webkit-progress-bar { background-color: #6c757d; }
+                progress.secondary::-moz-progress-bar { background-color: #6c757d; }
+
+                progress.success[value]::-webkit-progress-value { background-color: #28a745; }
+                progress.success:not([value])::before { background-color: #28a745; }
+                progress.success:not([value])::-webkit-progress-bar { background-color: #28a745; }
+                progress.success::-moz-progress-bar { background-color: #28a745; }
+
+                progress.danger[value]::-webkit-progress-value { background-color: #dc3545; }
+                progress.danger:not([value])::before { background-color: #dc3545; }
+                progress.danger:not([value])::-webkit-progress-bar { background-color: #dc3545; }
+                progress.danger::-moz-progress-bar { background-color: #dc3545; }
+
+                progress.warning[value]::-webkit-progress-value { background-color: #ffc107; }
+                progress.warning:not([value])::before { background-color: #ffc107; }
+                progress.warning:not([value])::-webkit-progress-bar { background-color: #ffc107; }
+                progress.warning::-moz-progress-bar { background-color: #ffc107; }
+
+                progress.info[value]::-webkit-progress-value { background-color: #17a2b8; }
+                progress.info:not([value])::before { background-color: #17a2b8; }
+                progress.info:not([value])::-webkit-progress-bar { background-color: #17a2b8; }
+                progress.info::-moz-progress-bar { background-color: #17a2b8; }
+
+                progress.light[value]::-webkit-progress-value { background-color: #f8f9fa; }
+                progress.light:not([value])::before { background-color: #f8f9fa; }
+                progress.light:not([value])::-webkit-progress-bar { background-color: #f8f9fa; }
+                progress.light::-moz-progress-bar { background-color: #f8f9fa; }
+
+                progress.dark[value]::-webkit-progress-value { background-color: #343a40; }
+                progress.dark:not([value])::-webkit-progress-bar { background-color: #343a40; }
+                progress.dark:not([value])::before { background-color: #343a40; }
+                progress.dark::-moz-progress-bar { background-color: #343a40; }
+
+                progress:not([value])::-webkit-progress-bar {
+                	border-radius: 3px;
+                	background:
+                	linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.2) 33%, rgba(0, 0, 0, 0.2) 66%, transparent 66%) left/2.5em 1.5em;
+                }
+                progress:not([value])::before {
+                	content:" ";
+                	position:absolute;
+                	height: 20px;
+                	top:0;
+                	left:0;
+                	right:0;
+                	bottom:0;
+                	border-radius: 3px;
+                	background:
+                	linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.2) 33%, rgba(0, 0, 0, 0.2) 66%, transparent 66%) left/2.5em 1.5em;
+                }
+
+                @keyframes stripes {
+                  from {background-position: 0%}
+                  to {background-position: 100%}
+                }
+
+        </style>
+        <style>
+            .codehilite .hll { background-color: #ffffcc }
+                .codehilite  { background: #f8f8f8; }
+                .codehilite .c { color: #408080; font-style: italic } /* Comment */
+                .codehilite .err { border: 1px solid #FF0000 } /* Error */
+                .codehilite .k { color: #008000; font-weight: bold } /* Keyword */
+                .codehilite .o { color: #666666 } /* Operator */
+                .codehilite .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
+                .codehilite .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+                .codehilite .cp { color: #BC7A00 } /* Comment.Preproc */
+                .codehilite .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
+                .codehilite .c1 { color: #408080; font-style: italic } /* Comment.Single */
+                .codehilite .cs { color: #408080; font-style: italic } /* Comment.Special */
+                .codehilite .gd { color: #A00000 } /* Generic.Deleted */
+                .codehilite .ge { font-style: italic } /* Generic.Emph */
+                .codehilite .gr { color: #FF0000 } /* Generic.Error */
+                .codehilite .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+                .codehilite .gi { color: #00A000 } /* Generic.Inserted */
+                .codehilite .go { color: #888888 } /* Generic.Output */
+                .codehilite .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+                .codehilite .gs { font-weight: bold } /* Generic.Strong */
+                .codehilite .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+                .codehilite .gt { color: #0044DD } /* Generic.Traceback */
+                .codehilite .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+                .codehilite .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+                .codehilite .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+                .codehilite .kp { color: #008000 } /* Keyword.Pseudo */
+                .codehilite .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+                .codehilite .kt { color: #B00040 } /* Keyword.Type */
+                .codehilite .m { color: #666666 } /* Literal.Number */
+                .codehilite .s { color: #BA2121 } /* Literal.String */
+                .codehilite .na { color: #7D9029 } /* Name.Attribute */
+                .codehilite .nb { color: #008000 } /* Name.Builtin */
+                .codehilite .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+                .codehilite .no { color: #880000 } /* Name.Constant */
+                .codehilite .nd { color: #AA22FF } /* Name.Decorator */
+                .codehilite .ni { color: #999999; font-weight: bold } /* Name.Entity */
+                .codehilite .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+                .codehilite .nf { color: #0000FF } /* Name.Function */
+                .codehilite .nl { color: #A0A000 } /* Name.Label */
+                .codehilite .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+                .codehilite .nt { color: #008000; font-weight: bold } /* Name.Tag */
+                .codehilite .nv { color: #19177C } /* Name.Variable */
+                .codehilite .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+                .codehilite .w { color: #bbbbbb } /* Text.Whitespace */
+                .codehilite .mb { color: #666666 } /* Literal.Number.Bin */
+                .codehilite .mf { color: #666666 } /* Literal.Number.Float */
+                .codehilite .mh { color: #666666 } /* Literal.Number.Hex */
+                .codehilite .mi { color: #666666 } /* Literal.Number.Integer */
+                .codehilite .mo { color: #666666 } /* Literal.Number.Oct */
+                .codehilite .sa { color: #BA2121 } /* Literal.String.Affix */
+                .codehilite .sb { color: #BA2121 } /* Literal.String.Backtick */
+                .codehilite .sc { color: #BA2121 } /* Literal.String.Char */
+                .codehilite .dl { color: #BA2121 } /* Literal.String.Delimiter */
+                .codehilite .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+                .codehilite .s2 { color: #BA2121 } /* Literal.String.Double */
+                .codehilite .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+                .codehilite .sh { color: #BA2121 } /* Literal.String.Heredoc */
+                .codehilite .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+                .codehilite .sx { color: #008000 } /* Literal.String.Other */
+                .codehilite .sr { color: #BB6688 } /* Literal.String.Regex */
+                .codehilite .s1 { color: #BA2121 } /* Literal.String.Single */
+                .codehilite .ss { color: #19177C } /* Literal.String.Symbol */
+                .codehilite .bp { color: #008000 } /* Name.Builtin.Pseudo */
+                .codehilite .fm { color: #0000FF } /* Name.Function.Magic */
+                .codehilite .vc { color: #19177C } /* Name.Variable.Class */
+                .codehilite .vg { color: #19177C } /* Name.Variable.Global */
+                .codehilite .vi { color: #19177C } /* Name.Variable.Instance */
+                .codehilite .vm { color: #19177C } /* Name.Variable.Magic */
+                .codehilite .il { color: #666666 } /* Literal.Number.Integer.Long */
+
+                .markdown h1 { margin-block-start: 0.34em }
+                .markdown h2 { margin-block-start: 0.42em }
+                .markdown h3 { margin-block-start: 0.5em }
+                .markdown h4 { margin-block-start: 0.67em }
+                .markdown h5 { margin-block-start: 0.84em }
+                .markdown h6 { margin-block-start: 1.17em }
+                .markdown ul { padding-inline-start: 2em }
+                .markdown ol { padding-inline-start: 2em }
+                .markdown strong { font-weight: 600 }
+                .markdown a { color: -webkit-link }
+                .markdown a { color: -moz-hyperlinkText }
+
+        </style>
+        <style>
+            .json-formatter-row {
+                  font-family: monospace;
+                }
+                .json-formatter-row,
+                .json-formatter-row a,
+                .json-formatter-row a:hover {
+                  color: black;
+                  text-decoration: none;
+                }
+                .json-formatter-row .json-formatter-row {
+                  margin-left: 1rem;
+                }
+                .json-formatter-row .json-formatter-children.json-formatter-empty {
+                  opacity: 0.5;
+                  margin-left: 1rem;
+                }
+                .json-formatter-row .json-formatter-children.json-formatter-empty:after {
+                  display: none;
+                }
+                .json-formatter-row .json-formatter-children.json-formatter-empty.json-formatter-object:after {
+                  content: "No properties";
+                }
+                .json-formatter-row .json-formatter-children.json-formatter-empty.json-formatter-array:after {
+                  content: "[]";
+                }
+                .json-formatter-row .json-formatter-string,
+                .json-formatter-row .json-formatter-stringifiable {
+                  color: green;
+                  white-space: pre;
+                  word-wrap: break-word;
+                }
+                .json-formatter-row .json-formatter-number {
+                  color: blue;
+                }
+                .json-formatter-row .json-formatter-boolean {
+                  color: red;
+                }
+                .json-formatter-row .json-formatter-null {
+                  color: #855A00;
+                }
+                .json-formatter-row .json-formatter-undefined {
+                  color: #ca0b69;
+                }
+                .json-formatter-row .json-formatter-function {
+                  color: #FF20ED;
+                }
+                .json-formatter-row .json-formatter-date {
+                  background-color: rgba(0, 0, 0, 0.05);
+                }
+                .json-formatter-row .json-formatter-url {
+                  text-decoration: underline;
+                  color: blue;
+                  cursor: pointer;
+                }
+                .json-formatter-row .json-formatter-bracket {
+                  color: blue;
+                }
+                .json-formatter-row .json-formatter-key {
+                  color: #00008B;
+                  padding-right: 0.2rem;
+                }
+                .json-formatter-row .json-formatter-toggler-link {
+                  cursor: pointer;
+                }
+                .json-formatter-row .json-formatter-toggler {
+                  line-height: 1.2rem;
+                  font-size: 0.7rem;
+                  vertical-align: middle;
+                  opacity: 0.6;
+                  cursor: pointer;
+                  padding-right: 0.2rem;
+                }
+                .json-formatter-row .json-formatter-toggler:after {
+                  display: inline-block;
+                  transition: transform 100ms ease-in;
+                  content: "\25BA";
+                }
+                .json-formatter-row > a > .json-formatter-preview-text {
+                  opacity: 0;
+                  transition: opacity 0.15s ease-in;
+                  font-style: italic;
+                }
+                .json-formatter-row:hover > a > .json-formatter-preview-text {
+                  opacity: 0.6;
+                }
+                .json-formatter-row.json-formatter-open > .json-formatter-toggler-link .json-formatter-toggler:after {
+                  transform: rotate(90deg);
+                }
+                .json-formatter-row.json-formatter-open > .json-formatter-children:after {
+                  display: inline-block;
+                }
+                .json-formatter-row.json-formatter-open > a > .json-formatter-preview-text {
+                  display: none;
+                }
+                .json-formatter-row.json-formatter-open.json-formatter-empty:after {
+                  display: block;
+                }
+                .json-formatter-dark.json-formatter-row {
+                  font-family: monospace;
+                }
+                .json-formatter-dark.json-formatter-row,
+                .json-formatter-dark.json-formatter-row a,
+                .json-formatter-dark.json-formatter-row a:hover {
+                  color: white;
+                  text-decoration: none;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-row {
+                  margin-left: 1rem;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-children.json-formatter-empty {
+                  opacity: 0.5;
+                  margin-left: 1rem;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-children.json-formatter-empty:after {
+                  display: none;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-children.json-formatter-empty.json-formatter-object:after {
+                  content: "No properties";
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-children.json-formatter-empty.json-formatter-array:after {
+                  content: "[]";
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-string,
+                .json-formatter-dark.json-formatter-row .json-formatter-stringifiable {
+                  color: #31F031;
+                  white-space: pre;
+                  word-wrap: break-word;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-number {
+                  color: #66C2FF;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-boolean {
+                  color: #EC4242;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-null {
+                  color: #EEC97D;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-undefined {
+                  color: #ef8fbe;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-function {
+                  color: #FD48CB;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-date {
+                  background-color: rgba(255, 255, 255, 0.05);
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-url {
+                  text-decoration: underline;
+                  color: #027BFF;
+                  cursor: pointer;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-bracket {
+                  color: #9494FF;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-key {
+                  color: #23A0DB;
+                  padding-right: 0.2rem;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-toggler-link {
+                  cursor: pointer;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-toggler {
+                  line-height: 1.2rem;
+                  font-size: 0.7rem;
+                  vertical-align: middle;
+                  opacity: 0.6;
+                  cursor: pointer;
+                  padding-right: 0.2rem;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-toggler:after {
+                  display: inline-block;
+                  transition: transform 100ms ease-in;
+                  content: "\25BA";
+                }
+                .json-formatter-dark.json-formatter-row > a > .json-formatter-preview-text {
+                  opacity: 0;
+                  transition: opacity 0.15s ease-in;
+                  font-style: italic;
+                }
+                .json-formatter-dark.json-formatter-row:hover > a > .json-formatter-preview-text {
+                  opacity: 0.6;
+                }
+                .json-formatter-dark.json-formatter-row.json-formatter-open > .json-formatter-toggler-link .json-formatter-toggler:after {
+                  transform: rotate(90deg);
+                }
+                .json-formatter-dark.json-formatter-row.json-formatter-open > .json-formatter-children:after {
+                  display: inline-block;
+                }
+                .json-formatter-dark.json-formatter-row.json-formatter-open > a > .json-formatter-preview-text {
+                  display: none;
+                }
+                .json-formatter-dark.json-formatter-row.json-formatter-open.json-formatter-empty:after {
+                  display: block;
+                }
+
+        </style>
+        <style>
+            table.panel-df {
+                    margin-left: auto;
+                    margin-right: auto;
+                    border: none;
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                    color: black;
+                    font-size: 12px;
+                    table-layout: fixed;
+                    width: 100%;
+                }
+
+                .panel-df tr, .panel-df th, .panel-df td {
+                    text-align: right;
+                    vertical-align: middle;
+                    padding: 0.5em 0.5em !important;
+                    line-height: normal;
+                    white-space: normal;
+                    max-width: none;
+                    border: none;
+                }
+
+                .panel-df tbody {
+                    display: table-row-group;
+                    vertical-align: middle;
+                    border-color: inherit;
+                }
+
+                .panel-df tbody tr:nth-child(odd) {
+                    background: #f5f5f5;
+                }
+
+                .panel-df thead {
+                    border-bottom: 1px solid black;
+                    vertical-align: bottom;
+                }
+
+                .panel-df tr:hover {
+                    background: lightblue !important;
+                    cursor: pointer;
+                }
+
+        </style>
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.1.1.min.js" integrity="sha384-kLr4fYcqcSpbuI95brIH3vnnYCquzzSxHPU6XGQCIkQRGJwhg0StNbj1eegrHs12" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="81361df7-bac9-454a-b24e-4fb9a104b6d9" data-root-id="1924"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="2170">
+          {"93949779-1397-467c-a432-f50d709ff982":{"roots":{"references":[{"attributes":{"end":1.199999997337633,"reset_end":1.199999997337633,"reset_start":-1.1999999707139621,"start":-1.1999999707139621,"tags":[[["y","y",null]]]},"id":"1927","type":"Range1d"},{"attributes":{"align":null,"below":[{"id":"1938"}],"center":[{"id":"1941"},{"id":"1945"}],"left":[{"id":"1942"}],"margin":null,"min_border_bottom":10,"min_border_left":10,"min_border_right":10,"min_border_top":10,"plot_height":900,"plot_width":900,"renderers":[{"id":"1975"}],"sizing_mode":"fixed","title":{"id":"1930"},"toolbar":{"id":"1954"},"toolbar_location":null,"x_range":{"id":"1926"},"x_scale":{"id":"1934"},"y_range":{"id":"1927"},"y_scale":{"id":"1936"}},"id":"1929","subtype":"Figure","type":"Plot"},{"attributes":{"edge_renderer":{"id":"1973"},"inspection_policy":{"id":"1986"},"layout_provider":{"id":"1964"},"node_renderer":{"id":"1968"},"selection_policy":{"id":"1984"}},"id":"1975","type":"GraphRenderer"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"1953","type":"BoxAnnotation"},{"attributes":{},"id":"2000","type":"UnionRenderers"},{"attributes":{"axis":{"id":"1942"},"dimension":1,"grid_line_color":null,"ticker":null},"id":"1945","type":"Grid"},{"attributes":{"fill_color":{"value":"red"},"size":{"field":"node_size","units":"screen"}},"id":"1967","type":"Circle"},{"attributes":{},"id":"1999","type":"Selection"},{"attributes":{"graph_layout":{"0":[-4.212206234360422e-08,1.0],"1":[-0.5877850557602794,-0.8090170977105015],"10":[0.587785237752862,0.8090170051248842],"11":[0.30901697025596997,0.9510565406638868],"12":[0.9999999882774899,1.3311835367777423e-08],"13":[-0.8090169306190795,-0.5877852824563453],"14":[0.9510565289413768,-0.3090169255524872],"15":[0.9510565289413768,0.30901701178080193],"16":[0.8090169337977302,-0.5877852824563453],"17":[0.3090171192675799,-0.9510564544355722],"18":[0.5877850589389301,-0.8090170977105015],"19":[-0.9510565257627261,-0.3090169553548092],"2":[-0.3090170266819632,0.9510564810592429],"3":[-0.3090171160889292,-0.9510564544355722],"4":[1.3514205841015913e-08,-0.9999999733763293],"5":[0.8090169934023742,0.587785249475372],"6":[-0.9510564661580821,0.30901704158312393],"7":[-0.9999999850988393,-7.411094004194081e-08],"8":[-0.8090169902237235,0.587785249475372],"9":[-0.5877852345742114,0.8090170051248842]}},"id":"1964","type":"StaticLayoutProvider"},{"attributes":{"data_source":{"id":"1962"},"glyph":{"id":"1965"},"hover_glyph":{"id":"1967"},"muted_glyph":null,"nonselection_glyph":{"id":"1966"},"selection_glyph":null,"view":{"id":"1969"}},"id":"1968","type":"GlyphRenderer"},{"attributes":{"margin":[5,5,5,5],"name":"HSpacer10973","sizing_mode":"stretch_width"},"id":"2014","type":"Spacer"},{"attributes":{"line_alpha":{"value":0.2},"line_width":{"field":"edge_line_width"},"xs":{"field":"xs"},"ys":{"field":"ys"}},"id":"1971","type":"MultiLine"},{"attributes":{},"id":"1946","type":"SaveTool"},{"attributes":{"line_color":{"value":"gold"},"line_width":{"field":"edge_line_width"},"xs":{"field":"xs"},"ys":{"field":"ys"}},"id":"1970","type":"MultiLine"},{"attributes":{"source":{"id":"1962"}},"id":"1969","type":"CDSView"},{"attributes":{"end":1.1999999856151229,"reset_end":1.1999999856151229,"reset_start":-1.1999999824364722,"start":-1.1999999824364722,"tags":[[["x","x",null]]]},"id":"1926","type":"Range1d"},{"attributes":{},"id":"1947","type":"PanTool"},{"attributes":{},"id":"1991","type":"BasicTickFormatter"},{"attributes":{"fill_color":{"value":"lime"},"size":{"field":"node_size","units":"screen"}},"id":"1965","type":"Circle"},{"attributes":{},"id":"2002","type":"UnionRenderers"},{"attributes":{"text":"Transitions among chronologically successive Jacques Rivette's films in terms of numbers of common actors","text_color":{"value":"black"},"text_font_size":{"value":"12pt"}},"id":"1930","type":"Title"},{"attributes":{},"id":"1948","type":"WheelZoomTool"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"1952","type":"BoxAnnotation"},{"attributes":{"overlay":{"id":"1952"}},"id":"1951","type":"BoxSelectTool"},{"attributes":{"overlay":{"id":"1953"}},"id":"1949","type":"BoxZoomTool"},{"attributes":{},"id":"1986","type":"EdgesAndLinkedNodes"},{"attributes":{"data_source":{"id":"1963"},"glyph":{"id":"1970"},"hover_glyph":{"id":"1972"},"muted_glyph":null,"nonselection_glyph":{"id":"1971"},"selection_glyph":null,"view":{"id":"1974"}},"id":"1973","type":"GlyphRenderer"},{"attributes":{},"id":"1934","type":"LinearScale"},{"attributes":{},"id":"1984","type":"NodesAndLinkedEdges"},{"attributes":{},"id":"1950","type":"ResetTool"},{"attributes":{"data":{"common_actors":["Jean Martin","Michel Delahaye, Fran\u00e7oise Godde","Bulle Ogier, Mich\u00e8le Moretti, Michel Delahaye","Jean-Pierre L\u00e9aud, Ode Bitton, Juliet Berto, Michel Delahaye, Jean Bouise, Pierre Baillot, Jean-Pierre Bastid, \u00c9ric Rohmer, Mich\u00e8le Moretti, Michael Lonsdale, Jacques Doniol-Valcroze, Hermine Karagheuz, Barbet Schroeder, Bernadette Lafont, Fran\u00e7oise Fabian, Ren\u00e9 Biaggi, Michel Berto, Marcel Bozonnet, Jean-Fran\u00e7ois St\u00e9venin, Gilette Barbier, Bulle Ogier","Bulle Ogier, Barbet Schroeder, Juliet Berto","Bulle Ogier, Juliet Berto","Humbert Balsan, Dani\u00e8le G\u00e9gauff","Jean-Fran\u00e7ois St\u00e9venin","Sandra Montaigu","Jane Birkin, Michel Piccoli, Gilles Arbona, David Bursztein, Emmanuelle B\u00e9art, Marianne Denicourt","Jean-Louis Richard, Mathias Jung, Pierre Baillot, Didier Sauvegrain, Xavier Maly, Sandrine Bonnaire, Quentin Ogier, Jean-Pierre Becker, Andr\u00e9 Marcon, St\u00e9phane Boucher, Jean-Pierre Lorit, Vincent Solignac, Patrick Le Mauff, Marcel Bozonnet, Bruno Wolkowitch, Mathieu Busson","Marcel Bozonnet, Nathalie Richard, Andr\u00e9 Marcon","Bettina Kee","Mathias Jung"],"edge_line_width":{"__ndarray__":"ZmZmZmZmBkAAAAAAAAAMQMzMzMzMzBBAzMzMzMzMMEDMzMzMzMwQQAAAAAAAAAxAAAAAAAAADEBmZmZmZmYGQGZmZmZmZgZAMzMzMzMzGUCZmZmZmZkqQMzMzMzMzBBAZmZmZmZmBkBmZmZmZmYGQA==","dtype":"float64","order":"little","shape":[14]},"end":{"__ndarray__":"DwAAAAUAAAAKAAAACwAAAAAAAAACAAAACAAAAAYAAAATAAAAAQAAAAQAAAARAAAAEAAAAA4AAAA=","dtype":"int32","order":"little","shape":[14]},"end_values":["The Nun (1966)","L'amour fou (1969)","Out 1 (1971)","Out 1: Spectre (1972)","Celine and Julie Go Boating (1974)","Duelle (1976)","Merry-Go-Round (1980)","Le Pont du Nord (1981)","Wuthering Heights (1985)","Divertimento (1992)","Joan the Maid 2: The Prisons (1994)","Up, Down, Fragile (1995)","The Story of Marie and Julien (2003)","The Duchess of Langeais (2007)"],"start":{"__ndarray__":"DAAAAA8AAAAFAAAACgAAAAsAAAAAAAAACQAAAAgAAAAHAAAADQAAAAMAAAAEAAAAEgAAABAAAAA=","dtype":"int32","order":"little","shape":[14]},"start_values":["Paris Belongs to Us (1961)","The Nun (1966)","L'amour fou (1969)","Out 1 (1971)","Out 1: Spectre (1972)","Celine and Julie Go Boating (1974)","Noro\u00eet (1976)","Merry-Go-Round (1980)","Love on the Ground (1984)","The Beautiful Troublemaker (1991)","Joan the Maid 1: The Battles (1994)","Joan the Maid 2: The Prisons (1994)","Va Savoir (Who Knows?) (2001)","The Story of Marie and Julien (2003)"],"weight":[1,2,3,21,3,2,2,1,1,6,16,3,1,1],"xs":[{"__ndarray__":"2N60+f//7z9UYorHvf/vP0jYNris/u8/EM4bXAj77z8QUyrQuPHvPxJlTaLe3+8/tEwKe8TF7z+YMY8vZafvP0DeOUHSiO8/jn7y3DRr7z/OV8uzR07vP9b2kFWLM+8/Bh+ch18d7z/GZFPH3AvvPzIFRvRd/O4/GlRN57Ts7j9sZJ5Z7dzuP7guJQfdze4/fHiJsEa/7j8ekB69+a/uP1xiI0dZn+4/pnTefhSO7j8iKR0Yln3uPxpDuZcvbu4/bGoOGg5v7j8=","dtype":"float64","order":"little","shape":[25]},{"__ndarray__":"bGoOGg5v7j9QR/gnW1TuPyITiXQDN+4/AtkWUTcV7j9Oo7Z7me3tPyyW3hmBvu0/tMn7PPOI7T8qrAYU1lHtP6aIGJDwG+0/lOxuffXk7D+k/0Sss6rsP/bf8grkbuw/ykLS/tMz7D9C94KxIPrrP8hM3GRhwOs/ztjKb6yD6z+umKGTdkTrP2Y985PlBes/EBhdZ07I6j/KWG2wVonqP0aT2VIkS+o/utaoCOES6j/YGWTvJuDpP0hJEpt34+k/","dtype":"float64","order":"little","shape":[24]},{"__ndarray__":"SEkSm3fj6T/m7OyyZL/pP0oJFotojOk/WGuTIXxG6T/k1juNtvPoP2YmiqM5nug/NAiY0JtM6D+etD7j0/7nP+5J18bisuc/5qWMVGJo5z8McwubbBznPwxtotRny+Y/bgRBsPZ35j/aup99+yjmP5J9hh1f4OU/7LcUrpqX5T9MU7KXVEnlP1ozWXy1+OQ/kLV7YLmr5D8sVVjVmWHkP0qFN7hdEuQ/YAztKk+64z/YZPrh22DjP7Bvb6e1D+M/ZHzcmqvG4j9IC6f8Is/iPw==","dtype":"float64","order":"little","shape":[26]},{"__ndarray__":"SAun/CLP4j8Soiu+c5jiPxBUEBkYUOI/NnWwDDn24T8Uzho1bJfhP6rMCjjIOuE/3D6T9UHa4D/4R5wwtG/gP9Qnn595/d8/XDtqqDcd3z/gv1c2EEPeP4Cb3UjmZ90/5HtDCc2D3D+8fw5HYpDbPzxjrGVYido/uPx7vnh92T+8/Jz2FofYP6AlUYRKr9c/IDqdK+jj1j80DiQ2UxXWP+zjh0pQTNU/qFqSMDuZ1D8IoYE8H/nTPygjSh3vxtM/","dtype":"float64","order":"little","shape":[24]},{"__ndarray__":"KCNKHe/G0z8gCGtedWbTP9Q/5cQj4dI/fIgxeZYt0j/8EMaU21LRP/QaVz1vU9A/8IHj1nBhzj84xrYcL/zLP+h/uEVxs8k/YCQi2euuxz9AQjXhuN3FP+A9ra28AMQ/aMsih8DuwT+Qiw3/PnW/P2D+1SY0Dbs/wLwkP2Wltj/Qh9DaThqyP+AntJeC7qo/YCl3G/WzoT9AIQCd4h6RPwAAAFE2nWa+","dtype":"float64","order":"little","shape":[21]},{"__ndarray__":"AAAAUTadZr6AYmtu+6KPv2A7NyTKgJ6/EBm3ie0gpr8gPx4KYNusv1DnWgNGtbG/eISGv+3ctL9wjH0jBQq4v5BqnlVecbu/2CZLTMkQv7+EzYcu/lvBvyDsNyLJH8O/jLLeDZPWxL/QLLDYS4jGvwCXdaykNMi/9J7Fazrvyb8IYakt0tbLv3QDBC6W6M2/WviJnTAB0L+ohmdsRQfRv0TyMIrvCdK/cGXgWe/G078=","dtype":"float64","order":"little","shape":[22]},{"__ndarray__":"dCzy+iLP4r/KVyWiujrjv9FDk5C3oOO/UImZ5zYD5L+MMEcfxWbkv6zZ6OoOzeS/GlPbAn0w5b/NThqAeIzlv/I68GpS5eW/hDVNVztD5r+78QmPXKjmvwQHvIEBEOe/s8tzpEd157/C7SwZSdnnv5Zn1TlVP+i/s7lAFfWl6L9DKpUejgfpv6KDnD17Xum/jUZudL6s6b9zal2Zd+Ppvw==","dtype":"float64","order":"little","shape":[20]},{"__ndarray__":"c2pdmXfj6b9IDjqncPnpv/RwA3w+H+q/gPh0XuVX6r/FnyDe/Zzqv9oI9i9j5uq/NhM7fCkv679yoM6aSnTrv3QYHPuns+u/kozQApzv678gP/qZTCvsv8rv4NZPZey/Pc55/V+a7L+RcBiXLcvsvzifrLjp/Oy/oQEnQ44y7b92cFhHTGjtvxraEa0NmO2/0IQCtprA7b/2rwWct+btvzvPHyX8Du6/29X3an457r+fi1n4DW/uvw==","dtype":"float64","order":"little","shape":[23]},{"__ndarray__":"BAAA+P//778xGOQhIvnvv3tNDNIN9O+/uw4aUK7v7783h+1/5Onvv92Vd+zJ3++/btmES+jN779VasdIzbLvvx8/aSZrku+/GlGf5UJz778S8noARVfvv70IVThWPO+/jXQK96gh779dICAz1wfvv4WpiG3m7e6/qrqRIh/S7r9Ukp4WIrXuv3cM8pV4mu6/5m+BuheF7r9J0Z11YHPuv5iLWRgOb+6/","dtype":"float64","order":"little","shape":[21]},{"__ndarray__":"empdeXfj6b9aHhHRL2zpv0LXoBS1Bum/6csvugyz6L8kdxvRwWnov8aQXBXTI+i/RHUXwd3a57/mTVNQuovnv+Kg9vCEOOe/Vtylie7i5r8RL3Kvponmv0U4VF+zK+a/OtNoeIvM5b9gIjEcGHXlv9AhnbB7KOW/8GO11b7f5L9KvolndpTkv8irc9M8SOS/daf0URn/47/k19DGR7jjv6NRbRgLcOO/TBNVC+Ql47+JLPKaIs/ivw==","dtype":"float64","order":"little","shape":[23]},{"__ndarray__":"XGXgue/G079Qgfk05ULSvwb5ElQq9dC/nBF6OxDCz7+wrH6z+8bNv3CUmZHZucu/KKQhVnKayb/k1/2L1o7Hv1x5qLZbr8W/wB8vTOruw79Iil0a2zTCvyjD1vxYccC/aJzxKKkVvb9oUnNd/NW4v1Dk5HD0NbS/0DhP0tfQrr+QpgL/IS2lv2DGzN1PNpe/AAAAZIMFTT4=","dtype":"float64","order":"little","shape":[19]},{"__ndarray__":"AAAAZIMFTT5Az0wImOeSPyAXSvT8PqI/wG2HGClzqj8QU+k6Ki2xP6Aq/qG1DbU/YE76bYQMuT/QWccDAV29Pyjw8mJZ8MA/WJ+7oYEjwz+AYoMY9TPFP+j5klH2J8c/WIt9MskHyT9AnLVR3OLKP2j4D+xdwcw/uDnl/O+azj/YeWWd6zvQP1yWfb4UNtE/fBw1b+Q50j8EI0q978bTPw==","dtype":"float64","order":"little","shape":[20]},{"__ndarray__":"XAunnCLP4j/CpdxEujrjP+p6pDS3oOM/CnxPjTYD5D/iP7LGxGbkP+Qw8JMOzeQ/REFPrXww5T+8+sgreIzlPzLBuBdS5eU/pKcpBTtD5j/mbA4+XKjmP+hjGjIBEOc/Pl1zVkd15z/69wfNSNnnP/IDj+9UP+g/FkegzPSl6D/sBFXXjQfpP+jygfd6Xuk/SKJWL76s6T9OSRJ7d+PpPw==","dtype":"float64","order":"little","shape":[20]},{"__ndarray__":"TkkSe3fj6T/s9heMcPnpP5ioemM+H+o/tsASSOVX6j+sTOXJ/ZzqP4Q+YR5j5uo/rn0Jbikv6z+ONWWQSnTrP6r0GvSns+s/FJ9l/pvv6z80ZXqXTCvsP2iZ/dVPZew/NCQg/l+a7D9wR1iZLcvsPzIQyrzp/Ow/Vn+YSY4y7T+0UJdQTGjtP7wNcLkNmO0/7Hq4xZrA7T+MDW2vt+btP2S7tDz8Du4/6v4Jh3457j9sag4aDm/uPw==","dtype":"float64","order":"little","shape":[23]}],"ys":[{"__ndarray__":"AAAATEKWTD5gZXmoSpWQP1A8mr7IFKA/0ClCdw1fpz+wa21QU0KuP1jXs2yKh7I/aLgJXmMHtj9ICHBkeo65Pwhy+xAQBr0/LBXt+RhFwD/UD/iYWxzCPwxzCs5J8sM/POGh9X+gxT+crr2/ciDHP5QxLlIRlcg/9F3kMLsbyj+cop0vKqzLP4wlE9tqNs0/ZAwhLMjFzj/KHhzmEjnQP1pF8KouHNE/Lr4g7CP70T+2qsXw4sPSP3KKU7/zeNM/bmXgSe/G0z8=","dtype":"float64","order":"little","shape":[25]},{"__ndarray__":"bmXgSe/G0z8elBFWu/zTP7rKMQZ5WNQ/VnNrgSrf1D8+IZzU6oTVP5YX9zQ4RNY/6oXyZr4b1z/S9wOwvf7XPwIgRb9I3dg//tJTQlu02T8CIWWDConaP6pVt5JBWds/1gYEDTMi3D+Ki3ZAfujcP2rSqdAquN0/igiHf5Gf3j8aFbjqvJ3fPz0FCCl+UuA/DwiTl3bW4D/tfdXgaFnhP6E1gwkS1OE/CdNrIcw+4j/nhf/9RZ3iP28s8gIjz+I/","dtype":"float64","order":"little","shape":[24]},{"__ndarray__":"byzyAiPP4j9VbtxajuPiP63rTGVeCeM/5xee4XRF4z/bXBJdspLjP0uhAJrH5+M/mxVsIoE95D/HUiRAIJLkP3Vzp6UE5uQ/I1WHtWI45T8N52Lfi4vlP7fY0H624uU/YdDYmYc65j+xRaEBg4vmP1O5lkG20+Y/Mb+G5Sga5z+3bsPtRWXnPyVU8K4Qs+c/8WMMc5H95z/v+iYtAUToPwkpHx+ZjOg/Pe6dp+na6D/FTgquPynpP0eKARnSb+k/M3rR1Cqv6T9val2hd+PpPw==","dtype":"float64","order":"little","shape":[26]},{"__ndarray__":"b2pdoXfj6T9Nr3XAgOzpP89ACcbbA+o/CQNOfRAq6j/193Y2UlfqP7cSSUeshuo/8YiTKJK66j9zIzvys/XqP5kUEp9UNes/D4hkXUx06z9LeplM3a/rP584BUzs6Os/ufdLerwh7D8dIXArD13sP4FMRZepnew/m7uzkkLh7D93JVK1CiHtPzsFAwUNWe0/YTlFcXWM7T+N5HbTAL/tP5fnLc8v7+0/t7W4Rq4Z7j+PmV10hD/uP5OLWSAOb+4/","dtype":"float64","order":"little","shape":[24]},{"__ndarray__":"k4tZIA5v7j/jtDG8LWruP2VLqcEDbu4/DaZWS2V77j+JLBXrw47uP0uGgzeOpe4/FfNihHjA7j89FI8fguDuP6OITfL0Au8/QZGtedQh7z8pfS52vTrvP+PYwaFrUu8/tZRa3vhv7z+xVbsoNpXvP23Mea1Bu+8/AwcDmyrZ7z/363ihX+zvP/tsahUV9+8/BSMisqD87z/////////vP////////+8/","dtype":"float64","order":"little","shape":[21]},{"__ndarray__":"////////7z8bUVL+Jf7vP0UmDrc++u8/5Var0dry7z+vSiRtqOfvP6d+2kY22e8/u2GjbFfH7z+PdVCo4LDvP6Hzt8Uclu8/PWMe1aR67z89WNnwDGPvP4W6Rb5AUe8/ya460o1D7z+d/5k6wTbvPw0KBICxJ+8/mXQgtRAU7z+rB4FXG/zuP9e4Q/524u4/hYnoZMXI7j+d/AEXUa7uP8v2u8W5ku4/m4tZAA5v7j8=","dtype":"float64","order":"little","shape":[22]},{"__ndarray__":"b2pdoXfj6T+XP3om3m/pP4trkxJmAek/BdwxgAeY6D+/zHMTTjHoPzfOocudyuc/pUz9NCBn5z/NSAjaSQrnP8l18SeZsOY/I6D5vTZU5j+jLv8yzvTlP5UUiWt4leU/q1k6wrI25T8Rlx6ZbtTkP2O93sLRa+Q/bcJzmJ8A5D9LrqLXWZrjPyv8Tf95P+M/k5DV79bt4j9vLPICI8/iPw==","dtype":"float64","order":"little","shape":[20]},{"__ndarray__":"byzyAiPP4j9P/HNjoZHiP42HamiOOOI/I/9tNAnB4T+/hzpViTrhP1eXYm3GtOA/C2KC0G804D82aFMAvnHfP75oCvwLh94/6qPQuK2j3T9qaEGLvLzcP/r/ife/1ts/XkMHkmkD2z+ya15mXEnaP15alX0Gmdk/MmgGIrPj2D+WyYNDgS7YPxZTC1+Ahtc/pi01Dnbq1j+efFqijEfWP8rMdwpnj9U/srbZjCbI1D9mZeBp78bTPw==","dtype":"float64","order":"little","shape":[23]},{"__ndarray__":"AAAAct3kc77ggi59cvaSv8CGhfevN6K/wPjXwUbyqb9wodjFf3Wwv8iOM5W807O/eOxhuB5Qt7+ISTnxUSe7vzAqZPfLbb+/oF6MoXP5wb94IC2GfzzEv5zbuIZ0aMa/uNeO6v5vyL+A5Za9eVvKvyjdOkUMSsy/aOg/kIBLzr/Ux66YniLQv8r35bU/DNG/MmD/JHPj0b9Yh5AsjrPSvzAjSg3vxtO/","dtype":"float64","order":"little","shape":[21]},{"__ndarray__":"RQunFCPP4r+m9CqqjTTjv+gCI7oyj+O/foormLnf47/GJJGRlirkv490x2bgcuS/8Tu8FEm95L+Nc/BEGg/lv0GCsujoaeW/DGZ8curL5b/CkF3K2y/mvyoUclFjj+a//+gdyjTn5r/suSCjhTTnvwTpnUHteOe/a2bwfL67578KqCNYbQLov5tu3Z10S+i/D0C1iv2T6L+G8JFf6N3ov/5dezvDLOm/FoNYc2t/6b89SRLTd+Ppvw==","dtype":"float64","order":"little","shape":[23]},{"__ndarray__":"eGoO8g1v7r9jvMHD4pXuvzI7YU/xtu6/2FyonnLR7r/mKRDPrOfuvz4Zn9Vo++6/7tuvJxMN77+JVD6WKB/vv7Z/MwGyN++/KQJFZWtb77901Hb/4Ybvv7cGtoxer++/0EfMg8bM77/21Metq97vv731f0276O+/dNLOrNvu77+js13xnfPvv/KFbIkb+O+/3d608f//778=","dtype":"float64","order":"little","shape":[19]},{"__ndarray__":"3d608f//778wkkxBbfjvv/pgqiNR8++/p1UMspfv778iffXpQurvv/eBiFxZ3++/ZqaSDKXL778xCLgXwK/vv4/5jxygkO+/WuOAHZ1z779PpIRlt1rvv1yRmfrIRO+/YFft9rMv779TXyQBNhnvv9v2Oi7Y/+6/FysnGszi7r8lF3oDbsDuvzgQJsHil+6/W7FDjqBr7r94ag7yDW/uvw==","dtype":"float64","order":"little","shape":[20]},{"__ndarray__":"PUkS03fj6b/g5q1X3m/pv0keGkNmAem/8jDmrweY6L9gk01CTjHov+hwrfmdyue/4KNSYiBn578iQcAGSgrnv/aAHFSZsOa/YLWa6TZU5r9SPwxezvTlv2c06ZV4leW/Kt/J67I25b82YMDBbtTkv3I9kerRa+S/+UlTv58A5L8wD9L9WZrjv7uS6iR6P+O/4rDwFNft4r9FC6cUI8/ivw==","dtype":"float64","order":"little","shape":[20]},{"__ndarray__":"RQunFCPP4r/2jjVxoZHiv3d37HKOOOK/Vbo/PAnB4b8QpVtaiTrhv6uJM2/GtOC/VlIXzm804L8s3gjyvXHfvwAtO+ULh96/buCJm62j3b8E9C5pvLzcv7JCcNG/1tu/OFcVaGkD279IvWw4XEnav7Kq+UoGmdm/wJiY6bLj2L/MgxQEgS7Yv9C8zReAhte/KjGcvnXq1r90/YVJjEfWvyxpMadmj9W/3DpaHibI1L82I0rt7sbTvw==","dtype":"float64","order":"little","shape":[23]}]},"selected":{"id":"1999"},"selection_policy":{"id":"2000"}},"id":"1963","type":"ColumnDataSource"},{"attributes":{},"id":"1936","type":"LinearScale"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1928"},{"id":"1946"},{"id":"1947"},{"id":"1948"},{"id":"1949"},{"id":"1950"},{"id":"1951"}]},"id":"1954","type":"Toolbar"},{"attributes":{"callback":null,"renderers":[{"id":"1975"}],"tags":["hv_created"],"tooltips":[["start","@{start_values}"],["end","@{end_values}"],["common_actors","@{common_actors}"],["weight","@{weight}"]]},"id":"1928","type":"HoverTool"},{"attributes":{},"id":"1989","type":"BasicTickFormatter"},{"attributes":{"line_color":{"value":"green"},"line_width":{"field":"edge_line_width"},"xs":{"field":"xs"},"ys":{"field":"ys"}},"id":"1972","type":"MultiLine"},{"attributes":{"children":[{"id":"1925"},{"id":"1929"},{"id":"2014"}],"margin":[0,0,0,0],"name":"Row10968","tags":["embedded"]},"id":"1924","type":"Row"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"#30a2da"},"line_alpha":{"value":0.2},"size":{"field":"node_size","units":"screen"}},"id":"1966","type":"Circle"},{"attributes":{"axis_label":"x","bounds":"auto","formatter":{"id":"1989"},"major_label_orientation":"horizontal","ticker":{"id":"1939"},"visible":false},"id":"1938","type":"LinearAxis"},{"attributes":{"margin":[5,5,5,5],"name":"HSpacer10972","sizing_mode":"stretch_width"},"id":"1925","type":"Spacer"},{"attributes":{},"id":"1939","type":"BasicTicker"},{"attributes":{"data":{"index":{"__ndarray__":"AAAAAAEAAAACAAAAAwAAAAQAAAAFAAAABgAAAAcAAAAIAAAACQAAAAoAAAALAAAADAAAAA0AAAAOAAAADwAAABAAAAARAAAAEgAAABMAAAA=","dtype":"int32","order":"little","shape":[20]},"node_size":{"__ndarray__":"AAAAAAAAJEAAAAAAAAAIQAAAAAAAABRAAAAAAACANEAAAAAAAAA1QAAAAAAAACBAAAAAAAAAFkAAAAAAAAAWQAAAAAAAACNAAAAAAAAAHEAAAAAAAAA4QAAAAAAAACVAAAAAAACAMEAAAAAAAAAYQAAAAAAAACpAAAAAAAAAI0AAAAAAAAAMQAAAAAAAAC5AAAAAAAAAJ0AAAAAAAAAWQA==","dtype":"float64","order":"little","shape":[20]}},"selected":{"id":"2001"},"selection_policy":{"id":"2002"}},"id":"1962","type":"ColumnDataSource"},{"attributes":{"axis":{"id":"1938"},"grid_line_color":null,"ticker":null},"id":"1941","type":"Grid"},{"attributes":{"source":{"id":"1963"}},"id":"1974","type":"CDSView"},{"attributes":{},"id":"2001","type":"Selection"},{"attributes":{},"id":"1943","type":"BasicTicker"},{"attributes":{"axis_label":"y","bounds":"auto","formatter":{"id":"1991"},"major_label_orientation":"horizontal","ticker":{"id":"1943"},"visible":false},"id":"1942","type":"LinearAxis"}],"root_ids":["1924"]},"title":"Bokeh Application","version":"2.1.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('2170').textContent;
+                  var render_items = [{"docid":"93949779-1397-467c-a432-f50d709ff982","root_ids":["1924"],"roots":{"1924":"81361df7-bac9-454a-b24e-4fb9a104b6d9"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>p3</title>
+      
+      
+        
+          
+        <style>
+            .panel-widget-box {
+                	min-height: 20px;
+                	background-color: #f5f5f5;
+                	border: 1px solid #e3e3e3 !important;
+                	border-radius: 4px;
+                	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+                	box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+                	overflow-x: hidden;
+                	overflow-y: hidden;
+                }
+
+                .scrollable {
+                  overflow: scroll;
+                }
+
+                progress {
+                	appearance: none;
+                	-moz-appearance: none;
+                	-webkit-appearance: none;
+
+                	border: none;
+                	height: 20px;
+                	background-color: whiteSmoke;
+                	border-radius: 3px;
+                	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+                	color: royalblue;
+                	position: relative;
+                	margin: 0 0 1.5em;
+                }
+
+                progress[value]::-webkit-progress-bar {
+                	background-color: whiteSmoke;
+                	border-radius: 3px;
+                	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+                }
+
+                progress[value]::-webkit-progress-value {
+                	position: relative;
+
+                	background-size: 35px 20px, 100% 100%, 100% 100%;
+                	border-radius:3px;
+                }
+
+                progress.active:not([value])::before {
+                	background-position: 10%;
+                	animation-name: stripes;
+                	animation-duration: 3s;
+                	animation-timing-function: linear;
+                	animation-iteration-count: infinite;
+                }
+
+                progress[value]::-moz-progress-bar {
+                	background-size: 35px 20px, 100% 100%, 100% 100%;
+                	border-radius:3px;
+                }
+
+                progress:not([value])::-moz-progress-bar {
+                	border-radius:3px;
+                	background:
+                	linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.2) 33%, rgba(0, 0, 0, 0.2) 66%, transparent 66%) left/2.5em 1.5em;
+
+                }
+
+                progress.active:not([value])::-moz-progress-bar {
+                	background-position: 10%;
+                	animation-name: stripes;
+                	animation-duration: 3s;
+                	animation-timing-function: linear;
+                	animation-iteration-count: infinite;
+                }
+
+                progress.active:not([value])::-webkit-progress-bar {
+                	background-position: 10%;
+                	animation-name: stripes;
+                	animation-duration: 3s;
+                	animation-timing-function: linear;
+                	animation-iteration-count: infinite;
+                }
+
+                progress.primary[value]::-webkit-progress-value { background-color: #007bff; }
+                progress.primary:not([value])::before { background-color: #007bff; }
+                progress.primary:not([value])::-webkit-progress-bar { background-color: #007bff; }
+                progress.primary::-moz-progress-bar { background-color: #007bff; }
+
+                progress.secondary[value]::-webkit-progress-value { background-color: #6c757d; }
+                progress.secondary:not([value])::before { background-color: #6c757d; }
+                progress.secondary:not([value])::-webkit-progress-bar { background-color: #6c757d; }
+                progress.secondary::-moz-progress-bar { background-color: #6c757d; }
+
+                progress.success[value]::-webkit-progress-value { background-color: #28a745; }
+                progress.success:not([value])::before { background-color: #28a745; }
+                progress.success:not([value])::-webkit-progress-bar { background-color: #28a745; }
+                progress.success::-moz-progress-bar { background-color: #28a745; }
+
+                progress.danger[value]::-webkit-progress-value { background-color: #dc3545; }
+                progress.danger:not([value])::before { background-color: #dc3545; }
+                progress.danger:not([value])::-webkit-progress-bar { background-color: #dc3545; }
+                progress.danger::-moz-progress-bar { background-color: #dc3545; }
+
+                progress.warning[value]::-webkit-progress-value { background-color: #ffc107; }
+                progress.warning:not([value])::before { background-color: #ffc107; }
+                progress.warning:not([value])::-webkit-progress-bar { background-color: #ffc107; }
+                progress.warning::-moz-progress-bar { background-color: #ffc107; }
+
+                progress.info[value]::-webkit-progress-value { background-color: #17a2b8; }
+                progress.info:not([value])::before { background-color: #17a2b8; }
+                progress.info:not([value])::-webkit-progress-bar { background-color: #17a2b8; }
+                progress.info::-moz-progress-bar { background-color: #17a2b8; }
+
+                progress.light[value]::-webkit-progress-value { background-color: #f8f9fa; }
+                progress.light:not([value])::before { background-color: #f8f9fa; }
+                progress.light:not([value])::-webkit-progress-bar { background-color: #f8f9fa; }
+                progress.light::-moz-progress-bar { background-color: #f8f9fa; }
+
+                progress.dark[value]::-webkit-progress-value { background-color: #343a40; }
+                progress.dark:not([value])::-webkit-progress-bar { background-color: #343a40; }
+                progress.dark:not([value])::before { background-color: #343a40; }
+                progress.dark::-moz-progress-bar { background-color: #343a40; }
+
+                progress:not([value])::-webkit-progress-bar {
+                	border-radius: 3px;
+                	background:
+                	linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.2) 33%, rgba(0, 0, 0, 0.2) 66%, transparent 66%) left/2.5em 1.5em;
+                }
+                progress:not([value])::before {
+                	content:" ";
+                	position:absolute;
+                	height: 20px;
+                	top:0;
+                	left:0;
+                	right:0;
+                	bottom:0;
+                	border-radius: 3px;
+                	background:
+                	linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.2) 33%, rgba(0, 0, 0, 0.2) 66%, transparent 66%) left/2.5em 1.5em;
+                }
+
+                @keyframes stripes {
+                  from {background-position: 0%}
+                  to {background-position: 100%}
+                }
+
+        </style>
+        <style>
+            .codehilite .hll { background-color: #ffffcc }
+                .codehilite  { background: #f8f8f8; }
+                .codehilite .c { color: #408080; font-style: italic } /* Comment */
+                .codehilite .err { border: 1px solid #FF0000 } /* Error */
+                .codehilite .k { color: #008000; font-weight: bold } /* Keyword */
+                .codehilite .o { color: #666666 } /* Operator */
+                .codehilite .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
+                .codehilite .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+                .codehilite .cp { color: #BC7A00 } /* Comment.Preproc */
+                .codehilite .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
+                .codehilite .c1 { color: #408080; font-style: italic } /* Comment.Single */
+                .codehilite .cs { color: #408080; font-style: italic } /* Comment.Special */
+                .codehilite .gd { color: #A00000 } /* Generic.Deleted */
+                .codehilite .ge { font-style: italic } /* Generic.Emph */
+                .codehilite .gr { color: #FF0000 } /* Generic.Error */
+                .codehilite .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+                .codehilite .gi { color: #00A000 } /* Generic.Inserted */
+                .codehilite .go { color: #888888 } /* Generic.Output */
+                .codehilite .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+                .codehilite .gs { font-weight: bold } /* Generic.Strong */
+                .codehilite .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+                .codehilite .gt { color: #0044DD } /* Generic.Traceback */
+                .codehilite .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+                .codehilite .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+                .codehilite .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+                .codehilite .kp { color: #008000 } /* Keyword.Pseudo */
+                .codehilite .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+                .codehilite .kt { color: #B00040 } /* Keyword.Type */
+                .codehilite .m { color: #666666 } /* Literal.Number */
+                .codehilite .s { color: #BA2121 } /* Literal.String */
+                .codehilite .na { color: #7D9029 } /* Name.Attribute */
+                .codehilite .nb { color: #008000 } /* Name.Builtin */
+                .codehilite .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+                .codehilite .no { color: #880000 } /* Name.Constant */
+                .codehilite .nd { color: #AA22FF } /* Name.Decorator */
+                .codehilite .ni { color: #999999; font-weight: bold } /* Name.Entity */
+                .codehilite .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+                .codehilite .nf { color: #0000FF } /* Name.Function */
+                .codehilite .nl { color: #A0A000 } /* Name.Label */
+                .codehilite .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+                .codehilite .nt { color: #008000; font-weight: bold } /* Name.Tag */
+                .codehilite .nv { color: #19177C } /* Name.Variable */
+                .codehilite .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+                .codehilite .w { color: #bbbbbb } /* Text.Whitespace */
+                .codehilite .mb { color: #666666 } /* Literal.Number.Bin */
+                .codehilite .mf { color: #666666 } /* Literal.Number.Float */
+                .codehilite .mh { color: #666666 } /* Literal.Number.Hex */
+                .codehilite .mi { color: #666666 } /* Literal.Number.Integer */
+                .codehilite .mo { color: #666666 } /* Literal.Number.Oct */
+                .codehilite .sa { color: #BA2121 } /* Literal.String.Affix */
+                .codehilite .sb { color: #BA2121 } /* Literal.String.Backtick */
+                .codehilite .sc { color: #BA2121 } /* Literal.String.Char */
+                .codehilite .dl { color: #BA2121 } /* Literal.String.Delimiter */
+                .codehilite .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+                .codehilite .s2 { color: #BA2121 } /* Literal.String.Double */
+                .codehilite .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+                .codehilite .sh { color: #BA2121 } /* Literal.String.Heredoc */
+                .codehilite .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+                .codehilite .sx { color: #008000 } /* Literal.String.Other */
+                .codehilite .sr { color: #BB6688 } /* Literal.String.Regex */
+                .codehilite .s1 { color: #BA2121 } /* Literal.String.Single */
+                .codehilite .ss { color: #19177C } /* Literal.String.Symbol */
+                .codehilite .bp { color: #008000 } /* Name.Builtin.Pseudo */
+                .codehilite .fm { color: #0000FF } /* Name.Function.Magic */
+                .codehilite .vc { color: #19177C } /* Name.Variable.Class */
+                .codehilite .vg { color: #19177C } /* Name.Variable.Global */
+                .codehilite .vi { color: #19177C } /* Name.Variable.Instance */
+                .codehilite .vm { color: #19177C } /* Name.Variable.Magic */
+                .codehilite .il { color: #666666 } /* Literal.Number.Integer.Long */
+
+                .markdown h1 { margin-block-start: 0.34em }
+                .markdown h2 { margin-block-start: 0.42em }
+                .markdown h3 { margin-block-start: 0.5em }
+                .markdown h4 { margin-block-start: 0.67em }
+                .markdown h5 { margin-block-start: 0.84em }
+                .markdown h6 { margin-block-start: 1.17em }
+                .markdown ul { padding-inline-start: 2em }
+                .markdown ol { padding-inline-start: 2em }
+                .markdown strong { font-weight: 600 }
+                .markdown a { color: -webkit-link }
+                .markdown a { color: -moz-hyperlinkText }
+
+        </style>
+        <style>
+            .json-formatter-row {
+                  font-family: monospace;
+                }
+                .json-formatter-row,
+                .json-formatter-row a,
+                .json-formatter-row a:hover {
+                  color: black;
+                  text-decoration: none;
+                }
+                .json-formatter-row .json-formatter-row {
+                  margin-left: 1rem;
+                }
+                .json-formatter-row .json-formatter-children.json-formatter-empty {
+                  opacity: 0.5;
+                  margin-left: 1rem;
+                }
+                .json-formatter-row .json-formatter-children.json-formatter-empty:after {
+                  display: none;
+                }
+                .json-formatter-row .json-formatter-children.json-formatter-empty.json-formatter-object:after {
+                  content: "No properties";
+                }
+                .json-formatter-row .json-formatter-children.json-formatter-empty.json-formatter-array:after {
+                  content: "[]";
+                }
+                .json-formatter-row .json-formatter-string,
+                .json-formatter-row .json-formatter-stringifiable {
+                  color: green;
+                  white-space: pre;
+                  word-wrap: break-word;
+                }
+                .json-formatter-row .json-formatter-number {
+                  color: blue;
+                }
+                .json-formatter-row .json-formatter-boolean {
+                  color: red;
+                }
+                .json-formatter-row .json-formatter-null {
+                  color: #855A00;
+                }
+                .json-formatter-row .json-formatter-undefined {
+                  color: #ca0b69;
+                }
+                .json-formatter-row .json-formatter-function {
+                  color: #FF20ED;
+                }
+                .json-formatter-row .json-formatter-date {
+                  background-color: rgba(0, 0, 0, 0.05);
+                }
+                .json-formatter-row .json-formatter-url {
+                  text-decoration: underline;
+                  color: blue;
+                  cursor: pointer;
+                }
+                .json-formatter-row .json-formatter-bracket {
+                  color: blue;
+                }
+                .json-formatter-row .json-formatter-key {
+                  color: #00008B;
+                  padding-right: 0.2rem;
+                }
+                .json-formatter-row .json-formatter-toggler-link {
+                  cursor: pointer;
+                }
+                .json-formatter-row .json-formatter-toggler {
+                  line-height: 1.2rem;
+                  font-size: 0.7rem;
+                  vertical-align: middle;
+                  opacity: 0.6;
+                  cursor: pointer;
+                  padding-right: 0.2rem;
+                }
+                .json-formatter-row .json-formatter-toggler:after {
+                  display: inline-block;
+                  transition: transform 100ms ease-in;
+                  content: "\25BA";
+                }
+                .json-formatter-row > a > .json-formatter-preview-text {
+                  opacity: 0;
+                  transition: opacity 0.15s ease-in;
+                  font-style: italic;
+                }
+                .json-formatter-row:hover > a > .json-formatter-preview-text {
+                  opacity: 0.6;
+                }
+                .json-formatter-row.json-formatter-open > .json-formatter-toggler-link .json-formatter-toggler:after {
+                  transform: rotate(90deg);
+                }
+                .json-formatter-row.json-formatter-open > .json-formatter-children:after {
+                  display: inline-block;
+                }
+                .json-formatter-row.json-formatter-open > a > .json-formatter-preview-text {
+                  display: none;
+                }
+                .json-formatter-row.json-formatter-open.json-formatter-empty:after {
+                  display: block;
+                }
+                .json-formatter-dark.json-formatter-row {
+                  font-family: monospace;
+                }
+                .json-formatter-dark.json-formatter-row,
+                .json-formatter-dark.json-formatter-row a,
+                .json-formatter-dark.json-formatter-row a:hover {
+                  color: white;
+                  text-decoration: none;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-row {
+                  margin-left: 1rem;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-children.json-formatter-empty {
+                  opacity: 0.5;
+                  margin-left: 1rem;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-children.json-formatter-empty:after {
+                  display: none;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-children.json-formatter-empty.json-formatter-object:after {
+                  content: "No properties";
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-children.json-formatter-empty.json-formatter-array:after {
+                  content: "[]";
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-string,
+                .json-formatter-dark.json-formatter-row .json-formatter-stringifiable {
+                  color: #31F031;
+                  white-space: pre;
+                  word-wrap: break-word;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-number {
+                  color: #66C2FF;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-boolean {
+                  color: #EC4242;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-null {
+                  color: #EEC97D;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-undefined {
+                  color: #ef8fbe;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-function {
+                  color: #FD48CB;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-date {
+                  background-color: rgba(255, 255, 255, 0.05);
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-url {
+                  text-decoration: underline;
+                  color: #027BFF;
+                  cursor: pointer;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-bracket {
+                  color: #9494FF;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-key {
+                  color: #23A0DB;
+                  padding-right: 0.2rem;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-toggler-link {
+                  cursor: pointer;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-toggler {
+                  line-height: 1.2rem;
+                  font-size: 0.7rem;
+                  vertical-align: middle;
+                  opacity: 0.6;
+                  cursor: pointer;
+                  padding-right: 0.2rem;
+                }
+                .json-formatter-dark.json-formatter-row .json-formatter-toggler:after {
+                  display: inline-block;
+                  transition: transform 100ms ease-in;
+                  content: "\25BA";
+                }
+                .json-formatter-dark.json-formatter-row > a > .json-formatter-preview-text {
+                  opacity: 0;
+                  transition: opacity 0.15s ease-in;
+                  font-style: italic;
+                }
+                .json-formatter-dark.json-formatter-row:hover > a > .json-formatter-preview-text {
+                  opacity: 0.6;
+                }
+                .json-formatter-dark.json-formatter-row.json-formatter-open > .json-formatter-toggler-link .json-formatter-toggler:after {
+                  transform: rotate(90deg);
+                }
+                .json-formatter-dark.json-formatter-row.json-formatter-open > .json-formatter-children:after {
+                  display: inline-block;
+                }
+                .json-formatter-dark.json-formatter-row.json-formatter-open > a > .json-formatter-preview-text {
+                  display: none;
+                }
+                .json-formatter-dark.json-formatter-row.json-formatter-open.json-formatter-empty:after {
+                  display: block;
+                }
+
+        </style>
+        <style>
+            table.panel-df {
+                    margin-left: auto;
+                    margin-right: auto;
+                    border: none;
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                    color: black;
+                    font-size: 12px;
+                    table-layout: fixed;
+                    width: 100%;
+                }
+
+                .panel-df tr, .panel-df th, .panel-df td {
+                    text-align: right;
+                    vertical-align: middle;
+                    padding: 0.5em 0.5em !important;
+                    line-height: normal;
+                    white-space: normal;
+                    max-width: none;
+                    border: none;
+                }
+
+                .panel-df tbody {
+                    display: table-row-group;
+                    vertical-align: middle;
+                    border-color: inherit;
+                }
+
+                .panel-df tbody tr:nth-child(odd) {
+                    background: #f5f5f5;
+                }
+
+                .panel-df thead {
+                    border-bottom: 1px solid black;
+                    vertical-align: bottom;
+                }
+
+                .panel-df tr:hover {
+                    background: lightblue !important;
+                    cursor: pointer;
+                }
+
+        </style>
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.1.1.min.js" integrity="sha384-kLr4fYcqcSpbuI95brIH3vnnYCquzzSxHPU6XGQCIkQRGJwhg0StNbj1eegrHs12" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="df545e65-ba1e-4f76-84a3-fd23a4b3bbca" data-root-id="2402"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="2648">
+          {"ebf80649-7136-47d9-a8de-a087a8b79b7a":{"roots":{"references":[{"attributes":{},"id":"2466","type":"BasicTickFormatter"},{"attributes":{"overlay":{"id":"2430"}},"id":"2429","type":"BoxSelectTool"},{"attributes":{"fill_color":{"value":"lime"},"size":{"field":"node_size","units":"screen"}},"id":"2443","type":"Circle"},{"attributes":{},"id":"2480","type":"UnionRenderers"},{"attributes":{"align":null,"below":[{"id":"2416"}],"center":[{"id":"2419"},{"id":"2423"}],"left":[{"id":"2420"}],"margin":null,"min_border_bottom":10,"min_border_left":10,"min_border_right":10,"min_border_top":10,"plot_height":900,"plot_width":900,"renderers":[{"id":"2453"}],"sizing_mode":"fixed","title":{"id":"2408"},"toolbar":{"id":"2432"},"toolbar_location":null,"x_range":{"id":"2404"},"x_scale":{"id":"2412"},"y_range":{"id":"2405"},"y_scale":{"id":"2414"}},"id":"2407","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"2428","type":"ResetTool"},{"attributes":{"data":{"common_actors":["Patrick Bauchau","Anne Dubot","B\u00e9atrice Romand, Aurora Cornu, Laurence de Monaghan","Marie Rivi\u00e8re, Anne-Laure Meury, Fabrice Luchini","F\u00e9odor Atkine, Pascal Greggory, Arielle Dombasle","Marie Rivi\u00e8re, B\u00e9atrice Romand","Marie Rivi\u00e8re, Alain Libolt","Georges Beno\u00eet, Laurent Le Doyen, Serge Renko","Serge Renko"],"edge_line_width":{"__ndarray__":"ZmZmZmZmBkBmZmZmZmYGQMzMzMzMzBBAzMzMzMzMEEDMzMzMzMwQQAAAAAAAAAxAAAAAAAAADEDMzMzMzMwQQGZmZmZmZgZA","dtype":"float64","order":"little","shape":[9]},"end":{"__ndarray__":"BQAAAAYAAAACAAAACwAAAAcAAAAEAAAADAAAAA4AAAANAAAA","dtype":"int32","order":"little","shape":[9]},"end_values":["La Collectionneuse (1967)","My Night at Maud's (1969)","Chloe in the Afternoon (1972)","The Aviator's Wife (1981)","Pauline at the Beach (1983)","Four Adventures of Reinette and Mirabelle (1987)","The Lady and the Duke (2001)","Triple Agent (2004)","The Romance of Astrea and Celadon (2007)"],"start":{"__ndarray__":"CgAAAAUAAAADAAAACAAAAAAAAAAJAAAAAQAAAAwAAAAOAAAA","dtype":"int32","order":"little","shape":[9]},"start_values":["Suzanne's Career (1963)","La Collectionneuse (1967)","Claire's Knee (1970)","Perceval (1978)","A Good Marriage (1982)","Summer (1986)","Autumn Tale (1998)","The Lady and the Duke (2001)","Triple Agent (2004)"],"weight":[1,1,3,3,3,2,2,3,1],"xs":[{"__ndarray__":"AAAAAAAA8D/YAqIaY//vP4CphQvq/O8/zhU+trH07z9+ObnLZ+DvP1CFTq5Iu+8/4OpQNFGI7z+0Wy9K5VHvPzxnHtBGIe8/8NB5hH/47j+Kxipnc9TuP8imK8Jts+4/gLYY0mGV7j/KKyuuZHjuP+6pKa9RWu4/tPvMSlk87j+y8A4EbCLuP7jkpRkeD+4/dAjc9eUA7j+slwO6wvPtPzY+omL84+0/1IlbkTLQ7T9ugkOItbjtP3ahY4svne0/dnrIyoZ97T/gG8iaR1ztPx7bkAj5PO0/mGgjKB4g7T+cr6mewzvtPw==","dtype":"float64","order":"little","shape":[29]},{"__ndarray__":"nK+pnsM77T+ioad2oiHtP3rNvJMj+ew/DlF5sSi/7D9kOapSWnrsPxjnDCSvM+w/ejgrmnHu6z9GRANYxajrP+wYR0QEYus/XCIluZga6z84ewwI0M/qP6iGo+9re+o/QOO6Uowa6j8uOa4+BLPpP96nyT4WUOk/1FAZZ0n86D98CFMETrnoP3LKDgFxf+g/6IhwxzRH6D+cbgZqTQ/oPybPX8yz2Oc/nmLdxxCi5z+e6E+6tmnnP+CpSCx7MOc/zoi+CIv25j/6mAd1A7vmP8TYFCkff+Y/ujnFXPtD5j+mKFaJKQjmPyhL7qCvyuU/+O7heoRp5T8=","dtype":"float64","order":"little","shape":[31]},{"__ndarray__":"vCagCu/G0z8QzM01k8PSP9B2yRTMyNE/tBWPMV7X0D8Q4mSd/srPP/iyYz/d1c0/eAT3/Nfcyz+ocrMIo/TJP1iY5zVoGcg/CGX+dIooxj8wOmeGOwrEP4jmLY822ME/oIh1IM2Avz8gRaf4XJ+7P3AbRRE7u7c/cObwbrZrsz+AWvUDjUWtPwAeYUZmZqM/wOg+QXPlkz8A8F6j8xFfPwD4XfhqvY+/wHate1/uoL/Q+JlRCQKqv9j4ZC85mLG/4CZy1nI6tr9gwKroYcK6vw==","dtype":"float64","order":"little","shape":[26]},{"__ndarray__":"TTMzNwAA4L+KphmRH1Dgv9bQD7Ftn+C/MxutZyny4L9wdt52lUvhv8F5/JNaquG/wT2/z30O4r+S8Q7Xp3jiv+jz9SLM4uK/eDI3JdlD479aHBpEz5njv7jSpHHl7OO/3v2JRTRG5L9KqZmB96bkv09Hkv8bCuW/hqLT9yNq5b+bwnOvw8Xlv3wKH/J2H+a/NpAu+eZ75r+nhiDt0eDmv/pH6A90Tue/Wc++N7i+57/CWRB92Srov2DzB2Sbkui/rs/oVHL66L/llzVMnWPpvyK++rt34+m/","dtype":"float64","order":"little","shape":[27]},{"__ndarray__":"6GiYXvxM7791TNFc/EzvvwMwClv8TO+/kBNDWfxM778e93tX/Ezvv6vatFX8TO+/OL7tU/xM77/GoSZS/Ezvv1OFX1D8TO+/4GiYTvxM779uTNFM/Ezvv/svCkv8TO+/iRNDSfxM778W93tH/Ezvv6PatEX8TO+/Mb7tQ/xM77++oSZC/Ezvv0yFX0D8TO+/2WiYPvxM778=","dtype":"float64","order":"little","shape":[19]},{"__ndarray__":"E776m3fj6b8vW/JHHnfpv0t6+WHlDem/Yhe3HRmp6L9IvD1b+Evov19OAv4Y9ue/J+oyoc+j57+28F+nRlXnv7Q6NEuTDee/bfzVY2bM5r+TrhBzAYzmv/iYPd2zR+a/YBLqJIsA5r/wGhUtF7jlv1/aWJ0sa+W/t9MmBKUV5b9lfxvM4Ljkv3oTHnqZWeS/vn9PIv7447/QzinwQJHjv92X9jorHeO/NDoHPxei4r/6VwCBLyzivwpnPOmgw+G/ZgwmY3pm4b8AOETBZw3hv04eafabtOC/TmZmzv//378=","dtype":"float64","order":"little","shape":[28]},{"__ndarray__":"8L6q6F7Cur8A0RubEWe1v7C1aQJAa7C/wNw/E04NqL9QbjXqmGigv+Aeih0YH5O/gM1uJTuweb8A22fHDN14PyDzDzPP65M/IGb5BxOloT+gmEz97zGqP+A/1pcyq7E/sAv837I7tj+wBYz57pG6P1CBvUWlzr4/AOd4ZGiawT8gPtFc8OvDPyBRCyMfVcY/AJmyc8LGyD8A1azTKCrLP9DEJR4occ0/UK5PDxKmzz/Uv1ISgOnQPwhqwO/s69E/tFE48sjH0j88/yh934bTPwgnoKrvxtM/","dtype":"float64","order":"little","shape":[27]},{"__ndarray__":"CCegqu/G0z+Q6rJ7avHTP6BhjHmvQNQ/MG+VyxO41D+cVns6k0nVP/hSwnZJ79U/ZBOXv0av1j/ks0KD1IzXPyy+tltIgNg/MHLivWN22T+Y/oytxl7aPzTwdj5DPNs/aPkOsBUZ3D+ktZGo9vLcPyS38jUnw90/zOapBWWO3j+Eds3ugGDfPyDUyUlpHuA/BJP+52GP4D8eBLrHtP/gP5rul4vQbeE/oI/mbXLc4T+Q7Sa3T07iP3zCFPfRweI/gikixXM34z++ixnRA7HjP3xBDWiMKeQ/FCXJ2CiX5D+GBjRRUPPkPzDmrtssQ+U/JO/h2oRp5T8=","dtype":"float64","order":"little","shape":[31]},{"__ndarray__":"JO/h2oRp5T9ocXVmi33lP8Z8oFKmouU/TJuwqQrd5T+6NR5ylSXmPxj6/ToScOY/EACQU4u05j8CJMxb0vTmP+QJRyc0OOc/pE/r0RWE5z++kRuontjnP3SxMFDpL+g/Alv4LsKC6D/eTtZBvc/oP+SDuOyKGek/1pDqs+tg6T+UxPM9b6XpP8iqP7A96ek/fNwMId8x6j8aDul5JYHqP05Uq4VP0Oo/aJsZNsYY6z+Ahfihn1vrP9B8zokLnOs/xH8vruPa6z8e/vZ8SBrsP6AnTNMpXew/ZguN9dai7D+8r6newzvtPw==","dtype":"float64","order":"little","shape":[29]}],"ys":[{"__ndarray__":"AAAAqJmZOb6A/0qP0myPPwD4mC+Do54/ICtWStGTpj/A95eeFAmuP4DjLuy/ILM/wCfMC8O6tz9g/CsfZpS8Pwhpg1F9t8A/UFFrkqQqwz9AcfD/MK3FP5BvVE9EIMg/2GgX/wtiyj/YgBl3EnjMP4COD3eidM4/nJwGng0n0D9c/pI+QfzQP5xrd+OOwdE/LAKr18OD0j9sB6oYfkvTPzS5voelIdQ/WF+/3r8G1T8MdwIUeO3VP/Sfwt1CztY/QA/PkR2q1z/4+TdysXjYP6hhrwgwLtk/VM3TTfXP2T84hS4m+QfaPw==","dtype":"float64","order":"little","shape":[29]},{"__ndarray__":"OIUuJvkH2j8c1zIyGz7aP3jCQ5zDp9o/NL1+cdVP2z9QWvwcHh/cPwRMgChZ9Nw/UAtCQWzA3T9AgpgtCoreP6y42tkaWd8/kFNp4yAX4D8weqB1GITgPzpNd1nE9eA/vIhgZlBu4T+is/WlR+nhP/7mjeYPXeI/fEjzl3DA4j9eObWdvhPjPyBSGu4oYeM/5IcPrj2x4z/Q+TAFOgTkP0jalsQwWOQ/tHYVXLiu5D8mo4G07QjlP07prYf5Y+U/KgRUaAq/5T8UxugGIRvmP1bdus76dOY/9qhYr2fI5j+q9ULMEBbnP7BDxvy1Yec/5EFLyNfH5z8=","dtype":"float64","order":"little","shape":[31]},{"__ndarray__":"DHqCKw5v7j9SWkXhanruP6r618DUhu4/kBBL3jSV7j/SNriOJqbuPxCXXMcCue4/XJMWmsjL7j9iKYkVs9zuP3gAm+Qq6+4/8tm9PCn47j9sRmtGaQXvP/CG3QGcE+8/+n/QQpsh7z/qwq6b7i3vP/pVmFQ2Ou8/lB/U18xL7z9E3bP1ZWbvPyavTeCGhu8/0JfLtvqj7z/2ZAVxP7nvP87R6U80xu8/7LYTuTXN7z+QcC0HptDvP55QFts90u8/kpMurB/T7z+Sky6sH9PvPw==","dtype":"float64","order":"little","shape":[26]},{"__ndarray__":"eMwx6nq26z/4+ooK3WnrP8yg43pUH+s/wMDED4rT6j8KRuuVD4PqP/YTJCT+Leo/nNGAH4nT6T9IWOza7HLpP2h753rqEOk/fDGtXr206D+21LhGFWLoP7z669/kFeg/7BW9iqLJ5z9gPVq1T3rnP8DB2IVoKec/evnjh8nZ5j/exKB2SYzmP+qUlBQ1P+Y/mITYlxju5T/OiSQZ7JHlP2DOwFHkKOU/jCBYkZi65D+WIDgCiFLkPy4ZBJfr9OM/cgQ/1qyd4z/a+i/ujkjjP7od5AUjz+I/","dtype":"float64","order":"little","shape":[27]},{"__ndarray__":"kBMQANmcyj9wM6I+3afHP1hTNH3hssQ/SHPGu+W9wT9wJrH005G9P0Bm1XHcp7c/EKb57uS9sT/gyzvY2qenPwCXCKXXp5c/AAAAppmZeb4gatVx5KeXv2A1oj7hp6e/4NosIui9sb8Amwil36e3vzBb5CfXkb2/rA1gVee9wb/A7c0W47LEv9TNO9jep8e/7K2pmdqcyr8=","dtype":"float64","order":"little","shape":[19]},{"__ndarray__":"M4RKLCPP4r9oCaT8cDnjv8ZTqa3cmeO/crtcncnv478GC6MaJz3kv2wVU5yIhuS/nAd9jyDQ5L988vnBTxjlv7LZm1rVWuW/WLygcEqY5b9cXLY2V9flvwBpswRZHOa/OOxOhD5k5r8OLXeSe6rmvwIEHVyw7+a/pMZz82Q3578QHNrzwIHnv9JuftakzOe/IcCvPjkZ6L9YUc2vKG7ov+phZn9b0Oi/RjbTZao66b8QoNfJEKLpvxCrMnXS/+m/SXHgKklW6r8Q4ANWy6vqvxATBA5+Auu/8jKYEHu2678=","dtype":"float64","order":"little","shape":[28]},{"__ndarray__":"/PmUsh/T778bmQnofMrvv9vEB86Hw++/9rZH+m2+778LARcdhrrvv6yu1tcttu+/B/R5XNSu77+KeGTg26Hvv0Mmano8ju+/Z51ZJkF1779k1rVN8Fnvv7B5sI1dQO+/RtrOyMEr778p12qT1hvvv28sXqVHDe+/K+02/0r97r/Gdb6xu+vuv9hnHfeq2u6/XKiJNsLM7r9A+dAkSsLuvx4h9uPitu6/G6fqSr6k7r9+CPYuxoruv+jLVJuVbe6/iHdxt0dS7r8xUKtAjDnuv2Xg6BEOb+6/","dtype":"float64","order":"little","shape":[27]},{"__ndarray__":"ZeDoEQ5v7r9TafvialTuv1hz6tHnNO6/DvBwqrwP7r9YvhNggebtvyzaPkjeuO2/dAt6C8yE7b9W/C9LMkrtv1AOP8p+C+2/Gre+El/M7L9xE9TKlY7svwYTlCvZT+y/NmCXniIO7L+2xzWOuczrvzqxk0NUkOu/1/M7zMpY678d81wJTyHrv4Rc7UDd5eq/GFBUpNWl6r9KaIv2HGTqv4qq3sOCJOq/nnH9LaLn6b/O9SLgr6rpv5q1b5Rdaum/MrvHrKoi6b9EWELIbdLov0vltRrGf+i/OlXA5B406L/XdyBQ6PTnvwh+B7B0vue/H6ixbtfH578=","dtype":"float64","order":"little","shape":[31]},{"__ndarray__":"H6ixbtfH5796Z5kSVaznvw69QYbufee/ve88e/wz578IL90HR9Dmv6IjSaYRXua/XJ4iCX/r5b+Cz0dmXX7lv9K94VgyE+W/iPd/C1Gn5L9ynoDkJjzkvxZ7wBIR1eO/WlkhDeFy478AalZHzBDjv+dK90SGqeK/2LARRjQ/4r+azEQRs9fhv7uBU7PHc+G/kJg+8PYM4b8Ko4TkpJ7gv19xKdxGLuC/JJILH0uI37+GQOKEbsTevyh4s+1eDd6/ps2oGA5i3b+AukzmRrzcv5Z9GeKQEty/ynC50Atk27+8UfuS+Afavw==","dtype":"float64","order":"little","shape":[29]}]},"selected":{"id":"2477"},"selection_policy":{"id":"2478"}},"id":"2441","type":"ColumnDataSource"},{"attributes":{"line_color":{"value":"green"},"line_width":{"field":"edge_line_width"},"xs":{"field":"xs"},"ys":{"field":"ys"}},"id":"2450","type":"MultiLine"},{"attributes":{"end":1.1934263275160029,"reset_end":1.1934263275160029,"reset_start":-1.1934263394369322,"start":-1.1934263394369322,"tags":[[["y","y",null]]]},"id":"2405","type":"Range1d"},{"attributes":{"axis":{"id":"2416"},"grid_line_color":null,"ticker":null},"id":"2419","type":"Grid"},{"attributes":{"axis_label":"x","bounds":"auto","formatter":{"id":"2466"},"major_label_orientation":"horizontal","ticker":{"id":"2417"},"visible":false},"id":"2416","type":"LinearAxis"},{"attributes":{"source":{"id":"2441"}},"id":"2452","type":"CDSView"},{"attributes":{"data_source":{"id":"2441"},"glyph":{"id":"2448"},"hover_glyph":{"id":"2450"},"muted_glyph":null,"nonselection_glyph":{"id":"2449"},"selection_glyph":null,"view":{"id":"2452"}},"id":"2451","type":"GlyphRenderer"},{"attributes":{},"id":"2417","type":"BasicTicker"},{"attributes":{"graph_layout":{"0":[-0.9781476829114384,0.20791161063257524],"1":[-0.10452836208673566,-0.9945219505241876],"10":[1.0,-5.9604646492535615e-09],"11":[-0.8090170546983624,0.5877852549610261],"12":[0.3090171018853743,-0.9510565137670822],"13":[0.9135455464252042,-0.40673651078875733],"14":[0.6691307330179127,-0.7431447183601029],"2":[-0.10452854090067513,0.9945219386032582],"3":[0.3090169528737581,0.9510565614507995],"4":[-0.49999995380639894,-0.8660254787551749],"5":[0.9135454272159113,0.4067366478794443],"6":[0.6691305542039733,0.7431448852531132],"7":[-0.978147623306792,-0.20791180136744403],"8":[-0.5000001028180151,0.8660254072295991],"9":[-0.8090169950937159,-0.5877853264866019]}},"id":"2442","type":"StaticLayoutProvider"},{"attributes":{},"id":"2477","type":"Selection"},{"attributes":{},"id":"2412","type":"LinearScale"},{"attributes":{"axis":{"id":"2420"},"dimension":1,"grid_line_color":null,"ticker":null},"id":"2423","type":"Grid"},{"attributes":{"source":{"id":"2440"}},"id":"2447","type":"CDSView"},{"attributes":{},"id":"2421","type":"BasicTicker"},{"attributes":{"axis_label":"y","bounds":"auto","formatter":{"id":"2468"},"major_label_orientation":"horizontal","ticker":{"id":"2421"},"visible":false},"id":"2420","type":"LinearAxis"},{"attributes":{"end":1.1978147682911437,"reset_end":1.1978147682911437,"reset_start":-1.1759624512025821,"start":-1.1759624512025821,"tags":[[["x","x",null]]]},"id":"2404","type":"Range1d"},{"attributes":{},"id":"2464","type":"EdgesAndLinkedNodes"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"2430","type":"BoxAnnotation"},{"attributes":{"edge_renderer":{"id":"2451"},"inspection_policy":{"id":"2464"},"layout_provider":{"id":"2442"},"node_renderer":{"id":"2446"},"selection_policy":{"id":"2462"}},"id":"2453","type":"GraphRenderer"},{"attributes":{},"id":"2414","type":"LinearScale"},{"attributes":{"data_source":{"id":"2440"},"glyph":{"id":"2443"},"hover_glyph":{"id":"2445"},"muted_glyph":null,"nonselection_glyph":{"id":"2444"},"selection_glyph":null,"view":{"id":"2447"}},"id":"2446","type":"GlyphRenderer"},{"attributes":{},"id":"2468","type":"BasicTickFormatter"},{"attributes":{"children":[{"id":"2403"},{"id":"2407"},{"id":"2492"}],"margin":[0,0,0,0],"name":"Row13342","tags":["embedded"]},"id":"2402","type":"Row"},{"attributes":{"margin":[5,5,5,5],"name":"HSpacer13347","sizing_mode":"stretch_width"},"id":"2492","type":"Spacer"},{"attributes":{"text":"Transitions among chronologically successive \u00c9ric Rohmer's films in terms of numbers of common actors","text_color":{"value":"black"},"text_font_size":{"value":"12pt"}},"id":"2408","type":"Title"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"#30a2da"},"line_alpha":{"value":0.2},"size":{"field":"node_size","units":"screen"}},"id":"2444","type":"Circle"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"2406"},{"id":"2424"},{"id":"2425"},{"id":"2426"},{"id":"2427"},{"id":"2428"},{"id":"2429"}]},"id":"2432","type":"Toolbar"},{"attributes":{"line_alpha":{"value":0.2},"line_width":{"field":"edge_line_width"},"xs":{"field":"xs"},"ys":{"field":"ys"}},"id":"2449","type":"MultiLine"},{"attributes":{"data":{"index":{"__ndarray__":"AAAAAAEAAAACAAAAAwAAAAQAAAAFAAAABgAAAAcAAAAIAAAACQAAAAoAAAALAAAADAAAAA0AAAAOAAAA","dtype":"int32","order":"little","shape":[15]},"node_size":{"__ndarray__":"AAAAAAAAHkAAAAAAAAASQAAAAAAAACdAAAAAAAAAEEAAAAAAAAAiQAAAAAAAACJAAAAAAAAAEkAAAAAAAAAQQAAAAAAAgDFAAAAAAACAMUAAAAAAAAAQQAAAAAAAABhAAAAAAAAAO0AAAAAAAAAhQAAAAAAAgDRA","dtype":"float64","order":"little","shape":[15]}},"selected":{"id":"2479"},"selection_policy":{"id":"2480"}},"id":"2440","type":"ColumnDataSource"},{"attributes":{},"id":"2478","type":"UnionRenderers"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"2431","type":"BoxAnnotation"},{"attributes":{"fill_color":{"value":"red"},"size":{"field":"node_size","units":"screen"}},"id":"2445","type":"Circle"},{"attributes":{},"id":"2462","type":"NodesAndLinkedEdges"},{"attributes":{},"id":"2424","type":"SaveTool"},{"attributes":{},"id":"2479","type":"Selection"},{"attributes":{"margin":[5,5,5,5],"name":"HSpacer13346","sizing_mode":"stretch_width"},"id":"2403","type":"Spacer"},{"attributes":{},"id":"2425","type":"PanTool"},{"attributes":{"line_color":{"value":"gold"},"line_width":{"field":"edge_line_width"},"xs":{"field":"xs"},"ys":{"field":"ys"}},"id":"2448","type":"MultiLine"},{"attributes":{},"id":"2426","type":"WheelZoomTool"},{"attributes":{"overlay":{"id":"2431"}},"id":"2427","type":"BoxZoomTool"},{"attributes":{"callback":null,"renderers":[{"id":"2453"}],"tags":["hv_created"],"tooltips":[["start","@{start_values}"],["end","@{end_values}"],["common_actors","@{common_actors}"],["weight","@{weight}"]]},"id":"2406","type":"HoverTool"}],"root_ids":["2402"]},"title":"Bokeh Application","version":"2.1.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('2648').textContent;
+                  var render_items = [{"docid":"ebf80649-7136-47d9-a8de-a087a8b79b7a","root_ids":["2402"],"roots":{"2402":"df545e65-ba1e-4f76-84a3-fd23a4b3bbca"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
