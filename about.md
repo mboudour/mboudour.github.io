@@ -14,7 +14,7 @@ In 2019 he was awarded a Robert K. Merton Visiting Research Fellowship from the 
 **Personal Webpages**
 * [Moses Boudourides at the Northwestern University SONIC Lab](http://sonic.northwestern.edu/people/affiliated-faculty/moses-boudourides/)
 * [Moses Boudourides at the NYUAD Research Group in Network Science](https://sites.google.com/nyu.edu/rgns/members)
-* [Moses Boudourides CV](https://www.dropbox.com/s/eyjlqpisiv5zui6/Boudourides_CV_Aug2020a.pdf?dl=0)
+* [Moses Boudourides CV](https://www.dropbox.com/s/s7n63zum1498q0i/Boudourides_CV_Aug2020a.pdf?dl=0)
 
 **Social Media**
 * [Github](https://github.com/mboudour)
