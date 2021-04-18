@@ -14,7 +14,7 @@ In 2019 he was awarded a Robert K. Merton Visiting Research Fellowship from the 
 **Abstracts accepted at Conferences**
 * [Networks 2021](https://sonic.northwestern.edu/sonic-faculty-affiliate-will-also-attend-networks2021/)
 
-**Interactive Networs**
+**Interactive Networks**
 * [Mostly visualizations but not only](https://mboudour.github.io/var/index.html)
 
 **Personal Webpages**
