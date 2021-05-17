@@ -11,6 +11,9 @@ His undergraduate studies (Engineering Diploma) were on Chemical Engineering at 
 
 In 2019 he was awarded a Robert K. Merton Visiting Research Fellowship from the Institute for Analytical Sociology (IAS) at Linköping University in Sweden.
 
+**Network/Data Science Highlights**
+* [Python-based Computational Social Network Analysis](https://nbviewer.jupyter.org/github/mboudour/var/tree/master/CompSocialNetworkAnalysis/)
+
 **Abstracts accepted at Conferences**
 * [Networks 2021](https://sonic.northwestern.edu/sonic-faculty-affiliate-will-also-attend-networks2021/)
 
