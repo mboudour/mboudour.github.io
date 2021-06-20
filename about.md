@@ -11,9 +11,9 @@ In 2021-2, starting end of August 2021, he will be visiting [Haverford College](
 
 During 2019-20, he was Visiting Professor at the [New York University Abu Dhabi (NYUAD)](https://nyuad.nyu.edu/en/). In 2017, he retired from the [University of Patras](https://www.upatras.gr/en/) in Greece as professor of Computational and Applied Mathematics at the [Department of Mathematics](https://thalis.math.upatras.gr/~mboudour/).
 
-His undergraduate studies (Engineering Diploma) were on Chemical Engineering at the National Technical University of Athens (Greece) and his graduate studies (PhD) on Mechanics at the Johns Hopkins University.
+His undergraduate studies (Engineering Diploma) were on Chemical Engineering at the [National Technical University of Athens](https://www.ntua.gr/en/) and his graduate studies (PhD) on Mechanics at the [Johns Hopkins University](https://www.jhu.edu/).
 
-In 2019 he was awarded a Robert K. Merton Visiting Research Fellowship from the Institute for Analytical Sociology (IAS) at Linköping University in Sweden.
+In 2019 he was awarded a Robert K. Merton Visiting Research Fellowship from the [Institute for Analytical Sociology (IAS)](https://liu.se/en/organisation/liu/iei/ias) at [Linköping University](https://liu.se/en) in Sweden.
 
 **Network/Data Science Highlights**
 * [Python-based Computational Social Network Analysis](https://nbviewer.jupyter.org/github/mboudour/var/tree/master/CompSocialNetworkAnalysis/)
