@@ -9,7 +9,7 @@ Moses Boudourides is in the Faculty of [Northwestern University School of Profes
 
 In 2021-2, starting end of August 2021, he will be visiting [Haverford College](https://www.haverford.edu/) [Department of Computer Science](https://www.haverford.edu/computer-science).
 
-During 2019-20, he was Visiting Professor at the [New York University Abu Dhabi (NYUAD)](https://nyuad.nyu.edu/en/). In 2017, he retired from the University of Patras in Greece as professor of Computational and Applied Mathematics at the Department of Mathematics.
+During 2019-20, he was Visiting Professor at the [New York University Abu Dhabi (NYUAD)](https://nyuad.nyu.edu/en/). In 2017, he retired from the [University of Patras](https://www.upatras.gr/en/) in Greece as professor of Computational and Applied Mathematics at the [Department of Mathematics](https://thalis.math.upatras.gr/~mboudour/).
 
 His undergraduate studies (Engineering Diploma) were on Chemical Engineering at the National Technical University of Athens (Greece) and his graduate studies (PhD) on Mechanics at the Johns Hopkins University.
 
