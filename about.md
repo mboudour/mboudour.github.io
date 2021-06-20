@@ -5,7 +5,11 @@ permalink: /about/
 ---
 ![](images/IMG-1651.JPG)
 
-Moses Boudourides is in the Faculty of [Northwestern University School of Professional Studies (SPS) Data Science Program](https://sps.northwestern.edu/masters/data-science/faculty.php) and Affiliated Faculty at the [Science of Networks in Communities (SONIC) at Northwestern University](http://sonic.northwestern.edu/people/affiliated-faculty/moses-boudourides/). During 2019-20 he was Visiting Professor at the [New York University Abu Dhabi (NYUAD)](https://nyuad.nyu.edu/en/). In 2017, he retired from the University of Patras in Greece as professor of Computational and Applied Mathematics at the Department of Mathematics.
+Moses Boudourides is in the Faculty of [Northwestern University School of Professional Studies (SPS) Data Science Program](https://sps.northwestern.edu/masters/data-science/faculty.php) and Affiliated Faculty at the [Science of Networks in Communities (SONIC) at Northwestern University](http://sonic.northwestern.edu/people/affiliated-faculty/moses-boudourides/). 
+
+In 2021-2, starting end of August 2021, he will be visiting [Haverford College] (https://www.haverford.edu/) [Department of Computer Science] (https://www.haverford.edu/computer-science).
+
+During 2019-20, he was Visiting Professor at the [New York University Abu Dhabi (NYUAD)](https://nyuad.nyu.edu/en/). In 2017, he retired from the University of Patras in Greece as professor of Computational and Applied Mathematics at the Department of Mathematics.
 
 His undergraduate studies (Engineering Diploma) were on Chemical Engineering at the National Technical University of Athens (Greece) and his graduate studies (PhD) on Mechanics at the Johns Hopkins University.
 
