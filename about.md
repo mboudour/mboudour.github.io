@@ -18,7 +18,7 @@ In 2019, he was awarded a Robert K. Merton Visiting Research Fellowship from the
 **Network/Data Science Highlights**
 * [Python-based Computational Social Network Analysis](https://nbviewer.jupyter.org/github/mboudour/var/tree/master/CompSocialNetworkAnalysis/)
 
-**Slides of Prsentations at Conferences**
+**Slides of Presentations at Conferences**
 * [Networks 2021](https://drive.google.com/drive/folders/1mq4Oo3RG6FGPRMtESC-e9BiADypsTGUM?usp=sharing)
 
 **Interactive Networks**
