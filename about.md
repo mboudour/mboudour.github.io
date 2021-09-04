@@ -5,7 +5,7 @@ permalink: /about/
 ---
 ![](images/IMG-1651.JPG)
 
-Moses Boudourides is in the Faculty of [Northwestern University School of Professional Studies (SPS) Data Science Program](https://sps.northwestern.edu/masters/data-science/faculty.php) and Affiliated Faculty at the [Science of Networks in Communities (SONIC) at Northwestern University](http://sonic.northwestern.edu/people/affiliated-faculty/moses-boudourides/). 
+Moses Boudourides is in the Faculty of [Northwestern University School of Professional Studies (SPS) Data Science Program](https://sps.northwestern.edu/masters/data-science/faculty.php) and Affiliated Faculty at the [Science of Networks in Communities (SONIC) at Northwestern University](https://sonic.northwestern.edu/home/people/affiliated-faculty/moses-boudourides/). 
 
 During 2021-2, he is visiting [Haverford College](https://www.haverford.edu/) [Department of Computer Science](https://www.haverford.edu/computer-science).
 
