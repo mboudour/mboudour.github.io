@@ -7,7 +7,7 @@ permalink: /about/
 
 Moses Boudourides is in the Faculty of [Northwestern University School of Professional Studies (SPS) Data Science Program](https://sps.northwestern.edu/masters/data-science/faculty.php) and Affiliated Faculty at the [Science of Networks in Communities (SONIC) at Northwestern University](http://sonic.northwestern.edu/people/affiliated-faculty/moses-boudourides/). 
 
-In 2021-2, starting end of August 2021, he will be visiting [Haverford College](https://www.haverford.edu/) [Department of Computer Science](https://www.haverford.edu/computer-science).
+During 2021-2, he is visiting [Haverford College](https://www.haverford.edu/) [Department of Computer Science](https://www.haverford.edu/computer-science).
 
 During 2019-20, he was Visiting Professor at the [New York University Abu Dhabi (NYUAD)](https://nyuad.nyu.edu/en/). In 2017, he retired from the [University of Patras](https://www.upatras.gr/en/) in Greece as professor of Computational and Applied Mathematics at the [Department of Mathematics](https://thalis.math.upatras.gr/~mboudour/).
 
@@ -25,7 +25,7 @@ In 2019, he was awarded a Robert K. Merton Visiting Research Fellowship from the
 * [Mostly visualizations but not only](https://mboudour.github.io/var/index.html)
 
 **Personal Webpages**
-* [Moses Boudourides at the Northwestern University SONIC Lab](http://sonic.northwestern.edu/people/affiliated-faculty/moses-boudourides/)
+* [Moses Boudourides at the Northwestern University SONIC Lab](https://sonic.northwestern.edu/home/people/affiliated-faculty/moses-boudourides/)
 * [Moses Boudourides at the NYUAD Research Group in Network Science](https://sites.google.com/nyu.edu/rgns/members)
 * [Moses Boudourides CV](https://www.dropbox.com/s/s7n63zum1498q0i/Boudourides_CV_Aug2020a.pdf?dl=0)
 
