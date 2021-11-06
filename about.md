@@ -13,6 +13,11 @@ His undergraduate studies (Engineering Diploma) were on Chemical Engineering at 
 
 In 2019, he was awarded a Robert K. Merton Visiting Research Fellowship from the [Institute for Analytical Sociology (IAS)](https://liu.se/en/organisation/liu/iei/ias) at [Linköping University](https://liu.se/en) in Sweden.
 
+**CV**
+* [Moses Boudourides CV](https://www.dropbox.com/s/9cxhfxl5heeklfg/Boudourides_CV_Sep2021.pdf?dl=0)
+* [Moses Boudourides Teaching Experience](https://github.com/mboudour/var/blob/master/Teaching%26Research/Boudourides%20Teaching%20Experience.pdf)
+* [Moses Boudourides Ongoing Research](https://github.com/mboudour/var/blob/master/Teaching%26Research/Boudourides%20Research%20Interests.pdf)
+
 **Network/Data Science Highlights**
 * [Python-based Computational Social Network Analysis](https://nbviewer.jupyter.org/github/mboudour/var/tree/master/CompSocialNetworkAnalysis/)
 
@@ -26,7 +31,6 @@ In 2019, he was awarded a Robert K. Merton Visiting Research Fellowship from the
 **Personal Webpages**
 * [Moses Boudourides at the Northwestern University SONIC Lab](https://sonic.northwestern.edu/home/people/affiliated-faculty/moses-boudourides/)
 * [Moses Boudourides at the NYUAD Research Group in Network Science](https://sites.google.com/nyu.edu/rgns/members)
-* [Moses Boudourides CV](https://www.dropbox.com/s/9cxhfxl5heeklfg/Boudourides_CV_Sep2021.pdf?dl=0)
 
 **Social Media**
 * [Github](https://github.com/mboudour)
