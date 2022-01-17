@@ -22,6 +22,7 @@ In 2019, he was awarded a Robert K. Merton Visiting Research Fellowship from the
 * [Python-based Computational Social Network Analysis](https://nbviewer.jupyter.org/github/mboudour/var/tree/master/CompSocialNetworkAnalysis/)
 
 **Slides of recent Presentations at Conferences**
+* [SMR Winter School 2022](https://github.com/mboudour/var/blob/master/Boudourides_TriadicEffectsInSocialNetworks.pdf)
 * [Networks 2021](https://drive.google.com/drive/folders/1mq4Oo3RG6FGPRMtESC-e9BiADypsTGUM?usp=sharing)
 * [EUSN 2021](https://github.com/mboudour/var/blob/master/CNAG.pdf)
 
