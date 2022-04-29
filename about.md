@@ -5,13 +5,19 @@ permalink: /about/
 ---
 ![](images/IMG-1651.JPG)
 
-Moses Boudourides is currently (2021-2) visiting [Haverford College](https://www.haverford.edu/) [Department of Computer Science](https://www.haverford.edu/computer-science). During 2018-21, he was in the Faculty of [Northwestern University School of Professional Studies (SPS) Data Science Program](https://sps.northwestern.edu/masters/data-science/faculty.php) and Affiliated Faculty at the [Science of Networks in Communities (SONIC) at Northwestern University](https://sonic.northwestern.edu/home/people/affiliated-faculty/moses-boudourides/). 
+* Starting in August 2022, Moses Boudourides will be Professor of Practice with the [Arizona State University](https://www.asu.edu/) [School of Public Affairs](https://spa.asu.edu/).
 
-During 2019-20, he was Visiting Professor at the [New York University Abu Dhabi (NYUAD)](https://nyuad.nyu.edu/en/). In 2017, he retired from the [University of Patras](https://www.upatras.gr/en/) in Greece as professor of Computational and Applied Mathematics at the [Department of Mathematics](https://thalis.math.upatras.gr/~mboudour/).
+* He is currently (2021-2) visiting [Haverford College](https://www.haverford.edu/) [Department of Computer Science](https://www.haverford.edu/computer-science). 
 
-His undergraduate studies (Engineering Diploma) were on Chemical Engineering at the [National Technical University of Athens](https://www.ntua.gr/en/) and his graduate studies (PhD) on Mechanics at the [Johns Hopkins University](https://www.jhu.edu/).
+* During 2018-21, he was in the Faculty of [Northwestern University School of Professional Studies (SPS) Data Science Program](https://sps.northwestern.edu/masters/data-science/faculty.php) and Affiliated Faculty at the [Science of Networks in Communities (SONIC) at Northwestern University](https://sonic.northwestern.edu/home/people/affiliated-faculty/moses-boudourides/). 
 
-In 2019, he was awarded a Robert K. Merton Visiting Research Fellowship from the [Institute for Analytical Sociology (IAS)](https://liu.se/en/organisation/liu/iei/ias) at [Linköping University](https://liu.se/en) in Sweden.
+* During 2019-20, he was Visiting Professor at the [New York University Abu Dhabi (NYUAD)](https://nyuad.nyu.edu/en/). 
+
+* In 2017, he retired from the [University of Patras](https://www.upatras.gr/en/) in Greece as professor of Computational and Applied Mathematics at the [Department of Mathematics](https://thalis.math.upatras.gr/~mboudour/).
+
+* His undergraduate studies (Engineering Diploma) were on Chemical Engineering at the [National Technical University of Athens](https://www.ntua.gr/en/) and his graduate studies (PhD) on Mechanics at the [Johns Hopkins University](https://www.jhu.edu/).
+
+* In 2019, he was awarded a Robert K. Merton Visiting Research Fellowship from the [Institute for Analytical Sociology (IAS)](https://liu.se/en/organisation/liu/iei/ias) at [Linköping University](https://liu.se/en) in Sweden.
 
 **CV**
 * [Moses Boudourides CV](https://www.dropbox.com/s/9cxhfxl5heeklfg/Boudourides_CV_Sep2021.pdf?dl=0)
