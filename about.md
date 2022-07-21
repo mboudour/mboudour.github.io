@@ -7,7 +7,7 @@ permalink: /about/
 
 * Starting in August 2022, Moses Boudourides will be Professor of Practice with the [Arizona State University](https://www.asu.edu/) [School of Public Affairs](https://spa.asu.edu/).
 
-* He is currently (2021-2) visiting [Haverford College](https://www.haverford.edu/) [Department of Computer Science](https://www.haverford.edu/computer-science). 
+* During 2021-22, he was Visiting Associate Professor at [Haverford College](https://www.haverford.edu/) [Department of Computer Science](https://www.haverford.edu/computer-science). 
 
 * During 2018-21, he was in the Faculty of [Northwestern University School of Professional Studies (SPS) Data Science Program](https://sps.northwestern.edu/masters/data-science/faculty.php) and Affiliated Faculty at the [Science of Networks in Communities (SONIC) at Northwestern University](https://sonic.northwestern.edu/home/people/affiliated-faculty/moses-boudourides/). 
 
@@ -28,6 +28,8 @@ permalink: /about/
 * [Python-based Computational Social Network Analysis](https://nbviewer.jupyter.org/github/mboudour/var/tree/master/CompSocialNetworkAnalysis/)
 
 **Slides of recent Presentations at Conferences**
+* [Sunbelt 2022 at Cairns](https://github.com/mboudour/var/blob/master/Boudourides_Slides_ApiciusRecipes_Sunbelt2022.pdf)
+* [PolNet 2022](https://github.com/mboudour/var/blob/master/Lobue%26Boudourides_PolNet2022_Slides.pdf)
 * [SMR Winter School 2022](https://github.com/mboudour/var/blob/master/Boudourides_TriadicEffectsInSocialNetworks.pdf)
 * [Networks 2021](https://drive.google.com/drive/folders/1mq4Oo3RG6FGPRMtESC-e9BiADypsTGUM?usp=sharing)
 * [EUSN 2021](https://github.com/mboudour/var/blob/master/CNAG.pdf)
