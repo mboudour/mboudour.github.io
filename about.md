@@ -5,7 +5,7 @@ permalink: /about/
 ---
 ![](images/IMG-1651.JPG)
 
-* Starting in August 2022, Moses Boudourides will be Professor of Practice with the [Arizona State University](https://www.asu.edu/) [School of Public Affairs](https://spa.asu.edu/).
+* Currently, Moses Boudourides is Professor of Practice with the [Arizona State University](https://www.asu.edu/) [School of Public Affairs](https://spa.asu.edu/).
 
 * During 2021-22, he was Visiting Associate Professor at [Haverford College](https://www.haverford.edu/) [Department of Computer Science](https://www.haverford.edu/computer-science). 
 
