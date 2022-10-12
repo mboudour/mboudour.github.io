@@ -25,7 +25,7 @@ permalink: /about/
 * [Moses Boudourides Ongoing Research](https://github.com/mboudour/var/blob/master/Teaching%26Research/Boudourides%20Research%20Interests.pdf)
 
 **Network/Data Science Highlights**
-* [Citation Graph Analysis and Alignment Between Citation Adjacency and Themes or Topics of Publications in the Area of Disease Control Through Social Network Surveillance] (https://link.springer.com/content/pdf/10.1007/978-3-031-07869-9_5.pdf)
+* [Citation Graph Analysis and Alignment Between Citation Adjacency and Themes or Topics of Publications in the Area of Disease Control Through Social Network Surveillance](https://link.springer.com/content/pdf/10.1007/978-3-031-07869-9_5.pdf)
 * [Python-based Computational Social Network Analysis](https://nbviewer.jupyter.org/github/mboudour/var/tree/master/CompSocialNetworkAnalysis/)
 
 **Slides of recent Presentations at Conferences**
