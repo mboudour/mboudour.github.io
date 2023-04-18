@@ -3,7 +3,7 @@ layout: page
 title: Moses Boudourides
 permalink: /about/
 ---
-![](images/MAB_Flagstaff_Sept2022small.jpg)
+![](images/MAB_Flagstaff_Sept2022small3.jpg)
 
 * Currently, Moses Boudourides is Professor of Practice with the [Arizona State University](https://www.asu.edu/) [School of Public Affairs](https://spa.asu.edu/) and also teaching at the [ASU](https://www.asu.edu/) [School of Computing and Augmented Intelligence](https://scai.engineering.asu.edu/).
 
