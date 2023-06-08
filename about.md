@@ -5,19 +5,19 @@ permalink: /about/
 ---
 ![](images/MAB_Flagstaff_Sept2022small3.jpg)
 
-* Currently, Moses Boudourides is Professor of Practice with the [Arizona State University](https://www.asu.edu/) [School of Public Affairs](https://spa.asu.edu/) and also teaching at the [ASU](https://www.asu.edu/) [School of Computing and Augmented Intelligence](https://scai.engineering.asu.edu/).
+* In 2022-23, Professor of Practice with the [Arizona State University](https://www.asu.edu/) (ASU) [School of Public Affairs](https://spa.asu.edu/) and also teaching at the [ASU](https://www.asu.edu/) [School of Computing and Augmented Intelligence](https://scai.engineering.asu.edu/).
 
-* During 2021-22, he was Visiting Associate Professor at [Haverford College](https://www.haverford.edu/) [Department of Computer Science](https://www.haverford.edu/computer-science). 
+* During 2021-22, Visiting Associate Professor at [Haverford College](https://www.haverford.edu/) [Department of Computer Science](https://www.haverford.edu/computer-science). 
 
-* During 2018-21, he was in the Faculty of [Northwestern University School of Professional Studies (SPS) Data Science Program](https://sps.northwestern.edu/masters/data-science/faculty.php) and Affiliated Faculty at the [Science of Networks in Communities (SONIC) at Northwestern University](https://sonic.northwestern.edu/home/people/affiliated-faculty/moses-boudourides/). 
+* During 2018-21, in the Faculty of [Northwestern University School of Professional Studies (SPS) Data Science Program](https://sps.northwestern.edu/masters/data-science/faculty.php) and Affiliated Faculty at the [Science of Networks in Communities (SONIC) at Northwestern University](https://sonic.northwestern.edu/home/people/affiliated-faculty/moses-boudourides/). 
 
-* During 2019-20, he was Visiting Professor at the [New York University Abu Dhabi (NYUAD)](https://nyuad.nyu.edu/en/). 
+* During 2019-20, Visiting Professor at the [New York University Abu Dhabi (NYUAD)](https://nyuad.nyu.edu/en/). 
 
-* In 2017, he retired from the [University of Patras](https://www.upatras.gr/en/) in Greece as professor of Computational and Applied Mathematics at the [Department of Mathematics](https://thalis.math.upatras.gr/~mboudour/).
+* In 2017, retired from the [University of Patras](https://www.upatras.gr/en/) in Greece as professor of Computational and Applied Mathematics at the [Department of Mathematics](https://thalis.math.upatras.gr/~mboudour/).
 
-* His undergraduate studies (Engineering Diploma) were on Chemical Engineering at the [National Technical University of Athens](https://www.ntua.gr/en/) and his graduate studies (PhD) on Mechanics at the [Johns Hopkins University](https://www.jhu.edu/).
+* Undergraduate studies (Engineering Diploma) on Chemical Engineering at the [National Technical University of Athens](https://www.ntua.gr/en/) and graduate studies (PhD) on Mechanics at the [Johns Hopkins University](https://www.jhu.edu/).
 
-* In 2019, he was awarded a Robert K. Merton Visiting Research Fellowship from the [Institute for Analytical Sociology (IAS)](https://liu.se/en/organisation/liu/iei/ias) at [Linköping University](https://liu.se/en) in Sweden.
+* In 2019, awarded a Robert K. Merton Visiting Research Fellowship from the [Institute for Analytical Sociology (IAS)](https://liu.se/en/organisation/liu/iei/ias) at [Linköping University](https://liu.se/en) in Sweden.
 
 **CV**
 * [Moses Boudourides CV](https://www.dropbox.com/s/ctw43wqc1yemf3t/Boudourides_CV_Oct2022.pdf?dl=0)
@@ -26,7 +26,7 @@ permalink: /about/
 
 **Network/Data Science Highlights**
 * [Michel Foucault in the Cambridge Lexicon and ChatGPT](https://medium.com/@mosabou/michel-foucault-in-the-cambridge-lexicon-and-chatgpt-996bb09892e0)
-* [Sunbelt 2023 Workshop: Data Collection and Network Analysis of Temporal Citation Data using the Dimensions research database](https://www.insna.org/data-collection-and-network-analysis-of-temporal-citation-data-using-the-dimensions-research-database)
+<!-- * [Sunbelt 2023 Workshop: Data Collection and Network Analysis of Temporal Citation Data using the Dimensions research database](https://www.insna.org/data-collection-and-network-analysis-of-temporal-citation-data-using-the-dimensions-research-database) -->
 * [Citation Graph Analysis and Alignment Between Citation Adjacency and Themes or Topics of Publications in the Area of Disease Control Through Social Network Surveillance](https://link.springer.com/content/pdf/10.1007/978-3-031-07869-9_5.pdf)
 * [Python-based Computational Social Network Analysis](https://nbviewer.jupyter.org/github/mboudour/var/tree/master/CompSocialNetworkAnalysis/)
 
