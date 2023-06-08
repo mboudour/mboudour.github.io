@@ -25,8 +25,7 @@ permalink: /about/
 * [Moses Boudourides Ongoing Research](https://github.com/mboudour/var/blob/master/Teaching%26Research/Boudourides%20Research%20Interests.pdf)
 
 **Network/Data Science Highlights**
-* [Michel Foucault in the Cambridge Lexicon and ChatGPT](https://medium.com/@mosabou/michel-foucault-in-the-cambridge-lexicon-and-chatgpt-996bb09892e0)
-<!-- * [Sunbelt 2023 Workshop: Data Collection and Network Analysis of Temporal Citation Data using the Dimensions research database](https://www.insna.org/data-collection-and-network-analysis-of-temporal-citation-data-using-the-dimensions-research-database) -->
+* [Michel Foucault in the Cambridge Lexicon and ChatGPT](https://medium.com/@mosabou/michel-foucault-in-the-cambridge-lexicon-and-chatgpt-996bb09892e0) <!-- * [Sunbelt 2023 Workshop: Data Collection and Network Analysis of Temporal Citation Data using the Dimensions research database](https://www.insna.org/data-collection-and-network-analysis-of-temporal-citation-data-using-the-dimensions-research-database) -->
 * [Citation Graph Analysis and Alignment Between Citation Adjacency and Themes or Topics of Publications in the Area of Disease Control Through Social Network Surveillance](https://link.springer.com/content/pdf/10.1007/978-3-031-07869-9_5.pdf)
 * [Python-based Computational Social Network Analysis](https://nbviewer.jupyter.org/github/mboudour/var/tree/master/CompSocialNetworkAnalysis/)
 
