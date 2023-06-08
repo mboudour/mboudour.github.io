@@ -49,8 +49,8 @@ permalink: /about/
 * [Slideshare](https://www.slideshare.net/MosesBoudourides)
 * [LinkedIn](https://www.linkedin.com/in/moses-boudourides-24aba121/)
 * [Twitter](https://twitter.com/mosabou)
+* [Mastodon](https://sciences.social/@mosabou)
 * [Facebook](https://www.facebook.com/moses.boudourides)
   - [Computational Social Science Group](https://www.facebook.com/groups/523771471380181/)
   - [[ Ντίτζιταλ Χιουμάνιτυζ ] / [ Digital Humanities ] Group](https://www.facebook.com/groups/1960653647501516/)
-  - [Big Data & Networks Group](https://www.facebook.com/groups/925927650775110/)
-  - [Python programming Group](https://www.facebook.com/groups/452410538247509/)
+  - [Big Data & Networks Group](https://www.facebook.com/groups/925927650775110/)  <!-- - [Python programming Group](https://www.facebook.com/groups/452410538247509/) -->
