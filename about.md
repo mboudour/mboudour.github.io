@@ -5,15 +5,17 @@ permalink: /about/
 ---
 ![](images/MAB_Flagstaff_Sept2022small3.jpg)
 
-* In 2022-23, Professor of Practice with the [Arizona State University](https://www.asu.edu/) (ASU) [School of Public Affairs](https://spa.asu.edu/) and also teaching at the [ASU](https://www.asu.edu/) [School of Computing and Augmented Intelligence](https://scai.engineering.asu.edu/).
+* 2022-23: Professor of Practice with the [Arizona State University](https://www.asu.edu/) (ASU) [School of Public Affairs](https://spa.asu.edu/) and also teaching at the [ASU](https://www.asu.edu/) [School of Computing and Augmented Intelligence](https://scai.engineering.asu.edu/).
 
-* During 2021-22, Visiting Associate Professor at [Haverford College](https://www.haverford.edu/) [Department of Computer Science](https://www.haverford.edu/computer-science). 
+* 2021-22: Visiting Associate Professor at [Haverford College](https://www.haverford.edu/) [Department of Computer Science](https://www.haverford.edu/computer-science). 
 
-* During 2018-21, in the Faculty of [Northwestern University School of Professional Studies (SPS) Data Science Program](https://sps.northwestern.edu/masters/data-science/faculty.php) and Affiliated Faculty at the [Science of Networks in Communities (SONIC) at Northwestern University](https://sonic.northwestern.edu/home/people/affiliated-faculty/moses-boudourides/). 
+* 2018-: Faculty of [Northwestern University School of Professional Studies (SPS) Data Science Program](https://sps.northwestern.edu/masters/data-science/faculty.php). 
 
-* During 2019-20, Visiting Professor at the [New York University Abu Dhabi (NYUAD)](https://nyuad.nyu.edu/en/). 
+* 2019-20: Visiting Professor at the [New York University Abu Dhabi (NYUAD)](https://nyuad.nyu.edu/en/). 
 
-* In 2017, retired from the [University of Patras](https://www.upatras.gr/en/) in Greece as professor of Computational and Applied Mathematics at the [Department of Mathematics](https://thalis.math.upatras.gr/~mboudour/).
+* 1998-2017: Professor of Computational and Applied Mathematics at the [Department of Mathematics](https://thalis.math.upatras.gr/~mboudour/) of the [University of Patras](https://www.upatras.gr/en/) in Greece (retired in 2017).
+
+* 1982-1998: Associate Professor of Applied Mathematics at the [Department of Electrical and Computer Engineering] (https://www.ee.duth.gr/en/) of the [Democritus University of Thrace](https://duth.gr/en/Home) in Xanthi, Greece. 
 
 * Undergraduate studies (Engineering Diploma) on Chemical Engineering at the [National Technical University of Athens](https://www.ntua.gr/en/) and graduate studies (PhD) on Mechanics at the [Johns Hopkins University](https://www.jhu.edu/).
 
