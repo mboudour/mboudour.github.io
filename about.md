@@ -24,7 +24,8 @@ permalink: /about/
 **CV**
 * [Moses Boudourides CV](https://www.dropbox.com/scl/fi/fg6oyy78rgzom0dtfunpc/Boudourides_CV_Oct2023.pdf?rlkey=vgo8gj1cns6r5zji4vfypwjve&dl=0)
 * [Moses Boudourides Teaching Experience](https://github.com/mboudour/var/blob/master/Teaching%26Research/Boudourides%20Teaching%20Experience.pdf)
-* [Moses Boudourides Ongoing Research](https://github.com/mboudour/var/blob/master/Teaching%26Research/Boudourides%20Research%20Interests.pdf)
+* [Moses Boudourides Ongoing Research](https://github.com/mboudour/var/blob/master/Teaching%26Research/Boudourides_ongoing_research.pdf)
+* [Moses Boudourides Research Interests](https://github.com/mboudour/var/blob/master/Teaching%26Research/Boudourides%20Research%20Interests.pdf)
 
 **Network/Data Science Highlights**
 * [Michel Foucault in the Cambridge Lexicon and ChatGPT](https://medium.com/@mosabou/michel-foucault-in-the-cambridge-lexicon-and-chatgpt-996bb09892e0)  <!-- * [Sunbelt 2023 Workshop: Data Collection and Network Analysis of Temporal Citation Data using the Dimensions research database](https://www.insna.org/data-collection-and-network-analysis-of-temporal-citation-data-using-the-dimensions-research-database) -->
