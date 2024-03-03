@@ -5,17 +5,17 @@ permalink: /about/
 ---
 ![](images/MAB_Flagstaff_Sept2022small3.jpg)
 
-* 2022-23: Professor of Practice with the [Arizona State University](https://www.asu.edu/) (ASU) [School of Public Affairs](https://spa.asu.edu/) and also teaching at the [ASU](https://www.asu.edu/) [School of Computing and Augmented Intelligence](https://scai.engineering.asu.edu/).
+* 1998-: Professor of Computational and Applied Mathematics at the [University of Patras](https://www.upatras.gr/en/) (in Patras, Greece) [Department of Mathematics](https://thalis.math.upatras.gr/~mboudour/) (retired in 2017).
+* 
+* 2018-: Adjunct Lecturer at the [Northwestern University School of Professional Studies (SPS) Data Science Program](https://sps.northwestern.edu/masters/data-science/faculty.php).
+* 
+* 2022-23: Professor of Practice at the [Arizona State University](https://www.asu.edu/) (ASU) [School of Public Affairs](https://spa.asu.edu/) and also teaching at the [ASU](https://www.asu.edu/) [School of Computing and Augmented Intelligence](https://scai.engineering.asu.edu/).
 
-* 2021-22: Visiting Associate Professor at [Haverford College](https://www.haverford.edu/) [Department of Computer Science](https://www.haverford.edu/computer-science). 
-
-* 2018-: Faculty of [Northwestern University School of Professional Studies (SPS) Data Science Program](https://sps.northwestern.edu/masters/data-science/faculty.php). 
+* 2021-22: Visiting Associate Professor at the [Haverford College](https://www.haverford.edu/) [Department of Computer Science](https://www.haverford.edu/computer-science). 
 
 * 2019-20: Visiting Professor at the [New York University Abu Dhabi (NYUAD)](https://nyuad.nyu.edu/en/). 
 
-* 1998-2017: Professor of Computational and Applied Mathematics at the [Department of Mathematics](https://thalis.math.upatras.gr/~mboudour/) of the [University of Patras](https://www.upatras.gr/en/) in Greece (retired in 2017).
-
-* 1982-1998: Associate Professor of Applied Mathematics at the [Department of Electrical and Computer Engineering] (https://www.ee.duth.gr/en/) of the [Democritus University of Thrace](https://duth.gr/en/Home) in Xanthi, Greece. 
+* 1982-1998: Associate Professor of Applied Mathematics at the [Democritus University of Thrace](https://duth.gr/en/Home) (in Xanthi, Greece) [Department of Electrical and Computer Engineering] (https://www.ee.duth.gr/en/). 
 
 * Undergraduate studies (Engineering Diploma) on Chemical Engineering at the [National Technical University of Athens](https://www.ntua.gr/en/) and graduate studies (PhD) on Mechanics at the [Johns Hopkins University](https://www.jhu.edu/).
 
@@ -27,12 +27,13 @@ permalink: /about/
 * [Moses Boudourides Ongoing Research](https://github.com/mboudour/var/blob/master/Teaching%26Research/Boudourides_ongoing_research.pdf)
 * [Moses Boudourides Research Interests](https://github.com/mboudour/var/blob/master/Teaching%26Research/Boudourides%20Research%20Interests.pdf)
 
-**Network/Data Science Highlights**
+**Recent Research Highlights**
+* [Criminal justice in the age of AI: Addressing bias in predictive algorithms used by courts](https://github.com/mboudour/var/blob/master/Boudourides_etal_CrimeJusticeInTheAgeOfAI_Draft_15Nov2023.pdf)
 * [Michel Foucault in the Cambridge Lexicon and ChatGPT](https://medium.com/@mosabou/michel-foucault-in-the-cambridge-lexicon-and-chatgpt-996bb09892e0)  <!-- * [Sunbelt 2023 Workshop: Data Collection and Network Analysis of Temporal Citation Data using the Dimensions research database](https://www.insna.org/data-collection-and-network-analysis-of-temporal-citation-data-using-the-dimensions-research-database) -->
 * [Citation Graph Analysis and Alignment Between Citation Adjacency and Themes or Topics of Publications in the Area of Disease Control Through Social Network Surveillance](https://link.springer.com/content/pdf/10.1007/978-3-031-07869-9_5.pdf)
 * [Python-based Computational Social Network Analysis](https://nbviewer.jupyter.org/github/mboudour/var/tree/master/CompSocialNetworkAnalysis/)
 
-**Slides of recent Presentations at Conferences**
+**Slides of Recent Conference Presentations**
 * [Sunbelt 2022 at Cairns](https://github.com/mboudour/var/blob/master/Boudourides_Slides_ApiciusRecipes_Sunbelt2022.pdf)
 * [PolNet 2022](https://github.com/mboudour/var/blob/master/Lobue%26Boudourides_PolNet2022_Slides.pdf)
 * [SMR Winter School 2022](https://github.com/mboudour/var/blob/master/Boudourides_TriadicEffectsInSocialNetworks.pdf)
