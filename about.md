@@ -5,15 +5,15 @@ permalink: /about/
 ---
 ![](images/MAB_Flagstaff_Sept2022small3.jpg)
 
-* 1998-: Professor of Computational and Applied Mathematics at the [University of Patras](https://www.upatras.gr/en/) (in Patras, Greece) [Department of Mathematics](https://thalis.math.upatras.gr/~mboudour/) (retired in 2017).
+* 1998-2017: Professor of Computational and Applied Mathematics at the [University of Patras](https://www.upatras.gr/en/) (in Patras, Greece) [Department of Mathematics](https://thalis.math.upatras.gr/~mboudour/) (retired in 2017).
 
 * 2018-: Adjunct Lecturer at the [Northwestern University School of Professional Studies (SPS) Data Science Program](https://sps.northwestern.edu/masters/data-science/faculty.php).
 
-* 2022-23: Professor of Practice at the [Arizona State University](https://www.asu.edu/) (ASU) [School of Public Affairs](https://spa.asu.edu/) and also teaching at the [ASU](https://www.asu.edu/) [School of Computing and Augmented Intelligence](https://scai.engineering.asu.edu/).
+* 2022-2023: Professor of Practice at the [Arizona State University](https://www.asu.edu/) (ASU) [School of Public Affairs](https://spa.asu.edu/) and also teaching at the [ASU](https://www.asu.edu/) [School of Computing and Augmented Intelligence](https://scai.engineering.asu.edu/).
 
-* 2021-22: Visiting Associate Professor at the [Haverford College](https://www.haverford.edu/) [Department of Computer Science](https://www.haverford.edu/computer-science). 
+* 2021-2022: Visiting Associate Professor at the [Haverford College](https://www.haverford.edu/) [Department of Computer Science](https://www.haverford.edu/computer-science). 
 
-* 2019-20: Visiting Professor at the [New York University Abu Dhabi (NYUAD)](https://nyuad.nyu.edu/en/). 
+* 2019-2020: Visiting Professor at the [New York University Abu Dhabi (NYUAD)](https://nyuad.nyu.edu/en/). 
 
 * 1982-1998: Associate Professor of Applied Mathematics at the [Democritus University of Thrace](https://duth.gr/en/Home) (in Xanthi, Greece) [Department of Electrical and Computer Engineering] (https://www.ee.duth.gr/en/). 
 
