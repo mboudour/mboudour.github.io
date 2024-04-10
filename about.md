@@ -3,8 +3,7 @@ layout: page
 title: Moses Boudourides
 permalink: /about/
 ---
-![](images/MAB_Flagstaff_Sept2022small3.jpg)
-<img src="images/MAB_Patrasso_April2024.HEIC" width="275" height="365">
+![](images/MAB_Patrasso_April2024.jpg.jpg)
 
 * 1998-2017: Professor of Computational and Applied Mathematics at the [University of Patras](https://www.upatras.gr/en/) (in Patras, Greece) [Department of Mathematics](https://thalis.math.upatras.gr/~mboudour/) (retired in 2017).
 
