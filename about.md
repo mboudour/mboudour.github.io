@@ -22,13 +22,13 @@ permalink: /about/
 * In 2019, awarded a Robert K. Merton Visiting Research Fellowship from the [Institute for Analytical Sociology (IAS)](https://liu.se/en/organisation/liu/iei/ias) at [Linköping University](https://liu.se/en) in Sweden.
 
 **CV**
-* [Moses Boudourides CV](https://www.dropbox.com/scl/fi/fg6oyy78rgzom0dtfunpc/Boudourides_CV_Oct2023.pdf?rlkey=vgo8gj1cns6r5zji4vfypwjve&dl=0)
+* [Moses Boudourides CV](https://www.dropbox.com/scl/fi/6noub0iof5gkumuczwabz/Boudourides_CV_Nov2024.pdf?rlkey=6nwq2y5uiztfhxcqc9aapxs4h&st=mz4xjevn&dl=0)
 * [Moses Boudourides Teaching Experience](https://github.com/mboudour/var/blob/master/Teaching%26Research/Boudourides%20Teaching%20Experience.pdf)
 * [Moses Boudourides Ongoing Research](https://github.com/mboudour/var/blob/master/Teaching%26Research/Boudourides_ongoing_research.pdf)
 * [Moses Boudourides Research Interests](https://github.com/mboudour/var/blob/master/Teaching%26Research/Boudourides%20Research%20Interests.pdf)
 
 **Recent Research Highlights**
-* [Computational Network Science Using Python: instats seminar](https://instats.org/seminar/computational-network-science-using-pyth2)
+* [Computational Network Science Using Python](https://instats.org/seminar/computational-network-science-using-pyth2) ([instats](https://instats.org/) workshop)
 * [Criminal justice in the age of AI: Addressing bias in predictive algorithms used by courts](https://github.com/mboudour/var/blob/master/Boudourides_etal_CrimeJusticeInTheAgeOfAI_Draft_15Nov2023.pdf)  Accepted/In press in "The Ethics Gap in the Engineering of the Future: Moral Challenges for the Technology of Tomorrow," by Spyridon Stelios (Editor), Kostas Theologou (Editor), Emerald (released on November 25, 2024).
 * [Michel Foucault in the Cambridge Lexicon and ChatGPT](https://medium.com/@mosabou/michel-foucault-in-the-cambridge-lexicon-and-chatgpt-996bb09892e0)  <!-- * [Sunbelt 2023 Workshop: Data Collection and Network Analysis of Temporal Citation Data using the Dimensions research database](https://www.insna.org/data-collection-and-network-analysis-of-temporal-citation-data-using-the-dimensions-research-database) -->
 * [Citation Graph Analysis and Alignment Between Citation Adjacency and Themes or Topics of Publications in the Area of Disease Control Through Social Network Surveillance](https://link.springer.com/content/pdf/10.1007/978-3-031-07869-9_5.pdf)
