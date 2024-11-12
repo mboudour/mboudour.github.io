@@ -5,7 +5,7 @@ permalink: /about/
 ---
 ![](images/MAB_Patrasso_22October2024.jpg)
 
-* 1998-2017: Former Professor of Computational and Applied Mathematics at the [University of Patras](https://www.upatras.gr/en/) (in Patras, Greece) [Department of Mathematics](https://thalis.math.upatras.gr/~mboudour/) (retired in 2017).
+* 1998-2017: Professor of Computational and Applied Mathematics at the [University of Patras](https://www.upatras.gr/en/) (in Patras, Greece) [Department of Mathematics](https://thalis.math.upatras.gr/~mboudour/) (retired in 2017).
 
 * 2018-: Faculty (Adjunct Lecturer) at the [Northwestern University School of Professional Studies (SPS) Data Science Program](https://sps.northwestern.edu/masters/data-science/faculty.php).
 
@@ -28,10 +28,12 @@ permalink: /about/
 * [Moses Boudourides Research Interests](https://github.com/mboudour/var/blob/master/Teaching%26Research/Boudourides%20Research%20Interests.pdf)
 
 **Recent Research Highlights**
-* [Criminal justice in the age of AI: Addressing bias in predictive algorithms used by courts](https://github.com/mboudour/var/blob/master/Boudourides_etal_CrimeJusticeInTheAgeOfAI_Draft_15Nov2023.pdf)
+* [Computational Network Science Using Python: instats seminar](https://instats.org/seminar/computational-network-science-using-pyth2)
+* [Criminal justice in the age of AI: Addressing bias in predictive algorithms used by courts](https://github.com/mboudour/var/blob/master/Boudourides_etal_CrimeJusticeInTheAgeOfAI_Draft_15Nov2023.pdf)  Accepted/In press in "The Ethics Gap in the Engineering of the Future: Moral Challenges for the Technology of Tomorrow," by Spyridon Stelios (Editor), Kostas Theologou (Editor), Emerald (released on November 25, 2024).
 * [Michel Foucault in the Cambridge Lexicon and ChatGPT](https://medium.com/@mosabou/michel-foucault-in-the-cambridge-lexicon-and-chatgpt-996bb09892e0)  <!-- * [Sunbelt 2023 Workshop: Data Collection and Network Analysis of Temporal Citation Data using the Dimensions research database](https://www.insna.org/data-collection-and-network-analysis-of-temporal-citation-data-using-the-dimensions-research-database) -->
 * [Citation Graph Analysis and Alignment Between Citation Adjacency and Themes or Topics of Publications in the Area of Disease Control Through Social Network Surveillance](https://link.springer.com/content/pdf/10.1007/978-3-031-07869-9_5.pdf)
-* [Python-based Computational Social Network Analysis](https://nbviewer.jupyter.org/github/mboudour/var/tree/master/CompSocialNetworkAnalysis/)
+* [Computational Network Science Using Python](https://github.com/mboudour/var/tree/master/Computational%20Network%20Science%20Using%20Python) (github repository)
+  <!-- [Python-based Computational Social Network Analysis](https://nbviewer.jupyter.org/github/mboudour/var/tree/master/CompSocialNetworkAnalysis/) -->
 
 **Slides of Recent Conference Presentations**
 * [Sunbelt 2022 at Cairns](https://github.com/mboudour/var/blob/master/Boudourides_Slides_ApiciusRecipes_Sunbelt2022.pdf)
