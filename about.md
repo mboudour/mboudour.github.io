@@ -56,6 +56,7 @@ permalink: /about/
 * [LinkedIn](https://www.linkedin.com/in/moses-boudourides-24aba121/)
 * [Twitter](https://twitter.com/mosabou)
 * [Mastodon](https://sciences.social/@mosabou)
+* [Bluesky](https://bsky.app/@mosabou)
 * [Facebook](https://www.facebook.com/moses.boudourides)
   - [Computational Social Science Group](https://www.facebook.com/groups/523771471380181/)
   - [[ Ντίτζιταλ Χιουμάνιτυζ ] / [ Digital Humanities ] Group](https://www.facebook.com/groups/1960653647501516/)
