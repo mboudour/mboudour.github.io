@@ -7,7 +7,7 @@ permalink: /about/
 
 * 1998-2017: Professor of Computational and Applied Mathematics at the [University of Patras](https://www.upatras.gr/en/) (in Patras, Greece) [Department of Mathematics](https://thalis.math.upatras.gr/~mboudour/) (retired in 2017).
 
-* 2018-: Faculty (Adjunct Lecturer) at the [Northwestern University School of Professional Studies (SPS) Data Science Program](https://sps.northwestern.edu/masters/data-science/faculty.php).
+* 2018-2025: Faculty (Adjunct Lecturer) at the [Northwestern University School of Professional Studies (SPS) Data Science Program](https://sps.northwestern.edu/masters/data-science/faculty.php).
 
 * 2022-2023: Professor of Practice at the [Arizona State University](https://www.asu.edu/) (ASU) [School of Public Affairs](https://spa.asu.edu/) and also teaching at the [ASU](https://www.asu.edu/) [School of Computing and Augmented Intelligence](https://scai.engineering.asu.edu/).
 
@@ -29,7 +29,7 @@ permalink: /about/
 
 **Recent Research Highlights**
 * [Computational Network Science Using Python](https://instats.org/seminar/computational-network-science-using-pyth2) ([instats](https://instats.org/) workshop)
-* [Criminal justice in the age of AI: Addressing bias in predictive algorithms used by courts](https://github.com/mboudour/var/blob/master/Boudourides_etal_CrimeJusticeInTheAgeOfAI_Draft_15Nov2023.pdf)  Accepted/In press in "The Ethics Gap in the Engineering of the Future: Moral Challenges for the Technology of Tomorrow," by Spyridon Stelios (Editor), Kostas Theologou (Editor), Emerald (released on November 25, 2024).
+* [Criminal justice in the age of AI: Addressing bias in predictive algorithms used by courts](https://github.com/mboudour/var/blob/master/Boudourides_etal_CrimeJusticeInTheAgeOfAI_Draft_15Nov2023.pdf) in Stelios, S. and Theologou, K. (Ed.) The Ethics Gap in the Engineering of the Future, Emerald Publishing Limited, Leeds, pp. 27-50. (https://doi.org/10.1108/978-1-83797-635-520241003).
 * [Michel Foucault in the Cambridge Lexicon and ChatGPT](https://medium.com/@mosabou/michel-foucault-in-the-cambridge-lexicon-and-chatgpt-996bb09892e0)  <!-- * [Sunbelt 2023 Workshop: Data Collection and Network Analysis of Temporal Citation Data using the Dimensions research database](https://www.insna.org/data-collection-and-network-analysis-of-temporal-citation-data-using-the-dimensions-research-database) -->
 * [Citation Graph Analysis and Alignment Between Citation Adjacency and Themes or Topics of Publications in the Area of Disease Control Through Social Network Surveillance](https://link.springer.com/content/pdf/10.1007/978-3-031-07869-9_5.pdf)
 * [Computational Network Science Using Python](https://github.com/mboudour/var/tree/master/Computational%20Network%20Science%20Using%20Python) (github repository)
