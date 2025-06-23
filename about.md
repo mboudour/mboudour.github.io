@@ -28,6 +28,7 @@ permalink: /about/
 * [Moses Boudourides Research Interests](https://github.com/mboudour/var/blob/master/Teaching%26Research/Boudourides%20Research%20Interests.pdf)
 
 **Recent Research Highlights**
+* [Hyperlink Prediction on Hypergraphs Using Python](https://github.com/mboudour/hyperlink_prediction) ([2025 Paris Sunbelt](https://sunbelt2025.org/workshops/) workshop)
 * [Computational Network Science Using Python](https://instats.org/seminar/computational-network-science-using-pyth2) ([instats](https://instats.org/) workshop)
 * [Hypernetworks in Theory and Practice](https://instats.org/seminar/hypernetworks-in-theory-and-practice) ([instats](https://instats.org/) workshop)
 * [Criminal justice in the age of AI: Addressing bias in predictive algorithms used by courts](https://github.com/mboudour/var/blob/master/Boudourides_etal_CrimeJusticeInTheAgeOfAI_Draft_15Nov2023.pdf) in Stelios, S. and Theologou, K. (Ed.) *The Ethics Gap in the Engineering of the Future*, Emerald Publishing Limited, Leeds, pp. 27-50 [https://doi.org/10.1108/978-1-83797-635-520241003](https://doi.org/10.1108/978-1-83797-635-520241003)
