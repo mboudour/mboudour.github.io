@@ -28,6 +28,7 @@ permalink: /about/
 * [Moses Boudourides Research Interests](https://github.com/mboudour/var/blob/master/Teaching%26Research/Boudourides%20Research%20Interests.pdf)
 
 **Recent Research Highlights**
+* [Predicting Network Structure with Hypergraphs](https://instats.org/seminar/predicting-network-structure-with-hyperg) ([instats](https://instats.org/) workshop)
 * [Hyperlink Prediction on Hypergraphs Using Python](https://github.com/mboudour/hyperlink_prediction) ([2025 Paris Sunbelt](https://sunbelt2025.org/workshops/) workshop)
 * [Computational Network Science Using Python](https://instats.org/seminar/computational-network-science-using-pyth2) ([instats](https://instats.org/) workshop)
 * [Hypernetworks in Theory and Practice](https://instats.org/seminar/hypernetworks-in-theory-and-practice) ([instats](https://instats.org/) workshop)
