@@ -23,9 +23,12 @@ permalink: /about/
 
 **CV**
 * [Moses Boudourides CV](https://www.dropbox.com/scl/fi/6noub0iof5gkumuczwabz/Boudourides_CV_Nov2024.pdf?rlkey=6nwq2y5uiztfhxcqc9aapxs4h&st=mz4xjevn&dl=0)
-<!-- * [Moses Boudourides Teaching Experience](https://github.com/mboudour/var/blob/master/Teaching%26Research/Boudourides%20Teaching%20Experience.pdf)
+
+<!-- 
+* [Moses Boudourides Teaching Experience](https://github.com/mboudour/var/blob/master/Teaching%26Research/Boudourides%20Teaching%20Experience.pdf)
 * [Moses Boudourides Ongoing Research](https://github.com/mboudour/var/blob/master/Teaching%26Research/Boudourides_ongoing_research.pdf)
-* [Moses Boudourides Research Interests](https://github.com/mboudour/var/blob/master/Teaching%26Research/Boudourides%20Research%20Interests.pdf) -->
+* [Moses Boudourides Research Interests](https://github.com/mboudour/var/blob/master/Teaching%26Research/Boudourides%20Research%20Interests.pdf) 
+-->
 
 **Recent Research Highlights**
 * [Comparing Networks of Regime Transitions in Ancient Greece](https://www.dropbox.com/scl/fi/vjbe9gqwahxhhjg8kuerp/Schneider-Boudourides_slides_AncientGreekRegimeTransitions.pdf?rlkey=ugf92x943z1cxvkusxniak6j8&st=0uwoms4d&dl=0)(Slides of a paper co-authored with Volker Schneider and presented at the [2025 ECPR General Conference in Thessaloniki](https://ecpr.eu/GeneralConference))
