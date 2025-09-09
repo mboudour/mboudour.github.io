@@ -23,14 +23,19 @@ permalink: /about/
 
 **CV**
 * [Moses Boudourides CV](https://www.dropbox.com/scl/fi/6noub0iof5gkumuczwabz/Boudourides_CV_Nov2024.pdf?rlkey=6nwq2y5uiztfhxcqc9aapxs4h&st=mz4xjevn&dl=0)
-* [Moses Boudourides Teaching Experience](https://github.com/mboudour/var/blob/master/Teaching%26Research/Boudourides%20Teaching%20Experience.pdf)
+<!-- * [Moses Boudourides Teaching Experience](https://github.com/mboudour/var/blob/master/Teaching%26Research/Boudourides%20Teaching%20Experience.pdf)
 * [Moses Boudourides Ongoing Research](https://github.com/mboudour/var/blob/master/Teaching%26Research/Boudourides_ongoing_research.pdf)
-* [Moses Boudourides Research Interests](https://github.com/mboudour/var/blob/master/Teaching%26Research/Boudourides%20Research%20Interests.pdf)
+* [Moses Boudourides Research Interests](https://github.com/mboudour/var/blob/master/Teaching%26Research/Boudourides%20Research%20Interests.pdf) -->
 
 **Recent Research Highlights**
+* [Comparing Networks of Regime Transitions in Ancient Greece](https://www.dropbox.com/scl/fi/vjbe9gqwahxhhjg8kuerp/Schneider-Boudourides_slides_AncientGreekRegimeTransitions.pdf?rlkey=ugf92x943z1cxvkusxniak6j8&st=0uwoms4d&dl=0)(Slides of a paper co-authored with Volker Schneider and presented at the [2025 ECPR General Conference in Thessaloniki](https://ecpr.eu/GeneralConference))
+* [Forensic Science and Sociology in the Era of AI](https://www.dropbox.com/scl/fi/atwpi0qrj8t25fiofvivw/Karthikeyan-Boudourides_ForensicScience-SociologyInTheEraOfAI_draft.pdf?rlkey=z32w65j1242ps2zvpcikkuecu&st=zf9bdahj&dl=0) (Paper coauthored with Rahulrajan Karthikeyan and accepted for publication in [The Handbook on the Sociology of Artificial Intelligence, forthcoming from Emerald in 2026](https://www.ohio.edu/news/2024/09/call-papers-new-publication-focused-societal-impact-ai))
 * [Predicting Network Structure with Hypergraphs](https://instats.org/seminar/predicting-network-structure-with-hyperg) ([instats](https://instats.org/) workshop)
+* [Network Structures and Hypergraphs]([https://instats.org/seminar/predicting-network-structure-with-hyperg](https://instats.org/seminar/network-structures-and-hypergraphs-free)) ([instats](https://instats.org/) workshop) [Slides](https://www.dropbox.com/scl/fi/oaltohie64s7ozr1nlr9j/Boudourides_slides_NetworkStructures-Hypergraphs.pdf?rlkey=b2tmhxet2lw9ovz8en1ff69q2&st=arc8poho&dl=0)
 * [Hyperlink Prediction on Hypergraphs Using Python](https://github.com/mboudour/hyperlink_prediction) ([2025 Paris Sunbelt](https://sunbelt2025.org/workshops/) workshop)
-* [Computational Network Science Using Python](https://instats.org/seminar/computational-network-science-using-pyth2) ([instats](https://instats.org/) workshop)
+* [Hypergraph Basics: New Tools for Analyzing Text Data in Sociology](https://www.dropbox.com/scl/fi/5xaoy9ht695tmx62jm6st/Boudourides_slides_Bucharest_Hypergraphs-Sociology.pdf?rlkey=5xc6j406ocsjizok7p068wi0h&st=t8bjpwsj&dl=0) (Lecture at the Doctoral School of Sociology, University of Bucharest, May 5, 2025)
+* [Methods of Hypergraph / Hypernetwork Analysis](https://instats.org/seminar/methods-of-hypergraph-hypernetwork-analy) ([instats](https://instats.org/) workshop) [Code and Slides](https://github.com/mboudour/var/tree/master/Key%20Methods%20of%20Hypergraph%20Analysis%20Seminars)
+* [Computational Network Science Using Python](https://instats.org/seminar/computational-network-science-using-pyth2) ([instats](https://instats.org/) workshop) [Code and Slides](https://github.com/mboudour/var/tree/master/Computational%20Network%20Science%20Using%20Python)
 * [Hypernetworks in Theory and Practice](https://instats.org/seminar/hypernetworks-in-theory-and-practice) ([instats](https://instats.org/) workshop)
 * [Criminal justice in the age of AI: Addressing bias in predictive algorithms used by courts](https://github.com/mboudour/var/blob/master/Boudourides_etal_CrimeJusticeInTheAgeOfAI_Draft_15Nov2023.pdf) in Stelios, S. and Theologou, K. (Ed.) *The Ethics Gap in the Engineering of the Future*, Emerald Publishing Limited, Leeds, pp. 27-50 [https://doi.org/10.1108/978-1-83797-635-520241003](https://doi.org/10.1108/978-1-83797-635-520241003)
 * [Michel Foucault in the Cambridge Lexicon and ChatGPT](https://medium.com/@mosabou/michel-foucault-in-the-cambridge-lexicon-and-chatgpt-996bb09892e0)  <!-- * [Sunbelt 2023 Workshop: Data Collection and Network Analysis of Temporal Citation Data using the Dimensions research database](https://www.insna.org/data-collection-and-network-analysis-of-temporal-citation-data-using-the-dimensions-research-database) -->
@@ -38,7 +43,7 @@ permalink: /about/
 * [Computational Network Science Using Python, version 2021](https://github.com/mboudour/var/tree/master/Computational%20Network%20Science%20Using%20Python) (github repository)
   <!-- [Python-based Computational Social Network Analysis](https://nbviewer.jupyter.org/github/mboudour/var/tree/master/CompSocialNetworkAnalysis/) -->
 
-**Slides of Recent Conference Presentations**
+**Slides of Past Conference Presentations**
 * [Sunbelt 2022 at Cairns](https://github.com/mboudour/var/blob/master/Boudourides_Slides_ApiciusRecipes_Sunbelt2022.pdf)
 * [PolNet 2022](https://github.com/mboudour/var/blob/master/Lobue%26Boudourides_PolNet2022_Slides.pdf)
 * [SMR Winter School 2022](https://github.com/mboudour/var/blob/master/Boudourides_TriadicEffectsInSocialNetworks.pdf)
