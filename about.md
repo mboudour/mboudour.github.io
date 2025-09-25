@@ -7,7 +7,7 @@ permalink: /about/
 
 * 1998-2017: Professor of Computational and Applied Mathematics at the [University of Patras](https://www.upatras.gr/en/) (in Patras, Greece) [Department of Mathematics](https://thalis.math.upatras.gr/~mboudour/) (retired in 2017).
 
-* 2018-2025: Faculty (Adjunct Lecturer) at the [Northwestern University School of Professional Studies (SPS) Data Science Program](https://sps.northwestern.edu/masters/data-science/faculty.php).
+* 2018-: Faculty (Adjunct Lecturer) at the [Northwestern University School of Professional Studies (SPS) Data Science Program](https://sps.northwestern.edu/masters/data-science/faculty.php).
 
 * 2022-2023: Professor of Practice at the [Arizona State University](https://www.asu.edu/) (ASU) [School of Public Affairs](https://spa.asu.edu/) and also teaching at the [ASU](https://www.asu.edu/) [School of Computing and Augmented Intelligence](https://scai.engineering.asu.edu/).
 
@@ -31,9 +31,9 @@ permalink: /about/
 -->
 
 **Recent Research Highlights**
+* [Predicting Network Structure with Hypergraphs](https://instats.org/seminar/predicting-network-structure-with-hyperg) ([instats](https://instats.org/) workshop) [Slides](https://www.dropbox.com/scl/fo/3gks3q483q5qeqx5yaruy/ABoqbFRypyGx7tE6AeokUM4?rlkey=jpss2h41lyr02u3ol7vatw8ua&st=d3h17aqn&dl=0)
 * [Comparing Networks of Regime Transitions in Ancient Greece](https://www.dropbox.com/scl/fi/vjbe9gqwahxhhjg8kuerp/Schneider-Boudourides_slides_AncientGreekRegimeTransitions.pdf?rlkey=ugf92x943z1cxvkusxniak6j8&st=0uwoms4d&dl=0) (Slides of a paper co-authored with Volker Schneider and presented at the [2025 ECPR General Conference in Thessaloniki](https://ecpr.eu/GeneralConference))
 * [Forensic Science and Sociology in the Era of AI](https://www.dropbox.com/scl/fi/atwpi0qrj8t25fiofvivw/Karthikeyan-Boudourides_ForensicScience-SociologyInTheEraOfAI_draft.pdf?rlkey=z32w65j1242ps2zvpcikkuecu&st=zf9bdahj&dl=0) (Paper coauthored with Rahulrajan Karthikeyan and accepted for publication in [The Handbook on the Sociology of Artificial Intelligence, forthcoming from Emerald in 2026](https://www.ohio.edu/news/2024/09/call-papers-new-publication-focused-societal-impact-ai))
-* [Predicting Network Structure with Hypergraphs](https://instats.org/seminar/predicting-network-structure-with-hyperg) ([instats](https://instats.org/) workshop)
 * [Network Structures and Hypergraphs]([https://instats.org/seminar/predicting-network-structure-with-hyperg](https://instats.org/seminar/network-structures-and-hypergraphs-free)) ([instats](https://instats.org/) workshop) [Slides](https://www.dropbox.com/scl/fi/oaltohie64s7ozr1nlr9j/Boudourides_slides_NetworkStructures-Hypergraphs.pdf?rlkey=b2tmhxet2lw9ovz8en1ff69q2&st=arc8poho&dl=0)
 * [Hyperlink Prediction on Hypergraphs Using Python](https://github.com/mboudour/hyperlink_prediction) ([2025 Paris Sunbelt](https://sunbelt2025.org/workshops/) workshop)
 * [Co-authors and co-PIs: Relational hyperevent models for the coevolution of scientific publications and grants](https://github.com/mboudour/var/blob/master/LernerFabbrucci%26Boudourides_Co-Authors%26Co-PIs_RelationalHypereventModelsForTheCoevolutionOfScientificPublications%26Grants_SIS2025.pdf) (Paper co-authored with J. Lerner and G.A. Fabbrucci Barbagli and presented at the conference [SIS 2025, Statistics for Innovation}, Genoa, Italy, June 16-18, 2025](https://sis2025.sis-statistica.it/)).
