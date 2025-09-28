@@ -22,7 +22,10 @@ permalink: /about/
 * In 2019, awarded a Robert K. Merton Visiting Research Fellowship from the [Institute for Analytical Sociology (IAS)](https://liu.se/en/organisation/liu/iei/ias) at [Linköping University](https://liu.se/en) in Sweden.
 
 **CV**
-* [Moses Boudourides CV](https://www.dropbox.com/scl/fi/6noub0iof5gkumuczwabz/Boudourides_CV_Nov2024.pdf?rlkey=6nwq2y5uiztfhxcqc9aapxs4h&st=mz4xjevn&dl=0)
+* [Moses Boudourides CV](https://www.dropbox.com/scl/fi/klw9xv899iwdo2ej1mbuz/Boudourides_CV.pdf?rlkey=rioyjrhfm9z6jkgj6o8ogdfii&st=lyn8ulbw&dl=0)
+<!-- 
+https://www.dropbox.com/scl/fi/6noub0iof5gkumuczwabz/Boudourides_CV_Nov2024.pdf?rlkey=6nwq2y5uiztfhxcqc9aapxs4h&st=mz4xjevn&dl=0)
+-->
 
 <!-- 
 * [Moses Boudourides Teaching Experience](https://github.com/mboudour/var/blob/master/Teaching%26Research/Boudourides%20Teaching%20Experience.pdf)
