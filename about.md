@@ -36,7 +36,7 @@ https://www.dropbox.com/scl/fi/6noub0iof5gkumuczwabz/Boudourides_CV_Nov2024.pdf?
 **New and Forthcoming Work**
 * [“Two-Path Operators, Triadic Decompositions, and Majorized Quotients for Ego-Centered Network Compression,” *Journal of Complex Networks* (forthcoming)](https://arxiv.org/abs/2603.10258)
 * ["Borda Aggregation Dynamics of Preference Orderings on Networks," *Network Science* (forthcoming)](https://arxiv.org/abs/2604.04209) 
-* ["Missing Links in Public Email and Covert Networks: A Comparative Evaluation of Link Prediction, Hyperlink Prediction, and ERGM Estimation," *EPJ Data Science* (forthcoming)](https://www.dropbox.com/scl/fi/ulzpo8r7hoq9ne2mn1yx8/Boudourides_MissingLinksInEmail-CovertNetworksViaHyperlinkPrediction-ERGM.pdf?rlkey=q5dzpu46n1kqlfec06nk2qtzz&st=btgrwoap&dl=0) 
+* ["Missing Links in Public Email and Covert Networks: A Comparative Evaluation of Link Prediction, Hyperlink Prediction, and ERGM Estimation," *EPJ Data Science* (forthcoming)](https://doi.org/10.48550/arXiv.2605.22606) 
 * ["The algorithmic blind spot: bias, moral status, and the future of robot rights," (2026) *AI & Society*](https://link.springer.com/article/10.1007/s00146-026-03003-y) 
 
 **Recent Research Highlights**
