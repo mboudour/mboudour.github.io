@@ -34,10 +34,12 @@ https://www.dropbox.com/scl/fi/6noub0iof5gkumuczwabz/Boudourides_CV_Nov2024.pdf?
 -->
 
 **New and Forthcoming Work**
-* [“Two-Path Operators, Triadic Decompositions, and Majorized Quotients for Ego-Centered Network Compression,” *Journal of Complex Networks* (forthcoming)](https://arxiv.org/abs/2603.10258)
-* ["Borda Aggregation Dynamics of Preference Orderings on Networks," *Network Science* (forthcoming)](https://arxiv.org/abs/2604.04209) 
+* ["The algorithmic blind spot: bias, moral status, and the future of robot rights," (2026) *AI & Society*](https://link.springer.com/article/10.1007/s00146-026-03003-y)
+* [“Two-Path Operators, Triadic Decompositions, and Majorized Quotients for Ego-Centered Network Compression,” (2026) *Journal of Complex Networks*]([https://arxiv.org/abs/2603.10258](https://doi.org/10.1093/comnet/cnag022))
 * ["Missing Links in Public Email and Covert Networks: A Comparative Evaluation of Link Prediction, Hyperlink Prediction, and ERGM Estimation," *EPJ Data Science* (forthcoming)](https://doi.org/10.48550/arXiv.2605.22606) 
-* ["The algorithmic blind spot: bias, moral status, and the future of robot rights," (2026) *AI & Society*](https://link.springer.com/article/10.1007/s00146-026-03003-y) 
+* ["Interior-Boundary Assortativity Profiles on Networks and Applications to SIS Epidemic Dynamics," *Discrete and Continuous Dynamical Systems Series B (DCDS-B)* (forthcoming)](https://arxiv.org/abs/2601.19422)
+* ["Borda Aggregation Dynamics of Preference Orderings on Networks," *Network Science* (forthcoming)](https://arxiv.org/abs/2604.04209) 
+
 
 **Recent Research Highlights**
 * [AI-Assisted Systematic Reviews and Meta-Analysis](https://instats.org/seminar/ai-assisted-systematic-reviews-and-meta) ([instats](https://instats.org/) workshop) [GitHub repo](https://github.com/mboudour/ai-assisted-systematic-reviews-and-meta-analysis), [Streamlit app](https://ai-assisted-systematic-reviews-and-meta-analysis.streamlit.app/)
