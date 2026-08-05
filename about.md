@@ -42,6 +42,7 @@ https://www.dropbox.com/scl/fi/6noub0iof5gkumuczwabz/Boudourides_CV_Nov2024.pdf?
 
 
 **Recent Research Highlights**
+* [AI-Augmented Research](https://instats.org/seminar/ai-augmented-research) ([instats](https://instats.org/) workshop) [GitHub repo](https://github.com/mboudour/ai-augmented-research), [Streamlit app](https://ai-augmented-research.streamlit.app/)
 * [AI-Assisted Systematic Reviews and Meta-Analysis](https://instats.org/seminar/ai-assisted-systematic-reviews-and-meta) ([instats](https://instats.org/) workshop) [GitHub repo](https://github.com/mboudour/ai-assisted-systematic-reviews-and-meta-analysis), [Streamlit app](https://ai-assisted-systematic-reviews-and-meta-analysis.streamlit.app/)
 * [Predicting Network Structure with Hypergraphs](https://instats.org/seminar/predicting-network-structure-with-hyperg) ([instats](https://instats.org/) workshop) [Slides](https://www.dropbox.com/scl/fo/3gks3q483q5qeqx5yaruy/ABoqbFRypyGx7tE6AeokUM4?rlkey=jpss2h41lyr02u3ol7vatw8ua&st=d3h17aqn&dl=0)
 * [Forensic Science and Sociology in the Era of AI](https://www.dropbox.com/scl/fi/atwpi0qrj8t25fiofvivw/Karthikeyan-Boudourides_ForensicScience-SociologyInTheEraOfAI_draft.pdf?rlkey=z32w65j1242ps2zvpcikkuecu&st=zf9bdahj&dl=0) (Paper coauthored with Rahulrajan Karthikeyan and accepted for publication in [The Handbook on the Sociology of Artificial Intelligence, forthcoming from Emerald in 2026](https://www.ohio.edu/news/2024/09/call-papers-new-publication-focused-societal-impact-ai))
