@@ -1,0 +1,61 @@
+{
+  "owner": "mboudour",
+  "sections": [
+    {
+      "id": "research-methods-ai",
+      "title": "Research methods and artificial intelligence"
+    },
+    {
+      "id": "statistics-networks-scientometrics",
+      "title": "Statistics, networks, and scientometrics"
+    },
+    {
+      "id": "unclassified",
+      "title": "New and unclassified applications"
+    }
+  ],
+  "apps": {
+    "ai-assisted-systematic-reviews-and-meta-analysis": {
+      "title": "AI-Assisted Systematic Reviews and Meta-Analysis",
+      "section": "research-methods-ai",
+      "description": "A no-code companion for a three-day workshop on evidence synthesis, systematic reviews, and meta-analysis.",
+      "app_url": "https://ai-assisted-systematic-reviews-and-meta-analysis.streamlit.app/"
+    },
+    "ai-augmented-research": {
+      "title": "AI-Augmented Research",
+      "section": "research-methods-ai",
+      "description": "An interactive companion for an academic research seminar focused on directing, verifying, and critically assessing AI-mediated research workflows.",
+      "app_url": "https://ai-augmented-research.streamlit.app/"
+    },
+    "causal-inference-workshop": {
+      "title": "Causal Inference with Large Language Models",
+      "section": "research-methods-ai",
+      "description": "A three-day workshop companion for causal inference with large language models, including step-by-step calculations built around United States Congressional speeches data.",
+      "app_url": "https://causal-inference-workshop-odxipb5ycay2fkgr9xezet.streamlit.app/"
+    },
+    "web-scraping-and-data-collection": {
+      "title": "Web Scraping and Data Collection",
+      "section": "research-methods-ai",
+      "description": "A no-code academic workshop companion for collecting, preparing, inspecting, and exporting web-based research data.",
+      "app_url": "https://web-scraping-and-data-collection.streamlit.app/"
+    },
+    "no-code-statistical-inference": {
+      "title": "No-Code Statistical Inference",
+      "section": "statistics-networks-scientometrics",
+      "description": "A three-day seminar companion for data, uncertainty, hypothesis testing, group comparisons, categorical inference, regression, prediction, diagnostics, and reproducibility.",
+      "app_url": "https://no-code-statistical-inference.streamlit.app/"
+    },
+    "can-models": {
+      "title": "Causal Attitude Network Models",
+      "section": "statistics-networks-scientometrics",
+      "description": "A configuration-driven workspace for Causal Attitude Network analyses, including public replication, completed worked-case, and transparent feasibility workflows.",
+      "app_url": "https://can-models.streamlit.app/"
+    },
+    "Comparative-Bibiometric-Study-of-OpenAlex-Dimenions.ai": {
+      "title": "Scientometric Source Comparison",
+      "section": "statistics-networks-scientometrics",
+      "description": "A reproducible application for assessing how bibliographic infrastructure affects scientometric network conclusions based on OpenAlex and Dimensions data.",
+      "app_url": "https://comparative-bibiometric-study-of-openalex-dimenionsai.streamlit.app/"
+    }
+  }
+}
