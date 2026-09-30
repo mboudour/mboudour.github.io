@@ -42,6 +42,7 @@ https://www.dropbox.com/scl/fi/6noub0iof5gkumuczwabz/Boudourides_CV_Nov2024.pdf?
 
 
 **Recent Research Highlights**
+* [Public Streamlit Applications](/streamlit-apps/) — a dedicated index of the interactive applications linked to my public GitHub projects.
 * [AI-Augmented Research](https://instats.org/seminar/ai-augmented-research) ([instats](https://instats.org/) workshop) [GitHub repo](https://github.com/mboudour/ai-augmented-research), [Streamlit app](https://ai-augmented-research.streamlit.app/)
 * [AI-Assisted Systematic Reviews and Meta-Analysis](https://instats.org/seminar/ai-assisted-systematic-reviews-and-meta) ([instats](https://instats.org/) workshop) [GitHub repo](https://github.com/mboudour/ai-assisted-systematic-reviews-and-meta-analysis), [Streamlit app](https://ai-assisted-systematic-reviews-and-meta-analysis.streamlit.app/)
 * [Predicting Network Structure with Hypergraphs](https://instats.org/seminar/predicting-network-structure-with-hyperg) ([instats](https://instats.org/) workshop) [Slides](https://www.dropbox.com/scl/fo/3gks3q483q5qeqx5yaruy/ABoqbFRypyGx7tE6AeokUM4?rlkey=jpss2h41lyr02u3ol7vatw8ua&st=d3h17aqn&dl=0)
