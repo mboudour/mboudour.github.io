@@ -56,6 +56,12 @@
       "section": "statistics-networks-scientometrics",
       "description": "A reproducible application for assessing how bibliographic infrastructure affects scientometric network conclusions based on OpenAlex and Dimensions data.",
       "app_url": "https://comparative-bibiometric-study-of-openalex-dimenionsai.streamlit.app/"
+    },
+    "mboudour.github.io": {
+      "title": "Mboudour.Github.Io",
+      "section": "unclassified",
+      "description": "A newly discovered Streamlit application linked to this public GitHub project.",
+      "app_url": "https://ai-assisted-systematic-reviews-and-meta-analysis.streamlit.app/"
     }
   }
 }

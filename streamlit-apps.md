@@ -49,6 +49,15 @@ A reproducible application for assessing how bibliographic infrastructure affect
 
 [Open the app](https://comparative-bibiometric-study-of-openalex-dimenionsai.streamlit.app/) · [View the GitHub project](https://github.com/mboudour/Comparative-Bibiometric-Study-of-OpenAlex-Dimenions.ai)
 
+## New and unclassified applications
+
+These live deployments were found automatically. They are deliberately not assigned to a research area until reviewed.
+
+### [Mboudour.Github.Io](https://ai-assisted-systematic-reviews-and-meta-analysis.streamlit.app/)
+A newly discovered Streamlit application linked to this public GitHub project.
+
+[Open the app](https://ai-assisted-systematic-reviews-and-meta-analysis.streamlit.app/) · [View the GitHub project](https://github.com/mboudour/mboudour.github.io)
+
 ---
 
 The public deployments and their GitHub repositories are listed separately so that visitors can use an application immediately or inspect its accompanying materials and source code.
