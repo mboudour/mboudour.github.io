@@ -62,6 +62,18 @@
       "section": "unclassified",
       "description": "A newly discovered Streamlit application linked to this public GitHub project.",
       "app_url": "https://ai-assisted-systematic-reviews-and-meta-analysis.streamlit.app/"
+    },
+    "ethics-computation-and-institutional-linkages-in-ai-and-mental-health-research": {
+      "title": "Ethics Computation And Institutional Linkages In Ai And Mental Health Research",
+      "section": "unclassified",
+      "description": "A newly discovered Streamlit application linked to this public GitHub project.",
+      "app_url": "https://ai-and-mental-health-research.streamlit.app/"
+    },
+    "no-code-statistical-network-modeling": {
+      "title": "No Code Statistical Network Modeling",
+      "section": "unclassified",
+      "description": "A newly discovered Streamlit application linked to this public GitHub project.",
+      "app_url": "https://no-code-statistical-network-modeling.streamlit.app/"
     }
   }
 }

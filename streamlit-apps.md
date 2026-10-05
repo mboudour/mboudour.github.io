@@ -53,10 +53,20 @@ A reproducible application for assessing how bibliographic infrastructure affect
 
 These live deployments were found automatically. They are deliberately not assigned to a research area until reviewed.
 
+### [Ethics Computation And Institutional Linkages In Ai And Mental Health Research](https://ai-and-mental-health-research.streamlit.app/)
+A newly discovered Streamlit application linked to this public GitHub project.
+
+[Open the app](https://ai-and-mental-health-research.streamlit.app/) · [View the GitHub project](https://github.com/mboudour/ethics-computation-and-institutional-linkages-in-ai-and-mental-health-research)
+
 ### [Mboudour.Github.Io](https://ai-assisted-systematic-reviews-and-meta-analysis.streamlit.app/)
 A newly discovered Streamlit application linked to this public GitHub project.
 
 [Open the app](https://ai-assisted-systematic-reviews-and-meta-analysis.streamlit.app/) · [View the GitHub project](https://github.com/mboudour/mboudour.github.io)
+
+### [No Code Statistical Network Modeling](https://no-code-statistical-network-modeling.streamlit.app/)
+A newly discovered Streamlit application linked to this public GitHub project.
+
+[Open the app](https://no-code-statistical-network-modeling.streamlit.app/) · [View the GitHub project](https://github.com/mboudour/no-code-statistical-network-modeling)
 
 ---
 
